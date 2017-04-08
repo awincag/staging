@@ -1058,11 +1058,6 @@ html{
   font-family: "Miller Disp It", serif;
   width: 47%;
   margin: 0 3% .5em 0; }
-  @media only screen and (min-width: 700px) {
-    .client-list span {
-      font-size:
-    }
-  }
   @media only screen and (min-width: 1000px) {
     .client-list span {
       font-size: 1.125rem;
@@ -1394,7 +1389,7 @@ a[title]:hover:after {
 
 .closebtn:hover {
   color: #333;
-  cursor: pointer;;
+  cursor: pointer;
 }
 
 .quote {
@@ -2536,7 +2531,7 @@ a:hover .footer-contact {
 
 #projects .action {
   position: absolute;
-  bottom: -2em;;
+  bottom: -2em;
   left: 0;
   -webkit-transition:0.2s ease-in-out;
   transition: 0.2s ease-in-out;
@@ -2628,7 +2623,7 @@ a:hover .footer-contact {
   #projects a:hover .action {
     visibility: visible;
     position: absolute;
-    bottom: -1.75em;;
+    bottom: -1.75em;
     left: 0;
     opacity: 1;
   }
