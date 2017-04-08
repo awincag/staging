@@ -55,7 +55,7 @@ p{
 
 
 
-em{
+em {
   font-style:italic
 }
 
@@ -1057,6 +1057,7 @@ html{
 .client-list span {
   font-family: "Miller Disp It", serif;
   width: 47%;
+  font-style: italic;
   margin: 0 3% .5em 0; }
   @media only screen and (min-width: 1000px) {
     .client-list span {
@@ -1212,6 +1213,7 @@ html{
 .section-content a, #header a {
   font-family: "Miller Disp It", serif;
   color: #9A404D;
+  font-style: italic;
 }
 
 .section-content a:hover, #header a:hover {
@@ -1414,11 +1416,13 @@ a[title]:hover:after {
   font-family: "Miller Disp It", serif;
   margin-top: 2px;
   font-size: .8125rem;
+  font-style: italic;
 }
 
 .action {
   font-family: "Miller Disp It", serif;
   margin-top: 2px;
+  font-style: italic;
   font-size: .8125rem;
   color: #666666 !important; }
   @media only screen and (min-width: 1000px) {
