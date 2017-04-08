@@ -1,0 +1,19 @@
+<script src="../assets/js/headroom.min.js"></script>
+<script src="../assets/js/smooth-scroll.min.js"></script>
+<script src="../assets/js/clipboard.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script>
+  (function() {
+    var header = new Headroom(document.querySelector("#header"), {
+        tolerance: 3,
+        offset: 50,
+        classes: {
+          initial: "animated",
+          pinned: "slideDown",
+          unpinned: "slideUp"
+        }
+    });
+    header.init();
+
+}());
+</script>
