@@ -221,11 +221,6 @@ a, button {
   text-decoration:none;
 }
 
-a {
-  font-family: "Miller Disp It", serif;
-  font-style: italic;
-  color: #9A404D;
-}
 
 section {
   padding: 3em 0 0; }
@@ -608,17 +603,17 @@ img {
 
 .header-content-bio, .p-action span {
   font-family: "Miller Disp Lt", serif;
-  font-size: 1.25rem;
+  font-size: 1.38rem;
   line-height: 1.7;
   margin: 0 0 1em 0;}
   @media only screen and (min-width: 700px) {
     .header-content-bio, .p-action span {
-      font-size: 1.35rem;
+      font-size: 1.45rem;
     }
   }
   @media only screen and (min-width: 1000px) {
     .header-content-bio, .p-action span {
-      font-size: 1.5rem;
+      font-size: 1.55rem;
     }
   }
   @media only screen and (min-width: 1200px) {
@@ -1216,7 +1211,7 @@ html{
   margin: 1em 0 1em 0;
 }
 
-.section-content a, #header a {
+.p-action a, .section-content a, #header a {
   font-family: "Miller Disp It", serif;
   color: #9A404D;
   font-style: italic;
