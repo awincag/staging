@@ -221,6 +221,12 @@ a, button {
   text-decoration:none;
 }
 
+a {
+  font-family: "Miller Disp It", serif;
+  font-style: italic;
+  color: #9A404D;
+}
+
 section {
   padding: 3em 0 0; }
   @media only screen and (min-width: 700px) {
