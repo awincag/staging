@@ -1222,15 +1222,10 @@ html{
   margin: 1em 0 1em 0;
 }
 
-.p-action a, .section-content a {
+.p-action a, #header .p-action a, .section-content a {
   font-family: "Miller Disp It", serif;
   color: #9A404D;
   font-style: italic;
-}
-
-.section-content a:hover {
-  color: #000;
-  cursor: pointer;
 }
 
 #header a {
@@ -1241,6 +1236,11 @@ html{
 
 #header a:hover {
   color: #9A404D;
+  cursor: pointer;
+}
+
+.section-content a:hover, #header .p-action a:hover {
+  color: #000;
   cursor: pointer;
 }
 
