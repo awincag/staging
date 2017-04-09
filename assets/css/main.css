@@ -971,6 +971,7 @@ html{
 }
 
 .project--header {
+  position: relative;
   padding: 3em 25px; }
   @media only screen and (min-width: 700px) {
     .project--header {
@@ -1046,20 +1047,15 @@ html{
 }
 
 @media only screen and (min-width: 1000px) {
-  .clients {
-    width: 47%;
-    max-width: 550px;
+  .clients, .home-wrap-2 {
+    width: 42%;
     margin: 0 3% 0 0;
   }
   .section-content.m-b {
     margin: 0 0 1em;
   }
 }
-@media only screen and (min-width: 1800px) {
-  .clients, .home-wrap-2 {
-    max-width: 720px;
-  }
-}
+
 
 .client-list span {
   font-family: "Miller Disp It", serif;
@@ -1118,11 +1114,242 @@ html{
     .home-wrap {
       max-width: 63%;
     }
-    .home-wrap-2 {
-      width: 47%;
-      max-width: 550px;
+  }
+
+.header-content, .header-hero {
+  position: relative;
+  z-index: 1;
+}
+
+.header-content {
+  margin: 1em 0; }
+  @media only screen and (min-width: 700px) {
+    .header-content {
+      margin: 1.5em 0;
     }
   }
+
+.header-hero {
+  margin: 2em auto; }
+  @media only screen and (min-width: 1000px) {
+    .header-hero {
+      margin: 0em auto;
+      width: 85%;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .header-hero {
+      width: 75%;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .header-hero {
+      width: 65%;
+    }
+  }
+
+.header-text {
+  position: absolute;
+  top: -.05em;
+  left: -3%;
+  right: 0;
+  overflow: hidden;
+}
+
+.header-project-text {
+  line-height: .87;
+  font-family: 'NHaasGroteskTXStd-75Bd', Helvetica, sans-serif;
+  color: #000;
+  opacity: .1;
+  font-size: 14rem;
+  white-space: nowrap;
+  word-break: normal; }
+  @media only screen and (min-width: 700px) {
+    .header-project-text {
+      font-size: 26rem;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .header-project-text {
+      font-size: 28rem;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .header-project-text {
+      font-size: 32rem;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .header-project-text {
+      font-size: 40rem;
+    }
+  }
+
+
+.split {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3em 25px; }
+  @media only screen and (min-width: 700px) {
+    .split {
+      padding: 4em 120px 3em 35px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .split {
+      padding: 6em 120px 4em 80px;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .split {
+      padding: 8em 120px 5em 80px;
+    }
+  }
+
+.intro-content, .split-content, .project-content {
+  flex-basis: 420px;
+  flex-grow: 1; }
+  @media only screen and (min-width: 1000px) {
+    .intro-content, .split-content, .project-content {
+      max-width: 42%;
+      margin: 0 3% 0 0;
+    }
+}
+
+.intro-content {
+  margin: 0 0 2em 0;
+}
+
+.intro-project-header {
+  margin: .5em 0 25px; }
+  @media only screen and (min-width: 700px) {
+    .intro-project-header {
+      margin-bottom: 30px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .intro-project-header {
+      margin-bottom: 35px;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .intro-project-header {
+      margin-bottom: 40px;
+    }
+  }
+
+.intro-project-title {
+  font-family: "Miller Disp Lt", serif;
+  line-height: 1;
+  font-size: 2rem; }
+  @media only screen and (min-width: 700px) {
+    .intro-project-title {
+      font-size: 2.4rem;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .intro-project-title {
+      font-size: 2.8rem;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .intro-project-title {
+      font-size: 3.125rem;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .intro-project-title {
+      font-size: 4rem;
+    }
+}
+
+.intro-break, .project-break {
+  display: block;
+  content: '';
+  height: 1px;
+  background-color: #C8C8C8;
+  width: 100%;
+}
+
+.project-break {
+  margin: 0 25px;
+}
+
+.full {
+  width: 100%;
+}
+
+.intro-break {
+  margin: 0 0 25px; }
+  @media only screen and (min-width: 700px) {
+    .intro-break {
+      margin-bottom: 30px;
+    }
+    .project-break {
+      margin: 0 120px 0 35px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .intro-break {
+      margin-bottom: 35px;
+    }
+    .project-break {
+      margin: 0 120px 0 80px;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .intro-break {
+      margin-bottom: 40px;
+    }
+    .project-break {
+      margin: 0 120px 0 80px;
+    }
+  }
+
+
+.intro-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro-details-1 {
+  flex: 1;
+  flex-basis: 100%;
+}
+
+.intro-details-2 {
+  flex-basis: 47%;
+  margin: 0 3% 0 0;
+}
+
+.project-live p {
+  font-family: "Miller Disp It", serif;
+  font-style: italic;
+}
+
+
+
+.details-item {
+  position: relative;
+  margin-bottom: 25px; }
+  @media only screen and (min-width: 700px) {
+    .details-item {
+      margin-bottom: 30px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .details-item {
+      margin-bottom: 35px;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .details-item {
+      margin-bottom: 40px;
+    }
+  }
+
+
 
 
 
@@ -1186,12 +1413,8 @@ html{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 2em 0 0; }
-  @media only screen and (min-width: 1000px) {
-    .section-title {
-      margin: 4em 0 0;
-    }
-  }
+}
+
 
 .section-content-display {
   display: inline-block; }
@@ -2036,8 +2259,16 @@ a:hover .footer-contact {
 }
 
 
-#octane .project-period, #octane .main, #octane .action, #octane .close a:hover .fa, #octane a:hover, #projects #octane .action, #projects #octane .project-period, #projects #octane a:hover, #octane a:hover .footer-contact {
+#octane .project-period, #octane .main, #octane .action, #octane .close a:hover .fa, #octane a:hover, #projects #octane .action, #projects #octane .project-period, #projects #octane a:hover, #octane a:hover .footer-contact, #octane a.project-live {
   color: #106BE0;
+}
+
+#octane .project--header {
+  background-color: #106BE0;
+}
+
+#octane a:hover.project-live {
+  color: #000;
 }
 
 #octane .message {

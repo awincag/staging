@@ -1,5 +1,16 @@
 ---
 meta_title: Octane AI | Alex Cagwin
+project: Octane AI
+challenge: Allow anyone with no knowledge of chatbots, to build a chatbot in only a few minutes.
+details:
+  - label: Role
+    content: Lead Designer
+  - label: Art Director
+    content: Jackie Cruickshank
+  - label: Agency
+    content: West Agile Labs
+  - label: Role
+    content: Winter 2016
 ---
 
 <!DOCTYPE html>
@@ -36,91 +47,55 @@ meta_title: Octane AI | Alex Cagwin
         </div>
       </div>
 
-      <div id="header" class="project--header f-width">
+      <div class="project--header f-width">
         <div class="header">
           <div class="header-title block">
             <h1 class="hidden">Octane AI</h1>
-            <span class="h1">Octane AI</span><span class="h1 project-period">.</span>
           </div>
           <div class="header-content">
-            <span class="h4">The easiest way to create a chatbot.</span>
+            <span class="h4 white">The easiest way to create a chatbot.</span>
           </div>
+        </div>
+        <div class="header-hero">
+          <picture>
+            <img src="../assets/media/octane/main-hero.png" alt="Laptop Background">
+          </picture>
+        </div>
+        <div class="header-text">
+          <span class="header-project-text">{{ page.project }}</span>
         </div>
       </div>
 
-      <div class="fw-2">
-          <div class="screens--screen">
-            <div class="photo-width">
-              <picture>
-                <source
-                    data-srcset="../assets/media/octane/hero-xl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="../assets/media/octane/hero-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="../assets/media/octane/hero-m.jpg"
-                    media="(min-width: 1000px)" />
-                <source
-                    data-srcset="../assets/media/octane/hero-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="../assets/media/octane/hero-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="../assets/media/octane/hero-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
+        <section class="intro split">
+          <div class="intro-content">
+            <div class="intro-project-header">
+              <span class="intro-project-title">{{ page.project }}</span>
+            </div>
+            <div class="intro-break"></div>
+            <div class="intro-details">
+              <div class="intro-details-1">
+                <span class="header-label">Challenge</span>
+                <div class="details-item">
+                  <p>{{ page.challenge }}</p>
+                </div>
+              </div>
+              {% for item in page.details %}
+                <div class="intro-details-2">
+                  <span class="header-label">{{ item.label}}</span>
+                  <div class="details-item">
+                    <p>{{ item.content}}</p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+            <div class="intro-break"></div>
+            <div class="intro-link">
+              <a href="http://www.octaneai.com/" target="_blank" title="View Live" class="project-live">
+                <p>View Live</p>
+              </a>
             </div>
           </div>
-      </div>
-
-        <section class="footer" style="margin: 0">
-            <div class="footer--content">
-              <div class="footer--item-2">
-                <span class="footer-label grey">Challenge</span>
-                <div class="list-item">
-                  <p>Allow anyone to create a chatbot in under 5 minutes.</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Role</span>
-                <div class="list-item">
-                  <p>Lead Designer</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Art Director</span>
-                <div class="list-item">
-                  <p>Jackie Cruickshank</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Agency</span>
-                <div class="list-item">
-                  <p>West Agile Labs</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Year</span>
-                <div class="list-item">
-                  <p>Fall &amp; Winter 2015</p>
-                </div>
-              </div>
-              <div class="footer--item-2">
-                <a href="http://www.octaneai.com/" target="_blank" title="View Live" class="project-live">
-                  <span class="view">View Live</span>
-                </a>
-              </div>
-            </div>
-        </section>
-
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h4 main">Overview</span>
-            </div>
+          <div class="split-content">
             <div class="section-content">
               <p>Over 1 billion people use Facebook messenger every month. That's more than Snapchat, Instagram, and Twitter combined. At the moment, there's no sign of it slowing down. With publishers and content creators amassing fan bases as large as 34m+ followers like  Aerosmith, building chatbots provides an opportunity to engage your audience on a mass scale like never before.</p>
               <p>At the beginning of fall 2016, Matt Schilitcht, Ben Parr, and Leif K-Brooks saw this huge market opportunity to design and build a technology to allow anyone, with or without a chatbot. After an exhaustive search, they partnered with West Agile Labs to help build out their vision of a more automated and connected messaging platform.</p>
@@ -147,14 +122,53 @@ meta_title: Octane AI | Alex Cagwin
           </div>
         </div>
 
+        <div class="project-break"></div>
+
+        <section class="project-section split">
+          <div class="project-content">
+            <span class="intro-project-title">Building Chatbots</span>
+          </div>
+          <div class="split-content">
+            <div class="section-content">
+              <p>Due to the complex nature of chatbots and artificial intelligence, the core focus of the project was to simplify and humanize every step of creating a chatbot. The solution needed to clearly articulate how it was being built and what that meant for people interacting with it. This was the primary driver of every design decision.</p>
+              <p>After 7 rounds of low fidelity wireframes and usability tests, we designed a solution that allowed people to build a chatbot piece by piece, tailored to their needs. This solution came in the form of plugins that allows users to which type of content they'd like their audience to interact with. Plugins can manifest as notifications and messaging-allowing chatbots to blast a users updates to their audience, generate launch campaigns to promote upcoming events or content, or showcase merchandise to sell a users's latest items. Each plugin has it's own unique construction, whether it be messaging, images, content integrations (e.g, Spotify, Ticketmaster, Soundcloud, YouTube) or links that allow content to be pushed down to the audience. Ultimatley, the deconstruction of a chatbot into plugins allows for a step by step walkthrough eliminating and confusion when building your chatbot. Lastly, each plugin has a set of defaults that allows users to quickly build and edit from a template without every having to worry about starting completely from scratch.</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="fw-2">
+            <div class="screens--screen">
+              <div class="photo-width">
+                <picture>
+                  <source
+                      data-srcset="../assets/media/octane/hero-xl.jpg"
+                      media="(min-width: 1500px)" />
+                  <source
+                      data-srcset="../assets/media/octane/hero-l.jpg"
+                      media="(min-width: 1200px)" />
+                  <source
+                      data-srcset="../assets/media/octane/hero-m.jpg"
+                      media="(min-width: 1000px)" />
+                  <source
+                      data-srcset="../assets/media/octane/hero-s.jpg"
+                      media="(min-width: 700px)" />
+                  <source
+                      data-srcset="../assets/media/octane/hero-p.jpg"
+                      media="(min-width: 100px)" />
+                  <img
+                      data-sizes="auto"
+                      data-src="../assets/media/octane/hero-l.jpg"
+                      class="lazyload blur-up" />
+                </picture>
+              </div>
+            </div>
+        </div>
+
         <section id="like" class="padding f-width">
           <div class="wrap">
             <div class="section-title">
               <span class="h4 main">The Solution</span>
             </div>
-            <div class="section-content">
-              <p>Due to the complex nature of chatbots and artificial intelligence, the core focus of the project was to simplify and humanize every step of creating a chatbot. The solution needed to clearly articulate how it was being built and what that meant for people interacting with it. This was the primary driver of every design decision.</p>
-              <p>After 7 rounds of low fidelity wireframes and usability tests, we designed a solution that allowed people to build a chatbot piece by piece, tailored to their needs. This solution came in the form of plugins that allows users to which type of content they'd like their audience to interact with. Plugins can manifest as notifications and messaging-allowing chatbots to blast a users updates to their audience, generate launch campaigns to promote upcoming events or content, or showcase merchandise to sell a users's latest items. Each plugin has it's own unique construction, whether it be messaging, images, content integrations (e.g, Spotify, Ticketmaster, Soundcloud, YouTube) or links that allow content to be pushed down to the audience. Ultimatley, the deconstruction of a chatbot into plugins allows for a step by step walkthrough eliminating and confusion when building your chatbot. Lastly, each plugin has a set of defaults that allows users to quickly build and edit from a template without every having to worry about starting completely from scratch.</p>
               <p>After the chatbot has been created, a user can monitor their bot from a high-level or individual plugin level. This allows for users to monitor the engagement level of their content within Facebook Messenger, previously only available through Newsfeed. From here, a user can quickly update or push new content through the plugins that have alreayd been created.</p>
               <p>While we designed the app to make it as easy as possible for users to create responses to common messages, there's always the chance that people will be sending messages to a chatbot that it doesn't understand. We designed and created  'train your both' to quickly view and create responses to every unknown message. They can either have a singular mass response such as, "I didn't get that." Alternatively, they also have the option to build a randomized list of responses to each individual unknown message, truly allowing the users character to appear in their chatbot.</p>
               </p>
