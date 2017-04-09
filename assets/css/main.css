@@ -262,15 +262,12 @@ img {
   background-color: #ff00dd;
 }
 .blur-up {
-    -webkit-filter: blur(25px);
-    filter: blur(25px);
-    transition: filter 300ms, -webkit-filter 300ms;
+    opacity: 0;
+    transition: opacity 300ms, -webkit-opacity 300ms;
 }
 
 .blur-up.lazyloaded {
     opacity: 1;
-    -webkit-filter: blur(0);
-    filter: blur(0);
 }
 
 .an-s {
@@ -1050,8 +1047,17 @@ html{
 
 @media only screen and (min-width: 1000px) {
   .clients {
-    width: 30%;
+    width: 47%;
+    max-width: 550px;
     margin: 0 3% 0 0;
+  }
+  .section-content.m-b {
+    margin: 0 0 1em;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .clients, .home-wrap-2 {
+    max-width: 720px;
   }
 }
 
@@ -1113,7 +1119,8 @@ html{
       max-width: 63%;
     }
     .home-wrap-2 {
-      max-width: 50%;
+      width: 47%;
+      max-width: 550px;
     }
   }
 
@@ -1179,8 +1186,12 @@ html{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 2em 0 0;
-}
+  margin: 2em 0 0; }
+  @media only screen and (min-width: 1000px) {
+    .section-title {
+      margin: 4em 0 0;
+    }
+  }
 
 .section-content-display {
   display: inline-block; }
@@ -1211,16 +1222,29 @@ html{
   margin: 1em 0 1em 0;
 }
 
-.p-action a, .section-content a, #header a {
+.p-action a, .section-content a {
   font-family: "Miller Disp It", serif;
   color: #9A404D;
   font-style: italic;
 }
 
-.section-content a:hover, #header a:hover {
+.section-content a:hover {
   color: #000;
   cursor: pointer;
 }
+
+#header a {
+  font-family: "Miller Disp It", serif;
+  color: #000;
+  font-style: italic;
+}
+
+#header a:hover {
+  color: #9A404D;
+  cursor: pointer;
+}
+
+
 
 .f-width {
   width: 100%;
@@ -1323,7 +1347,7 @@ a[title]:hover:after {
   font-size: 16px;
   color: #555;
   left: -14em;
-  top: .9em;
+  top: 13px;
   line-height: 30px;
   text-align: right;
   width: 170px;
@@ -1764,7 +1788,7 @@ a[title]:hover:after {
 }
 
 .result-stat {
-	font-family: 'NHaasGroteskTXStd-75Bd', Helvetica, sans-serif;
+	font-family: 'Miller Disp Lt', serif;
   line-height: 1em;
   font-size: 4rem; }
   @media only screen and (min-width: 700px) {
@@ -1784,11 +1808,10 @@ a[title]:hover:after {
   }
 
 .result-label {
-  font-family:"SofiaProBlack",Helvetica,Roboto,Arial,sans-serif;
+	font-family: 'NHaasGroteskTXStd-75Bd', Helvetica, sans-serif;
   text-transform: uppercase;
   color: #777;
   font-size: .875rem;
-  letter-spacing: 0.15em;
 }
 
 .press-item-1, .press-item-2 {
@@ -1807,7 +1830,7 @@ a[title]:hover:after {
 }
 
 .press-item-1 a, .press-item-2 a {
-  font-family:"SofiaProBlack",Helvetica,Roboto,Arial,sans-serif;
+	font-family: 'NHaasGroteskTXStd-75Bd', Helvetica, sans-serif;
   font-size: 1.063rem;
 }
 
@@ -1854,17 +1877,17 @@ footer {
   margin: 3em 25px; }
 @media only screen and (min-width: 700px) {
   .about-photo {
-    margin: 3.5em 120px 3.5em 35px;
+    margin: 3.5em 120px 6em 35px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .about-photo {
-    margin: 4em 120px 4em 80px;
+    margin: 4em 120px 8em 80px;
   }
 }
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 1800px) {
   .about-photo {
-    margin: 6em 120px 6em 80px;
+    margin: 6em 120px 10em 80px;
   }
 }
 
@@ -1916,7 +1939,6 @@ footer {
 .footer-label {
 	font-family: 'NHaasGroteskTXStd-75Bd', Helvetica, sans-serif;
   font-size: .9375rem !important;
-  color: #9B9B9B;
   margin: 0 0 .25em 0;
 }
 

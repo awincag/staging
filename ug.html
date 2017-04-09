@@ -1,4 +1,6 @@
 ---
+meta_title: The Underground Symphony | Alex Cagwin
+bg_color: 1A1A1A
 ---
 
 <!DOCTYPE html>
@@ -68,8 +70,7 @@
                       media="(min-width: 100px)" />
                   <img
                       data-sizes="auto"
-                      src="media/ug/1-placeholder.jpg"
-                      data-src="media/ug/1-l.jpg"
+                      data-src="../assets/media/ug/1-l.jpg"
                       class="lazyload blur-up" />
                 </picture>
               </div>
@@ -135,9 +136,7 @@
                     data-srcset="../assets/media/ug/2-p.jpg"
                     media="(min-width: 100px)" />
                 <img
-                    data-sizes="auto"
-                    src="media/ug/2-placeholder.jpg"
-                    data-src="media/ug/2-l.jpg"
+                    data-src="../assets/media/ug/2-l.jpg"
                     class="lazyload blur-up" />
               </picture>
             </div>
@@ -165,8 +164,7 @@
                     media="(min-width: 100px)" />
                 <img
                     data-sizes="auto"
-                    src="media/ug/3-placeholder.jpg"
-                    data-src="media/ug/3-l.jpg"
+                    data-src="../assets/media/ug/3-l.jpg"
                     class="lazyload blur-up" />
               </picture>
             </div>
@@ -188,8 +186,7 @@
                       media="(min-width: 100px)" />
                   <img
                       data-sizes="auto"
-                      src="media/ug/4-placeholder.jpg"
-                      data-src="media/ug/4-l.jpg"
+                      data-src="../assets/media/ug/4-l.jpg"
                       class="lazyload blur-up" />
                 </picture>
               </div>
@@ -205,69 +202,13 @@
         </div>
       </div>
 
-        <footer>
-          <div class="footer">
-            <div class="footer--content">
-              <div class="footer--item">
-                <span class="footer-label">Copyright</span>
-                <span><i class="fa fa-copyright"></i> Alex Cagwin, 2016.</span>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label">Email</span>
-                <a href="mailto:hey@acag.win" title="Email Me">
-                  <span>Hey@acag.win</span>
-                </a>
-                <a data-clipboard-text="hey@acag.win" class="copied no-smoothState">
-                  <span class="footer-contact">Copy Email Link</span>
-                </a>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label">Elsewhere</span>
-                <a href="https://www.linkedin.com/in/alex-cagwin-25b90937" target="_blank" title="LinkedIn">
-                  <span>LinkedIn</span>
-                </a>
-                <a href="https://twitter.com/wincag1" target="_blank" title="Twitter">
-                  <span>Twitter</span>
-                </a>
-                <a href="https://500px.com/alexcagwin" target="_blank" title="500px">
-                  <span>500px</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </footer>
 
-        <div id="message">
-          <div id="msg" class="message">
-            <span>Email Copied to Clipboard</span>
-            <!-- <span class="closebtn">&times;</span> -->
-          </div>
-          <a data-scroll href="#make" id="f-msg" class="message">
-            <span>Oops! Didn't Work. Click here to jump to the bottom and copy/paste my email.</span>
-            <span class="closebtn">&times;</span>
-          </a>
-        </div>
+      {% include footer.html %}
+
+      {% include message.html %}
+
+      {% include js.html %}
 
 
-
-    <script src="js/headroom.min.js"></script>
-    <script src="js/smooth-scroll.min.js"></script>
-    <script src="js/clipboard.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-      (function() {
-        var header = new Headroom(document.querySelector("#header"), {
-            tolerance: 3,
-            offset: 50,
-            classes: {
-              initial: "animated",
-              pinned: "slideDown",
-              unpinned: "slideUp"
-            }
-        });
-        header.init();
-
-    }());
-    </script>
     </body>
 </html>
