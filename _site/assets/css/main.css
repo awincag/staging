@@ -578,7 +578,7 @@ img {
     }
   }
 
-.light p, .light .h1, .light .h2, .light .h3, .light .h4, .light .h5, .light a, .light .nav-tooltip {
+.light p, .light .h1, .light .h2, .light .h3, .light .h5, .light a, .light .nav-tooltip {
   color: #f2f2f2;
 }
 
@@ -2216,8 +2216,12 @@ a:hover .footer-contact {
   background-color: #ffffff !important;
 }
 
-#hopsy .project-period, #hopsy .main, #hopsy .action, #hopsy .close a:hover .fa, #hopsy a:hover, #projects #hopsy .action, #projects #hopsy .project-period, #projects #hopsy a:hover, #hopsy a:hover .footer-contact {
+#hopsy .project-period, #hopsy .main, #hopsy .action, #hopsy .close a:hover .fa, #hopsy a:hover, #projects #hopsy .action, #projects #hopsy .project-period, #projects #hopsy a:hover, #hopsy a:hover .footer-contact, #hopsy a.project-live p {
   color: #FCB714;
+}
+
+#hopsy .project--header {
+  background-color: #FCB714;
 }
 
 #hopsy .message {
@@ -2267,7 +2271,7 @@ a:hover .footer-contact {
   background-color: #106BE0;
 }
 
-#octane a:hover.project-live {
+#octane a:hover.project-live, #hopsy a:hover.project-live p {
   color: #000;
 }
 
