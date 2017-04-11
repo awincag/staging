@@ -1048,7 +1048,7 @@ html{
 
 @media only screen and (min-width: 1000px) {
   .clients, .home-wrap-2 {
-    width: 42%;
+    width: 47%;
     margin: 0 3% 0 0;
   }
   .section-content.m-b {
@@ -1212,7 +1212,7 @@ html{
   flex-grow: 1; }
   @media only screen and (min-width: 1000px) {
     .intro-content, .split-content, .project-content {
-      max-width: 42%;
+      max-width: 47%;
       margin: 0 3% 0 0;
     }
 }
