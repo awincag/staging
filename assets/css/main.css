@@ -245,6 +245,10 @@ img {
   vertical-align: top;
 }
 
+.body-height-fixed {
+  overflow: hidden;
+}
+
 .picture {
   overflow: hidden;
 }
@@ -424,6 +428,8 @@ img {
     margin-top: 20vh
   }
 }
+
+
 
 
 .nav {
@@ -2196,6 +2202,78 @@ a:hover .footer-contact {
 
 .top-1 {
   z-index: 5;
+}
+
+.mobile-menu{
+  position: fixed;
+  top: 100vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 25px;
+  overflow-x: scroll;
+  transition: .2s ease-out;
+}
+
+.mobile-menu.active {
+  top: 0;
+}
+
+.menu-links {
+
+}
+
+.menu-header {
+  padding: 1.25em 0;
+}
+
+.mobile-menu-title {
+  font-family: 'NHaasGroteskTXStd-75Bd', Helvetica, sans-serif;
+  color: #9A404d;
+  font-size: 1.4rem;
+}
+
+.link-item {
+  font-family: 'NHaasGroteskTXStd-75Bd', Helvetica, sans-serif;
+  font-size: 1.125rem;
+  color: #222;
+}
+
+.link-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.link-item a {
+  display: block;
+  padding: 17px 0 14px;
+}
+
+.link-item a:hover {
+  color: #9A404D !important;
+}
+
+.menu-item-active {
+  font-family: 'Miller Disp It', serif;
+  font-style: italic;
+}
+
+.menu-contact {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-contact-label {
+  font-family: 'NHaasGroteskTXStd-75Bd', Helvetica, sans-serif;
+  font-size: 0.937rem;
+  color: #9B9B9B;
+}
+
+.menu-contact-email {
+  font-family: 'Miller Disp It', serif;
+  font-style: italic;
 }
 
 #header .list-column {

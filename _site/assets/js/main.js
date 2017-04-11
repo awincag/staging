@@ -49,6 +49,17 @@ for (i = 0; i < close.length; i++) {
     }
 };
 
+var body = document.body;
+var menuButton = document.getElementById('menu-nav');
+var menu = document.getElementById('menu');
+var content = document.getElementById('content');
+
+menuButton.addEventListener('click', function (e) {
+    menu.classList.add('active');
+    body.classList.add('body-height-fixed');
+    content.classList.add('content-height-fixed');
+    e.preventDefault();
+});
 
 
 
