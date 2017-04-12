@@ -1,6 +1,8 @@
 ---
 meta_title: Octane AI | Alex Cagwin
 project: Octane AI
+nextProject: vfl
+previousProject: dumptruck
 challenge: Allow anyone with no knowledge of chatbots, to build a chatbot in only a few minutes.
 details:
   - label: Role
@@ -50,48 +52,8 @@ menu:
 </head>
   <body id="octane" class="main-bg">
     <div id="main" class="content flex flex-horizontal-center">
-      <div id="header" class="nav-2 header animated header--fixed">
-        <div class="nav--content desktop-hide">
-          <a href="#" id="menu-nav" class="project-btn" >
-            <div class="project-btn-out">
-              <div class="project-btn-item"></div>
-              <div class="project-btn-item"></div>
-              <div class="project-btn-item"></div>
-              <div class="project-btn-item"></div>
-              <div class="project-btn-item"></div>
-              <div class="project-btn-item"></div>
-              <div class="project-btn-item"></div>
-              <div class="project-btn-item"></div>
-              <div class="project-btn-item"></div>
-            </div>
-            <span class="nhg main">{{ page.project }}</span>
-          </a>
-          <div class="mobile-nav-mail">
-            <div class="nav--break"></div>
-            <a href="mailto:hey@acag.win" class="desktop-hide">
-              <i class="fa fa-envelope-o"></i>
-            </a>
-          </div>
-        </div>
-        <div class="nav--content mobile-hide">
-          <a href="/" class="project-btn">
-            <div class="close-out"></div>
-          </a>
-          <div class="nav--break"></div>
-          <a href="/dumptruck" title="Previous Project">
-            <i class="fa fa-angle-left"></i>
-            <span class="nav-tooltip">Previous Project</span>
-          </a>
-          <a href="/vfl" title="Next Project">
-            <i class="fa fa-angle-right"></i>
-            <span class="nav-tooltip">Next Project</span>
-          </a>
-          <a data-clipboard-text="hey@acag.win" class="no-smoothState copied">
-            <i class="fa fa-envelope-o"></i>
-            <span class="nav-tooltip">Shoot Me an Email</span>
-          </a>
-        </div>
-      </div>
+
+      {% include navigation.html %}
 
       <div class="project--header f-width">
         <div class="header">
@@ -112,7 +74,7 @@ menu:
         </div>
       </div>
 
-        <section class="intro split">
+        <section class="intro split split-p-a">
           <div class="intro-content">
             <div class="intro-project-header">
               <span class="intro-project-title">{{ page.project }}</span>
@@ -167,7 +129,7 @@ menu:
 
         <div class="project-break"></div>
 
-        <section class="project-section split">
+        <section class="project-section split split-p-a">
           <div class="project-content">
             <span class="intro-project-title">Building Chatbots</span>
           </div>
@@ -207,19 +169,24 @@ menu:
             </div>
         </div>
 
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h4 main">The Solution</span>
-            </div>
+        <div class="project-break m"></div>
+
+        <section class="project-section split split-p-t">
+          <div class="project-content">
+            <span class="intro-project-title">Managing Your Bot</span>
+          </div>
+          <div class="split-content">
+            <div class="section-content">
+              <div class="section-title">
+                <span class="h4">Track Your Bot</span>
+              </div>
               <p>After the chatbot has been created, a user can monitor their bot from a high-level or individual plugin level. This allows for users to monitor the engagement level of their content within Facebook Messenger, previously only available through Newsfeed. From here, a user can quickly update or push new content through the plugins that have alreayd been created.</p>
-              <p>While we designed the app to make it as easy as possible for users to create responses to common messages, there's always the chance that people will be sending messages to a chatbot that it doesn't understand. We designed and created  'train your both' to quickly view and create responses to every unknown message. They can either have a singular mass response such as, "I didn't get that." Alternatively, they also have the option to build a randomized list of responses to each individual unknown message, truly allowing the users character to appear in their chatbot.</p>
-              </p>
             </div>
           </div>
         </section>
 
-        <div class="fw-2">
+
+        <div class="fw-2 fw-p">
           <div class="screens--screen">
             <div class="photo-width">
               <picture>
@@ -247,35 +214,20 @@ menu:
           </div>
         </div>
 
-        <div class="fw-2">
-          <div class="screens--screen">
-            <div class="photo-width">
-              <picture>
-                <source
-                    data-srcset="../assets/media/octane/3-xl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="../assets/media/octane/3-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="../assets/media/octane/3-m.jpg"
-                    media="(min-width: 1000px)" />
-                <source
-                    data-srcset="../assets/media/octane/3-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="../assets/media/octane/3-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="../assets/media/octane/3-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
+        <section class="project-section split split-p-b">
+          <div class="project-content">
+          </div>
+          <div class="split-content">
+            <div class="section-content">
+              <div class="section-title">
+                <span class="h4">Plugin Health</span>
+              </div>
+              <p>While we designed the app to make it as easy as possible for users to create responses to common messages, there's always the chance that people will be sending messages to a chatbot that it doesn't understand. We designed and created  'train your both' to quickly view and create responses to every unknown message. They can either have a singular mass response such as, "I didn't get that." Alternatively, they also have the option to build a randomized list of responses to each individual unknown message, truly allowing the users character to appear in their chatbot.</p>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="fw-2">
+        <div class="fw-2 fw-p">
           <div class="screens--screen">
             <div class="photo-width">
               <picture>
@@ -303,11 +255,54 @@ menu:
           </div>
         </div>
 
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h4 main">Results</span>
+        <div class="project-break"></div>
+
+        <section class="project-section split split-p-t">
+          <div class="project-content">
+            <span class="intro-project-title">Custom Responses</span>
+          </div>
+          <div class="split-content">
+            <div class="section-content">
+              <p>After the chatbot has been created, a user can monitor their bot from a high-level or individual plugin level. This allows for users to monitor the engagement level of their content within Facebook Messenger, previously only available through Newsfeed. From here, a user can quickly update or push new content through the plugins that have alreayd been created.</p>
             </div>
+          </div>
+        </section>
+
+        <div class="fw-2 fw-p">
+          <div class="screens--screen">
+            <div class="photo-width">
+              <picture>
+                <source
+                    data-srcset="../assets/media/octane/3-xl.jpg"
+                    media="(min-width: 1500px)" />
+                <source
+                    data-srcset="../assets/media/octane/3-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/octane/3-m.jpg"
+                    media="(min-width: 1000px)" />
+                <source
+                    data-srcset="../assets/media/octane/3-s.jpg"
+                    media="(min-width: 700px)" />
+                <source
+                    data-srcset="../assets/media/octane/3-p.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/octane/3-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-break"></div>
+
+        <section class="project-section split split-p-t">
+          <div class="project-content">
+            <span class="intro-project-title">Results</span>
+          </div>
+          <div class="split-content">
             <div class="section-content">
               <p>Octane AI had a successful beta launch and quickly raised a series A round. However, some of their beta users include: 50 Cent, Aerosmith, Kiss, 30 Seconds to Mars, SPiN and Magic Mike Live. Their current focus is to market to content producers and publishers to manage their high volume of fans. The successful beta launch of their MVP allowed Octane AI to raise a significant amount of capital to slowly start building out their team. They currently have a team of 10 designing out building the product further. Excited to see where this goes in the future.</p>
             </div>
@@ -321,19 +316,26 @@ menu:
                 <span class="result-label">Average time to set up a chatbot</span>
               </div>
             </div>
-            <div class="section-title">
-              <span class="h4 main">Press</span>
-            </div>
+          </div>
+        </section>
+
+        <div class="project-break m"></div>
+
+        <section class="project-section split split-p-a">
+          <div class="project-content">
+            <span class="intro-project-title">Industry Responses</span>
+          </div>
+          <div class="split-content">
             <div class="press">
               <div class="press-item-1">
                 <p>“Their business is like web design platforms Wix or Weebly, but for chatbots. It’s a paint-by-numbers for bot creation that’s so easy, I could do it. (I did it! I programmed the Katie Roof bot to respond with “raise the roof” as my greeting. Sorry but not sorry).”</p>
                 <a href="https://techcrunch.com/2016/11/02/general-catalyst-backed-octane-will-make-you-a-bot/" title="Tech Crunch" target="_blank">Katie Roof — TechCrunch</a>
               </div>
-              <div class="press-item-2">
+              <div class="press-item-1">
                 <p>“Octane AI is a platform that enables businesses to set up powerful chatbots on Facebook Messenger in just a few minutes.”</p>
                 <a href="http://tech.co/octane-ai-makes-chatbots-easier-everyone-2016-11" title="Tech Crunch" target="_blank">Tech.Co</a>
               </div>
-              <div class="press-item-2">
+              <div class="press-item-1">
                 <p>“Octane keeps that promise of five minutes or less”</p>
                 <a href="http://venturebeat.com/2016/11/02/octane-ai-launches-with-bots-for-50-cent-kiss-and-aerosmith/" title="VentureBeat" target="_blank">VentureBeat</a>
               </div>

@@ -575,8 +575,10 @@ img {
 .project-btn span {
   font-size: 1.25rem;
   line-height: 1;
-  margin: 0 0 0 10px;
-}
+  margin: 0 0 0 10px; }
+  @media only screen and (min-width: 700px){
+
+  }
 
 .mobile-nav-mail {
   display: flex;
@@ -822,10 +824,33 @@ img {
   font-size: 1.5rem; }
   @media only screen and (min-width: 700px) {
     .nav--content a {
-      padding: .5em 0 1em 0;
+      background-color: rgba(0,0,0,0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 48px;
+      height: 48px;
+      margin: 2px 0;
+      transition: .2s ease-out;
+    }
+    #header .nav--content a {
+      color: #fff;
+    }
+    #header .nav--content a:hover {
+      color: #fff !important;
+      background-color: rgba(0,0,0,0.6);
     }
     .nav--content a.close-button {
       padding: 0 0 1em 0;
+    }
+    .project-btn {
+      padding: 0;
+    }
+    .project-btn-out {
+      margin: 3px 0 0 3px;
+    }
+    .project-btn-item {
+      background-color: #fff;
     }
   }
 
@@ -855,12 +880,28 @@ img {
   visibility: none;
 }
 
+.mobile-hide-2 {
+  display: none;
+  visibility: none;
+}
+
 @media only screen and (min-width: 700px) {
   .desktop-hide {
     display: none;
     visibility: none;
   }
   .mobile-hide {
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .desktop-hide-2 {
+    display: none;
+    visibility: none;
+  }
+  .mobile-hide-2 {
     display: block;
     visibility: visible;
   }
@@ -1238,20 +1279,50 @@ html{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 3em 25px; }
+}
+
+.split-p-a {
+  padding: 3em 25px;
+}
+
+.split-p-t {
+  padding: 3em 25px 0;
+}
+
+.split-p-b {
+  padding: 1em 25px 0;
+}
   @media only screen and (min-width: 700px) {
-    .split {
+    .split-p-a {
       padding: 4em 120px 3em 35px;
+    }
+    .split-p-t {
+      padding: 4em 120px 0 35px;
+    }
+    .split-p-b {
+      padding: 1em 120px 0 35px;
     }
   }
   @media only screen and (min-width: 1200px) {
-    .split {
+    .split-p-a {
       padding: 6em 120px 4em 80px;
+    }
+    .split-p-t {
+      padding: 6em 120px 0 80px;
+    }
+    .split-p-b {
+      padding: 2em 120px 0 80px;
     }
   }
   @media only screen and (min-width: 1800px) {
-    .split {
+    .split-p-a {
       padding: 8em 120px 5em 80px;
+    }
+    .split-p-t {
+      padding: 8em 120px 0 80px;
+    }
+    .split-p-b {
+      padding: 4em 120px 0 80px;
     }
   }
 
@@ -1321,8 +1392,13 @@ html{
 }
 
 .project-break {
-  margin: 0 25px;
+  margin: 0 25px 0;
 }
+
+.project-break.m {
+  margin: 3em 25px 0;
+}
+
 
 .full {
   width: 100%;
@@ -1337,6 +1413,9 @@ html{
     .project-break {
       margin: 0 120px 0 35px;
     }
+    .project-break.m {
+      margin: 3em 120px 0 35px;
+    }
   }
   @media only screen and (min-width: 1200px) {
     .intro-break {
@@ -1345,6 +1424,9 @@ html{
     .project-break {
       margin: 0 120px 0 80px;
     }
+    .project-break.m {
+      margin: 6em 120px 0 80px;
+    }
   }
   @media only screen and (min-width: 1800px) {
     .intro-break {
@@ -1352,6 +1434,27 @@ html{
     }
     .project-break {
       margin: 0 120px 0 80px;
+    }
+    .project-break.m {
+      margin: 8em 120px 0 80px;
+    }
+  }
+
+.fw-p {
+  padding: 0 25px; }
+  @media only screen and (min-width: 700px) {
+    .fw-p {
+      padding: 0 120px 0 35px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .fw-p {
+      padding: 0 120px 0 80px;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .fw-p {
+      padding: 0 120px 0 80px;
     }
   }
 
@@ -1488,9 +1591,10 @@ html{
 .section-title h5 {
   text-align: center;
 }
-
-.section-content {
-  margin: 1em 0 1em 0;
+@media only screen and (max-width: 1000px){
+  .section-content {
+    margin: 1em 0 1em 0;
+  }
 }
 
 .p-action a, #header .p-action a, .section-content a {
@@ -1617,7 +1721,7 @@ a[title]:hover:after {
   display: none;
   font-size: 16px;
   color: #555;
-  left: -14em;
+  left: -12em;
   top: 13px;
   line-height: 30px;
   text-align: right;
@@ -1629,6 +1733,10 @@ a[title]:hover:after {
   @media only screen and (min-width: 700px) {
     .nav-tooltip {
       display: block;
+    }
+    .project-btn span {
+      font-size: 16px;
+      margin: 0;
     }
   }
 
@@ -2046,6 +2154,14 @@ a[title]:hover:after {
           flex-wrap: wrap;
 }
 
+.press {
+  margin: 1em 0; }
+  @media only screen and (min-width: 1000px) {
+    .press {
+      margin: 0;
+    }
+  }
+
 .result-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2096,21 +2212,42 @@ a[title]:hover:after {
   width: 100%;
 }
 
-.press-item-1 p, .press-item-2 p {
-  margin: 0;
-}
+.press-item-1 p {
+  font-family: "Miller Disp Lt", serif;
+  font-size: 1.125rem;
+  margin: 0; }
+  @media only screen and (min-width: 700px) {
+    .press-item-1 p {
+      font-size: 1.25rem;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .press-item-1 p {
+      font-size: 1.5rem;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .press-item-1 p {
+      font-size: 1.75rem;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .press-item-1 p {
+      font-size: 2.25rem;
+    }
+  }
+
 
 .press-item-1 a, .press-item-2 a {
 	font-family: 'NHaasGroteskTXStd-75Bd', Helvetica, sans-serif;
   font-size: 1.063rem;
+  margin: .35em 0 0 0;
+  display: block;
 }
 
 @media only screen and (min-width: 1000px) {
-  .press-item-2, .result-item {
-    -webkit-flex-basis: 47%;
-        -ms-flex-preferred-size: 47%;
-            flex-basis: 47%;
-    margin: 0 3% 2em 0;
+  .result-item {
+    margin: 0 0 1em 0;
   }
   .press-item-1 a, .press-item-2 a {
     font-size: 1.25rem;
