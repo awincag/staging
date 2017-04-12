@@ -51,8 +51,30 @@ menu:
   <body id="octane" class="main-bg">
     <div id="main" class="content flex flex-horizontal-center">
       <div id="header" class="nav-2 header animated header--fixed">
-        <div class="nav--content">
-          <a href="#" id="menu-nav" class="close-button" >
+        <div class="nav--content desktop-hide">
+          <a href="#" id="menu-nav" class="project-btn" >
+            <div class="project-btn-out">
+              <div class="project-btn-item"></div>
+              <div class="project-btn-item"></div>
+              <div class="project-btn-item"></div>
+              <div class="project-btn-item"></div>
+              <div class="project-btn-item"></div>
+              <div class="project-btn-item"></div>
+              <div class="project-btn-item"></div>
+              <div class="project-btn-item"></div>
+              <div class="project-btn-item"></div>
+            </div>
+            <span class="nhg main">{{ page.project }}</span>
+          </a>
+          <div class="mobile-nav-mail">
+            <div class="nav--break"></div>
+            <a href="mailto:hey@acag.win" class="desktop-hide">
+              <i class="fa fa-envelope-o"></i>
+            </a>
+          </div>
+        </div>
+        <div class="nav--content mobile-hide">
+          <a href="/" class="project-btn">
             <div class="close-out"></div>
           </a>
           <div class="nav--break"></div>
@@ -64,10 +86,7 @@ menu:
             <i class="fa fa-angle-right"></i>
             <span class="nav-tooltip">Next Project</span>
           </a>
-          <a href="mailto:hey@acag.win" class="desktop-hide">
-            <i class="fa fa-envelope-o"></i>
-          </a>
-          <a data-clipboard-text="hey@acag.win" class="no-smoothState copied mobile-hide">
+          <a data-clipboard-text="hey@acag.win" class="no-smoothState copied">
             <i class="fa fa-envelope-o"></i>
             <span class="nav-tooltip">Shoot Me an Email</span>
           </a>

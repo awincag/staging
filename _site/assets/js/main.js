@@ -57,7 +57,6 @@ var content = document.getElementById('content');
 menuButton.addEventListener('click', function (e) {
     menu.classList.add('active');
     body.classList.add('body-height-fixed');
-    content.classList.add('content-height-fixed');
     e.preventDefault();
 });
 

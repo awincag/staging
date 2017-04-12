@@ -246,7 +246,7 @@ img {
 }
 
 .body-height-fixed {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .picture {
@@ -544,6 +544,48 @@ img {
 .close a:hover .close-out::before, .close a:hover .close-out::after {
   background-color: #111;
 }
+.project-btn {
+  padding: 6px 25px 4px;
+  display: flex;
+  align-items: center;
+}
+
+.desktop-hide .nav--break {
+  margin: 0;
+}
+
+.project-btn-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 28px;
+}
+
+.project-btn-item {
+  display: block;
+  content: '';
+  height: 5px;
+  width: 2px;
+  background-color: #222;
+  margin: 0 3px 3px 0;
+  flex-basis: 5px;
+}
+
+.project-btn span {
+  font-size: 1.25rem;
+  line-height: 1;
+  margin: 0 0 0 10px;
+}
+
+.mobile-nav-mail {
+  display: flex;
+  align-items: center;w
+}
+
+.mobile-nav-mail a {
+  padding: 0 25px;
+}
 
 .social {
   visibility: hidden;
@@ -722,7 +764,7 @@ img {
   width: 100%;
   background-color: #ffffff;
   border-top: 1px solid #dadada;
-  padding: .5em .5em .4em; }
+  padding: 12px 0 9px; }
   @media only screen and (min-width: 700px) {
     .nav--content {
       min-width: 76px;
@@ -759,7 +801,7 @@ img {
   content: '';
   display: block;
   background-color: #cacaca;
-  height: 35px;
+  height: 30px;
   width: 1px;
   margin: 0 1em 0 0; }
   @media only screen and (min-width: 700px) {
@@ -2232,7 +2274,7 @@ a:hover .footer-contact {
 .mobile-menu-title {
   font-family: 'NHaasGroteskTXStd-75Bd', Helvetica, sans-serif;
   color: #9A404d;
-  font-size: 1.4rem;
+  font-size: 1.75rem;
 }
 
 .link-item {
@@ -2260,7 +2302,7 @@ a:hover .footer-contact {
 }
 
 .menu-contact {
-  margin: 1em 0;
+  margin: 3em 0;
   display: flex;
   flex-direction: column;
 }
