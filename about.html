@@ -1,5 +1,33 @@
 ---
+project: About Me
 meta_title: About Me | Alex Cagwin
+menu:
+  - title: Home
+    link:
+  - title: About Me
+    link: about
+  - title: Hopsy
+    link: hopsy
+  - title: Dumptruck
+    link: dumptruck
+  - title: Octane AI
+    link: octaneai
+  - title: Virtual Fantasy League
+    link: vfl
+  - title: Everwill
+    link: everwill
+  - title: Nvolv
+    link: nvolv
+  - title: Instapark
+    link: instapark
+  - title: Eventyoda
+    link: eventyoda
+  - title: Dodo App
+    link: dodo
+  - title: Cal Poly Distance Club
+    link: cpdc
+  - title: The Underground Symphony
+    link: ug
 ---
 
 
@@ -11,33 +39,72 @@ meta_title: About Me | Alex Cagwin
 
     {% include headjs.html %}
 </head>
-  <body>
+  <body id="about">
       <div id="main" class="content flex home-padding flex-horizontal-center">
         <div id="header" class="nav-2 header animated header--fixed">
-          <div class="nav--content">
-            <a href="/" id="close" class="close-button" >
-              <div class="close-out"></div>
+          <div class="nav--content desktop-hide">
+            <a href="#" id="menu-nav" class="project-btn" >
+              <div class="project-btn-out">
+                <div class="project-btn-item"></div>
+                <div class="project-btn-item"></div>
+                <div class="project-btn-item"></div>
+                <div class="project-btn-item"></div>
+                <div class="project-btn-item"></div>
+                <div class="project-btn-item"></div>
+                <div class="project-btn-item"></div>
+                <div class="project-btn-item"></div>
+                <div class="project-btn-item"></div>
+              </div>
+              <span class="nhg main">{{ page.project }}</span>
             </a>
-            <div class="nav--break"></div>
-            <a href="https://www.linkedin.com/in/alex-cagwin-25b90937" target="_blank" title="LinkedIn">
-              <i class="fa fa-linkedin"></i>
-              <span class="nav-tooltip">Connect with Me</span>
-            </a>
-            <a href="https://twitter.com/wincag1" target="_blank" title="Twitter">
-              <i class="fa fa-twitter"></i>
-              <span class="nav-tooltip">Follow Me</span>
-            </a>
-            <a href="mailto:hey@acag.win" class="desktop-hide">
-              <i class="fa fa-envelope-o"></i>
-            </a>
-            <a data-clipboard-text="hey@acag.win" class="no-smoothState copied mobile-hide">
-              <i class="fa fa-envelope-o"></i>
-              <span class="nav-tooltip">Shoot Me an Email</span>
-            </a>
+            <div class="mobile-nav-mail">
+              <div class="nav--break"></div>
+              <a href="https://www.linkedin.com/in/alex-cagwin-25b90937" target="_blank" title="LinkedIn">
+                <i class="fa fa-linkedin"></i>
+                <span class="nav-tooltip">Connect with Me</span>
+              </a>
+              <a href="https://twitter.com/wincag1" target="_blank" title="Twitter">
+                <i class="fa fa-twitter"></i>
+                <span class="nav-tooltip">Follow Me</span>
+              </a>
+              <a href="mailto:hey@acag.win" class="desktop-hide">
+                <i class="fa fa-envelope-o"></i>
+              </a>
+            </div>
+          </div>
+          <div class="mobile-hide">
+            <div class="nav--content">
+              <a href="/" class="project-btn">
+                <div class="project-btn-out">
+                  <div class="project-btn-item"></div>
+                  <div class="project-btn-item"></div>
+                  <div class="project-btn-item"></div>
+                  <div class="project-btn-item"></div>
+                  <div class="project-btn-item"></div>
+                  <div class="project-btn-item"></div>
+                  <div class="project-btn-item"></div>
+                  <div class="project-btn-item"></div>
+                  <div class="project-btn-item"></div>
+                </div>
+                <span class="nav-tooltip">Return Home</span>
+              </a>
+              <a href="https://www.linkedin.com/in/alex-cagwin-25b90937" target="_blank" title="LinkedIn">
+                <i class="fa fa-linkedin"></i>
+                <span class="nav-tooltip">Connect with Me</span>
+              </a>
+              <a href="https://twitter.com/wincag1" target="_blank" title="Twitter">
+                <i class="fa fa-twitter"></i>
+                <span class="nav-tooltip">Follow Me</span>
+              </a>
+              <a data-clipboard-text="hey@acag.win" class="no-smoothState copied mobile-hide">
+                <i class="fa fa-envelope-o"></i>
+                <span class="nav-tooltip">Shoot Me an Email</span>
+              </a>
+            </div>
           </div>
         </div>
 
-        <section id="header" class="f-width header-space">
+        <section id="title" class="f-width header-space">
           <div class="header home-wrap">
             <div class="header-title block">
               <h1 class="hidden">About Me</h1>
@@ -148,6 +215,8 @@ meta_title: About Me | Alex Cagwin
 
 
           {% include footer.html %}
+
+          {% include menu.html %}
 
           {% include message.html %}
 
