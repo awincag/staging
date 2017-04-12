@@ -887,8 +887,8 @@ img {
 
 @media only screen and (min-width: 700px) {
   .desktop-hide {
-    display: none;
-    visibility: none;
+    display: none !important;
+    visibility: none !important;
   }
   .mobile-hide {
     display: block;
