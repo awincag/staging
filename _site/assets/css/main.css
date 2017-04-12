@@ -2181,20 +2181,20 @@ a[title]:hover:after {
 .result-stat {
 	font-family: 'Miller Disp Lt', serif;
   line-height: 1em;
-  font-size: 4rem; }
+  font-size: 5rem; }
   @media only screen and (min-width: 700px) {
     .result-stat {
-      font-size: 6rem;
+      font-size: 7rem;
     }
   }
   @media only screen and (min-width: 1200px) {
     .result-stat {
-      font-size: 8rem;
+      font-size: 9rem;
     }
   }
   @media only screen and (min-width: 1800px) {
     .result-stat {
-      font-size: 6rem;
+      font-size: 14rem;
     }
   }
 
@@ -2206,8 +2206,17 @@ a[title]:hover:after {
 }
 
 .press-item-1, .press-item-2 {
-  margin: 0 0 2em 0;
-}
+  margin: 0 0 2em 0; }
+  @media only screen and (min-width: 1200px) {
+    .press-item-1, .press-item-2 {
+      margin: 0 0 3em 0;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .press-item-1, .press-item-2 {
+      margin: 0 0 4em 0;
+    }
+  }
 
 .press-item-1 {
   -webkit-flex-basis: 100%;
@@ -2249,15 +2258,16 @@ a[title]:hover:after {
   display: block;
 }
 
+.result-item {
+  width: 100%;
+  margin: 0 0 1em 0;
+}
+
 @media only screen and (min-width: 1000px) {
-  .result-item {
-    margin: 0 0 1em 0;
-  }
   .press-item-1 a, .press-item-2 a {
     font-size: 1.25rem;
   }
 }
-
 
 footer {
   width: 100%;
