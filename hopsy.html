@@ -2,6 +2,9 @@
 meta_title: Hopsy | Alex Cagwin
 bg_color: 2C2C2C
 project: Hopsy
+nextProject: dumptruck
+nextProjectTitle: Dumptruck
+previousProject: ug
 challenge: Re-design Hopsy to help increase revenue and subscription sign ups.
 details:
   - label: Role
@@ -10,8 +13,35 @@ details:
     content: Annie Pyle
   - label: Agency
     content: West Agile Labs
-  - label: Role
+  - label: Year
     content: Fall 2016 / Winter 2017
+menu:
+  - title: Home
+    link:
+  - title: About Me
+    link: about
+  - title: Hopsy
+    link: hopsy
+  - title: Dumptruck
+    link: dumptruck
+  - title: Octane AI
+    link: octaneai
+  - title: Virtual Fantasy League
+    link: vfl
+  - title: Everwill
+    link: everwill
+  - title: Nvolv
+    link: nvolv
+  - title: Instapark
+    link: instapark
+  - title: Eventyoda
+    link: eventyoda
+  - title: Dodo App
+    link: dodo
+  - title: Cal Poly Distance Club
+    link: cpdc
+  - title: The Underground Symphony
+    link: ug
 ---
 
 <!DOCTYPE html>
@@ -24,29 +54,8 @@ details:
 </head>
   <body id="hopsy" class="main-bg">
     <div id="main" class="content flex flex-horizontal-center light">
-      <div id="header" class="nav-2 header animated header--fixed">
-        <div class="nav--content">
-          <a href="/" id="close" class="close-button" >
-            <div class="close-out"></div>
-          </a>
-          <div class="nav--break"></div>
-          <a href="/ug" title="Previous Project">
-            <i class="fa fa-angle-left"></i>
-            <span class="nav-tooltip">Previous Project</span>
-          </a>
-          <a href="/dumptruck" title="Next Project">
-            <i class="fa fa-angle-right"></i>
-            <span class="nav-tooltip">Next Project</span>
-          </a>
-          <a href="mailto:hey@acag.win" class="desktop-hide">
-            <i class="fa fa-envelope-o"></i>
-          </a>
-          <a data-clipboard-text="hey@acag.win" class="no-smoothState copied mobile-hide">
-            <i class="fa fa-envelope-o"></i>
-            <span class="nav-tooltip">Shoot Me an Email</span>
-          </a>
-        </div>
-      </div>
+
+      {% include navigation.html %}
 
       <div class="project--header f-width">
         <div class="header">
@@ -67,7 +76,7 @@ details:
         </div>
       </div>
 
-      <section class="intro split">
+      <section class="intro split split-p-a">
         <div class="intro-content">
           <div class="intro-project-header">
             <span class="intro-project-title white">{{ page.project }}</span>
@@ -91,7 +100,7 @@ details:
           </div>
           <div class="intro-break"></div>
           <div class="intro-link">
-            <a href="http://www.octaneai.com/" target="_blank" title="View Live" class="project-live">
+            <a href="http://sf.hopsy.beer" target="_blank" title="View Live" class="project-live">
               <p>View Live</p>
             </a>
           </div>
@@ -106,9 +115,6 @@ details:
       </section>
 
         <div id="mocks" class="f-width">
-          <div class="section-title">
-            <span class="h5 main t-center">Core Flow</span>
-          </div>
           <div class="screens--screen l-animation">
             <div class="laptop-flow">
               <picture>
@@ -125,17 +131,13 @@ details:
 
         <div class="project-break"></div>
 
-        <section class="project-section split">
+        <section class="project-section split split-p-a">
           <div class="project-content">
-            <span class="intro-project-title white">Find Your Beer</span>
+            <span class="intro-project-title white">An Iterative Approach</span>
           </div>
           <div class="split-content">
             <div class="section-content">
               <p>With an emphasis on conversion, that meant two things: ensuring customers could feel confident when choosing their beer and decreasing the effort needed to purchase that beer. Hopsy intially had their beer described by it's IBU's and ABV. They also included price, brewery, beer type and an 'add to cart' button. We found that majority of people didn't correlate IBU's and ABV to flavor profile. After that discovery, we update each beer SKU to include beer type, brewery, flavor profile, ABV and a combined price / add to cart button, to all the limited real-estate to breathe. Including flavor profiles enables customers to quickly understand if that's a beer they're looking for.</p>
-              <p>Initially at 6 steps—account creation, account information, delivery address, billing address, delivery method, payment information, the cart and checkout process made it cumbersome to quickly order your beer. Rathan than have a cart and 'review cart' at the beginning of a checkout, we designed the cart as the first step of the checkout process, eliminating the need to see a cart twice.</p>
-              <p>We designed a delivery method screen that ensures that a customer only needs to put in relevant information. The previous solution required a delivery address even if a customer was doing store pickup. Furthermore, the delivery options we dependent on a zip code only, not the full delivery address. We addressed that in the design as well.</p>
-              <p>Payment methods can require anything from CC and full billing details to just CC and zipcode. We opted for the later given that there had been zero cases of CC fraud. Lastly, for new and guest users, they simply had to add a password to create an account for future use, eliminating the step where users needed to create an account before finishing their order.
-              <p>This ultimately brought their checkout process from 7 full steps to 4. For returning users they could check out in under 4 clicks and feel confident about their beer purchase. This vastly reduced the barrier for tasting great fresh, local beer. </p>
             </div>
           </div>
         </section>
@@ -168,6 +170,18 @@ details:
             </div>
         </div>
 
+        <div class="project-break m"></div>
+
+        <section class="project-section split split-p-t">
+          <div class="project-content">
+            <span class="intro-project-title white">Find Your Beer</span>
+          </div>
+          <div class="split-content">
+            <div class="section-content">
+              <p>With an emphasis on conversion, that meant two things: ensuring customers could feel confident when choosing their beer and decreasing the effort needed to purchase that beer. Hopsy intially had their beer described by it's IBU's and ABV. They also included price, brewery, beer type and an 'add to cart' button. We found that majority of people didn't correlate IBU's and ABV to flavor profile. After that discovery, we update each beer SKU to include beer type, brewery, flavor profile, ABV and a combined price / add to cart button, to all the limited real-estate to breathe. Including flavor profiles enables customers to quickly understand if that's a beer they're looking for.</p>
+            </div>
+          </div>
+        </section>
 
         <div class="fw-2">
           <div class="screens--screen">
@@ -197,13 +211,12 @@ details:
           </div>
         </div>
 
-        <section class="project-section split">
+        <section class="project-section split split-p-t">
           <div class="project-content">
-            <span class="intro-project-title white">Make Checkout Seamless</span>
+            <span class="intro-project-title white">Streamling Checkout</span>
           </div>
           <div class="split-content">
             <div class="section-content">
-              <p>With an emphasis on conversion, that meant two things: ensuring customers could feel confident when choosing their beer and decreasing the effort needed to purchase that beer. Hopsy intially had their beer described by it's IBU's and ABV. They also included price, brewery, beer type and an 'add to cart' button. We found that majority of people didn't correlate IBU's and ABV to flavor profile. After that discovery, we update each beer SKU to include beer type, brewery, flavor profile, ABV and a combined price / add to cart button, to all the limited real-estate to breathe. Including flavor profiles enables customers to quickly understand if that's a beer they're looking for.</p>
               <p>Initially at 6 steps—account creation, account information, delivery address, billing address, delivery method, payment information, the cart and checkout process made it cumbersome to quickly order your beer. Rathan than have a cart and 'review cart' at the beginning of a checkout, we designed the cart as the first step of the checkout process, eliminating the need to see a cart twice.</p>
               <p>We designed a delivery method screen that ensures that a customer only needs to put in relevant information. The previous solution required a delivery address even if a customer was doing store pickup. Furthermore, the delivery options we dependent on a zip code only, not the full delivery address. We addressed that in the design as well.</p>
               <p>Payment methods can require anything from CC and full billing details to just CC and zipcode. We opted for the later given that there had been zero cases of CC fraud. Lastly, for new and guest users, they simply had to add a password to create an account for future use, eliminating the step where users needed to create an account before finishing their order.
@@ -239,22 +252,6 @@ details:
             </div>
           </div>
         </div>
-
-        <section class="project-section split">
-          <div class="project-content">
-            <span class="intro-project-title">Make Checkout Seamless</span>
-          </div>
-          <div class="split-content">
-            <div class="section-content">
-              <p>With an emphasis on conversion, that meant two things: ensuring customers could feel confident when choosing their beer and decreasing the effort needed to purchase that beer. Hopsy intially had their beer described by it's IBU's and ABV. They also included price, brewery, beer type and an 'add to cart' button. We found that majority of people didn't correlate IBU's and ABV to flavor profile. After that discovery, we update each beer SKU to include beer type, brewery, flavor profile, ABV and a combined price / add to cart button, to all the limited real-estate to breathe. Including flavor profiles enables customers to quickly understand if that's a beer they're looking for.</p>
-              <p>Initially at 6 steps—account creation, account information, delivery address, billing address, delivery method, payment information, the cart and checkout process made it cumbersome to quickly order your beer. Rathan than have a cart and 'review cart' at the beginning of a checkout, we designed the cart as the first step of the checkout process, eliminating the need to see a cart twice.</p>
-              <p>We designed a delivery method screen that ensures that a customer only needs to put in relevant information. The previous solution required a delivery address even if a customer was doing store pickup. Furthermore, the delivery options we dependent on a zip code only, not the full delivery address. We addressed that in the design as well.</p>
-              <p>Payment methods can require anything from CC and full billing details to just CC and zipcode. We opted for the later given that there had been zero cases of CC fraud. Lastly, for new and guest users, they simply had to add a password to create an account for future use, eliminating the step where users needed to create an account before finishing their order.
-              <p>This ultimately brought their checkout process from 7 full steps to 4. For returning users they could check out in under 4 clicks and feel confident about their beer purchase. This vastly reduced the barrier for tasting great fresh, local beer. </p>
-            </div>
-          </div>
-        </section>
-
 
 
         <div class="fw-2">
@@ -313,17 +310,14 @@ details:
           </div>
         </div>
 
-        <div class="next-project" id="dumptruck">
-          <a href="/dumptruck" title="Next Project" class="next--content wrap">
-            <span class="footer-label">Next Project</span>
-            <span class="next-label">Dumptruck</span>
-            <div class="next-background"></div>
-          </a>
-        </div>
+        {% include next-project.html %}
+
       </div>
 
 
       {% include footer.html %}
+
+      {% include menu.html %}
 
       {% include message.html %}
 

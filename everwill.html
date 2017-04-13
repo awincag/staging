@@ -1,5 +1,48 @@
 ---
 meta_title: Everwill | Alex Cagwin
+project: Everwill
+nextProject: nvolv
+nextProjectTitle: Nvolv
+previousProject: vfl
+challenge: Simplify the Will building process.
+details:
+  - label: Role
+    content: Lead Designer
+  - label: Art Director
+    content: Jackie Cruickshank
+  - label: Designer
+    content: Danielle Hadley
+  - label: Agency
+    content: West Agile Labs
+  - label: Year
+    content: Fall 2016
+menu:
+  - title: Home
+    link:
+  - title: About Me
+    link: about
+  - title: Hopsy
+    link: hopsy
+  - title: Dumptruck
+    link: dumptruck
+  - title: Octane AI
+    link: octaneai
+  - title: Virtual Fantasy League
+    link: vfl
+  - title: Everwill
+    link: everwill
+  - title: Nvolv
+    link: nvolv
+  - title: Instapark
+    link: instapark
+  - title: Eventyoda
+    link: eventyoda
+  - title: Dodo App
+    link: dodo
+  - title: Cal Poly Distance Club
+    link: cpdc
+  - title: The Underground Symphony
+    link: ug
 ---
 
 <!DOCTYPE html>
@@ -12,41 +55,94 @@ meta_title: Everwill | Alex Cagwin
 </head>
   <body id="everwill" class="main-bg">
     <div id="main" class="content flex flex-horizontal-center">
-      <div id="header" class="nav-2 header animated header--fixed">
-        <div class="nav--content">
-          <a href="/" id="close" class="close-button" >
-            <div class="close-out"></div>
-          </a>
-          <div class="nav--break"></div>
-          <a href="/vfl" title="Previous Project">
-            <i class="fa fa-angle-left"></i>
-            <span class="nav-tooltip">Previous Project</span>
-          </a>
-          <a href="/nvolv" title="Next Project">
-            <i class="fa fa-angle-right"></i>
-            <span class="nav-tooltip">Next Project</span>
-          </a>
-          <a href="mailto:hey@acag.win" class="desktop-hide">
-            <i class="fa fa-envelope-o"></i>
-          </a>
-          <a data-clipboard-text="hey@acag.win" class="no-smoothState copied mobile-hide">
-            <i class="fa fa-envelope-o"></i>
-            <span class="nav-tooltip">Shoot Me an Email</span>
-          </a>
+
+      {% include navigation.html %}
+
+      <div class="project--header f-width">
+        <div class="header">
+          <div class="header-title block">
+            <h1 class="hidden">{{ page.project }}</h1>
+          </div>
+          <div class="header-content">
+            <span class="h4 white">Wills made easy.</span>
+          </div>
+        </div>
+        <div class="header-hero">
+          <picture>
+            <img src="../assets/media/everwill/main-hero.png" alt="Laptop Background">
+          </picture>
+        </div>
+        <div class="header-text">
+          <span class="header-project-text">{{ page.project }}</span>
         </div>
       </div>
 
-      <div id="header" class="project--header f-width">
-        <div class="header">
-          <div class="header-title block">
-            <h1 class="hidden">Everwill</h1>
-            <span class="h1">Everwill</span><span class="h1 project-period">.</span>
+      <section class="intro split split-p-a">
+        <div class="intro-content">
+          <div class="intro-project-header">
+            <span class="intro-project-title">{{ page.project }}</span>
           </div>
-          <div class="header-content">
-            <span class="h4">Wills made easy.</span>
+          <div class="intro-break"></div>
+          <div class="intro-details">
+            <div class="intro-details-1">
+              <span class="header-label">Challenge</span>
+              <div class="details-item">
+                <p>{{ page.challenge }}</p>
+              </div>
+            </div>
+            {% for item in page.details %}
+              <div class="intro-details-2">
+                <span class="header-label">{{ item.label}}</span>
+                <div class="details-item">
+                  <p>{{ item.content}}</p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="intro-break"></div>
+          <div class="intro-link">
+            <a href="http://www.everwill.com/" target="_blank" title="View Live" class="project-live">
+              <p>View Live</p>
+            </a>
+          </div>
+        </div>
+        <div class="split-content">
+          <div class="section-content">
+            <p>Over 1 billion people use Facebook messenger every month. That's more than Snapchat, Instagram, and Twitter combined. At the moment, there's no sign of it slowing down. With publishers and content creators amassing fan bases as large as 34m+ followers like  Aerosmith, building chatbots provides an opportunity to engage your audience on a mass scale like never before.</p>
+            <p>At the beginning of fall 2016, Matt Schilitcht, Ben Parr, and Leif K-Brooks saw this huge market opportunity to design and build a technology to allow anyone, with or without a chatbot. After an exhaustive search, they partnered with West Agile Labs to help build out their vision of a more automated and connected messaging platform.</p>
+            <p>I oversaw the design efforts for simplifying the complex nature of chatbots. Branding and art direction was driven by Jackie Cruickshank while I lead product and interaction design with help from Danielle Hadley. With a focus on iterative prototyping and testing, we were able to design a fully responsive chatbot management platform in under 2 months. Octane AI had a successful private launch 2 months later with industry leading publishers joining the platform and a series A raise.</p>
+          </div>
+        </div>
+      </section>
+
+      <div id="mocks" class="f-width">
+        <div class="screens--screen l-animation">
+          <div class="laptop-flow">
+            <picture>
+              <video width="100%" height="80%" src="../assets/media/everwill/Everwill.mov" autoplay="auto" loop muted class="laptop-video"></video>
+            </picture>
+          </div>
+          <div class="laptop-bg">
+            <picture>
+              <img src="../assets/media/everwill/laptop-bg.png" alt="Laptop Background">
+            </picture>
           </div>
         </div>
       </div>
+
+      <div class="project-break"></div>
+
+      <section class="project-section split split-p-a">
+        <div class="project-content">
+          <span class="intro-project-title">Simplify the Legal Landscape</span>
+        </div>
+        <div class="split-content">
+          <div class="section-content">
+            <p>Due to the complex nature of chatbots and artificial intelligence, the core focus of the project was to simplify and humanize every step of creating a chatbot. The solution needed to clearly articulate how it was being built and what that meant for people interacting with it. This was the primary driver of every design decision.</p>
+            <p>After 7 rounds of low fidelity wireframes and usability tests, we designed a solution that allowed people to build a chatbot piece by piece, tailored to their needs. This solution came in the form of plugins that allows users to which type of content they'd like their audience to interact with. Plugins can manifest as notifications and messaging-allowing chatbots to blast a users updates to their audience, generate launch campaigns to promote upcoming events or content, or showcase merchandise to sell a users's latest items. Each plugin has it's own unique construction, whether it be messaging, images, content integrations (e.g, Spotify, Ticketmaster, Soundcloud, YouTube) or links that allow content to be pushed down to the audience. Ultimatley, the deconstruction of a chatbot into plugins allows for a step by step walkthrough eliminating and confusion when building your chatbot. Lastly, each plugin has a set of defaults that allows users to quickly build and edit from a template without every having to worry about starting completely from scratch.</p>
+          </div>
+        </div>
+      </section>
 
         <div class="fw-2">
             <div class="screens--screen">
@@ -76,93 +172,15 @@ meta_title: Everwill | Alex Cagwin
             </div>
         </div>
 
-        <section class="footer" style="margin: 0">
-            <div class="footer--content">
-              <div class="footer--item-2">
-                <span class="footer-label grey">Challenge</span>
-                <div class="list-item">
-                  <p>Simplify the Will building process.</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Role</span>
-                <div class="list-item">
-                  <p>Lead Designer</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Art Director</span>
-                <div class="list-item">
-                  <p>Jackie Cruickshank</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Designer</span>
-                <div class="list-item">
-                  <p>Danielle Hadley</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Agency</span>
-                <div class="list-item">
-                  <p>West Agile Labs</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Year</span>
-                <div class="list-item">
-                  <p>Winter 2016</p>
-                </div>
-              </div>
-              <div class="footer--item-2">
-                <a href="http://www.everwill.com/" target="_blank" title="View Live" class="project-live">
-                  <span class="view">View Live</span>
-                </a>
-              </div>
-            </div>
-        </section>
+        <div class="project-break m"></div>
 
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h4 main">Overview &amp; Problem</span>
-            </div>
+        <section class="project-section split split-p-t">
+          <div class="project-content">
+            <span class="intro-project-title">Asset Distribution</span>
+          </div>
+          <div class="split-content">
             <div class="section-content">
-              <p>"Booking events is hard. Booking events for a lot of people is harder. Booking events for your team takes time. Having 15 people tell you want they want makes it harder. Booking events within budget is hard. Trying to get proposals from multiple event vendors to stay within budget making sure people are happy and content and fulfilled in the time frame needed... well that's ******* hard. </p>
-              <p>Trying to do all of that and book events has been a pain in the ass for anyone who does them. There are full-time jobs dedicated to people for people to find the right vendor, the right venue, the right activities all within the right budget and timeframe. For small and medium businesses and teams, this becomes a nightmare. Adding in catering and transporation and event pages, yeah... we needed that too. </p>
-              <p>Ultimately, how do we simplify that process for SMB's to quickly find events and book them with all their constraints."</p>
-            </div>
-          </div>
-        </section>
-
-        <div id="mocks" class="f-width">
-          <div class="section-title">
-            <span class="h5 main t-center">Core Flow</span>
-          </div>
-          <div class="screens--screen l-animation">
-            <div class="laptop-flow">
-              <picture>
-                <video width="100%" height="80%" src="../assets/media/everwill/Everwill.mov" autoplay="auto" loop muted class="laptop-video"></video>
-              </picture>
-            </div>
-            <div class="laptop-bg">
-              <picture>
-                <img src="../assets/media/everwill/laptop-bg.png" alt="Laptop Background">
-              </picture>
-            </div>
-          </div>
-        </div>
-
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h4 main">The Process</span>
-            </div>
-            <div class="section-content">
-              <p>everwill was built late 2013 as a non-responsive, relatively simple CMS site that allowed for displaying of events and '1-click' quotes. While '1-click' quotes are great for the user, doing this at volume became difficult and time-consuming. The office assistant, company ops or event planner who needed to get proposals for 4-5 events would have to browse and find multiple events, go into their product pages, request the proposal, and continue the process again. Our focus quickly shifted from presenting a better information on the events page to how can people more effectively get volume. After discussing with 50 or so repeat event bookers, it became very evident that people were less concerned with the nitty gritty of the event, and more worried about making it operationally possible, specifically with budget and schedule. I mean, if someone says “hey do you want to go kayaking, skydiving, paintballing or lazer tag”, you most likely already know what the event is about, then it just comes down to when can it work. </p>
-              <p>When we started, they just finished a rebrand but needed help with improving the product. It became very evident that the biggest issue for users was browsing events and requesting multiple proposals at any given time. </p>
-              <p>After 3 large iterations and usability testing, I was able to take their existing layout and create a responsive booking flor for instant quote requests across multiple events within the attendee's requirements. Additionally, we were able to build out the booking flow for individual events to cater for venue booking, transporation, packages and any additional add-ons that could improve the team building experience. </p>
-              <p>To note, we also added the ability for users to version their proposals. Often, event bookers need to understand the legalities and intracacies of the proposals. If the initial proposal is rejected by the budgeting staff, having the ability to manage the various proposals has been a huge hit. </p>
+              <p>After the chatbot has been created, a user can monitor their bot from a high-level or individual plugin level. This allows for users to monitor the engagement level of their content within Facebook Messenger, previously only available through Newsfeed. From here, a user can quickly update or push new content through the plugins that have alreayd been created.</p>
             </div>
           </div>
         </section>
@@ -195,33 +213,18 @@ meta_title: Everwill | Alex Cagwin
           </div>
         </div>
 
-        <div class="fw-2">
-          <div class="screens--screen">
-            <div class="photo-width">
-              <picture>
-                <source
-                    data-srcset="../assets/media/everwill/phones-xl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="../assets/media/everwill/phones-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="../assets/media/everwill/phones-m.jpg"
-                    media="(min-width: 1000px)" />
-                <source
-                    data-srcset="../assets/media/everwill/phones-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="../assets/media/everwill/phones-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="../assets/media/everwill/phones-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
+        <div class="project-break m"></div>
+
+        <section class="project-section split split-p-t">
+          <div class="project-content">
+            <span class="intro-project-title">Illustrative Branding</span>
+          </div>
+          <div class="split-content">
+            <div class="section-content">
+              <p>After the chatbot has been created, a user can monitor their bot from a high-level or individual plugin level. This allows for users to monitor the engagement level of their content within Facebook Messenger, previously only available through Newsfeed. From here, a user can quickly update or push new content through the plugins that have alreayd been created.</p>
             </div>
           </div>
-        </div>
+        </section>
 
         <div class="fw-2">
           <div class="screens--screen">
@@ -251,6 +254,99 @@ meta_title: Everwill | Alex Cagwin
           </div>
         </div>
 
+        <div class="project-break m"></div>
+
+        <section class="project-section split split-p-t">
+          <div class="project-content">
+            <span class="intro-project-title">Mobile Focus</span>
+          </div>
+          <div class="split-content">
+            <div class="section-content">
+              <p>After the chatbot has been created, a user can monitor their bot from a high-level or individual plugin level. This allows for users to monitor the engagement level of their content within Facebook Messenger, previously only available through Newsfeed. From here, a user can quickly update or push new content through the plugins that have alreayd been created.</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="fw-2">
+          <div class="screens--screen">
+            <div class="photo-width">
+              <picture>
+                <source
+                    data-srcset="../assets/media/everwill/phones-xl.jpg"
+                    media="(min-width: 1500px)" />
+                <source
+                    data-srcset="../assets/media/everwill/phones-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/everwill/phones-m.jpg"
+                    media="(min-width: 1000px)" />
+                <source
+                    data-srcset="../assets/media/everwill/phones-s.jpg"
+                    media="(min-width: 700px)" />
+                <source
+                    data-srcset="../assets/media/everwill/phones-p.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/everwill/phones-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-break m"></div>
+
+        <section class="project-section split split-p-t">
+          <div class="project-content">
+            <span class="intro-project-title">Results</span>
+          </div>
+          <div class="split-content">
+            <div class="section-content">
+              <p>Octane AI had a successful beta launch and quickly raised a series A round. However, some of their beta users include: 50 Cent, Aerosmith, Kiss, 30 Seconds to Mars, SPiN and Magic Mike Live. Their current focus is to market to content producers and publishers to manage their high volume of fans. The successful beta launch of their MVP allowed Octane AI to raise a significant amount of capital to slowly start building out their team. They currently have a team of 10 designing out building the product further. Excited to see where this goes in the future.</p>
+            </div>
+            <div class="section-results">
+              <div class="result-item">
+                <span class="result-stat main">100+</span>
+                <span class="result-label">Million fans interacting with Octane AI Chatbots</span>
+              </div>
+              <div class="result-item">
+                <span class="result-stat main"> <3:00</span>
+                <span class="result-label">Average time to set up a chatbot</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="project-break m"></div>
+
+        <section class="project-section split split-p-a">
+          <div class="project-content">
+            <span class="intro-project-title">Industry Responses</span>
+          </div>
+          <div class="split-content">
+            <div class="press">
+              <div class="press-item-1">
+                <p>“Their business is like web design platforms Wix or Weebly, but for chatbots. It’s a paint-by-numbers for bot creation that’s so easy, I could do it. (I did it! I programmed the Katie Roof bot to respond with “raise the roof” as my greeting. Sorry but not sorry).”</p>
+                <a href="https://techcrunch.com/2016/11/02/general-catalyst-backed-octane-will-make-you-a-bot/" title="Tech Crunch" target="_blank">Katie Roof — TechCrunch</a>
+              </div>
+              <div class="press-item-1">
+                <p>“Octane AI is a platform that enables businesses to set up powerful chatbots on Facebook Messenger in just a few minutes.”</p>
+                <a href="http://tech.co/octane-ai-makes-chatbots-easier-everyone-2016-11" title="Tech Crunch" target="_blank">Tech.Co</a>
+              </div>
+              <div class="press-item-1">
+                <p>“Octane keeps that promise of five minutes or less”</p>
+                <a href="http://venturebeat.com/2016/11/02/octane-ai-launches-with-bots-for-50-cent-kiss-and-aerosmith/" title="VentureBeat" target="_blank">VentureBeat</a>
+              </div>
+              <div class="press-item-1">
+                <p>“I built a chatbot. It can only do a handful of things, and it’s even dumber than the average chatbot. But it works, and I can talk to it through Facebook Messenger. More importantly, I’m not a coder.”</p>
+                <a href="https://www.bloomberg.com/news/articles/2016-11-02/these-apps-let-anyone-build-a-dumb-chatbot" title="Bloomberg" target="_blank">Ellen Huet — Bloomberg</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
         <div class="fw-2">
           <div class="screens--screen">
             <div class="photo-width">
@@ -279,58 +375,14 @@ meta_title: Everwill | Alex Cagwin
           </div>
         </div>
 
+        {% include next-project.html %}
 
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h4 main">Results</span>
-            </div>
-            <div class="section-content">
-              <p>Unfortunately, the client ran out of funds to finish the devlopment of this core booking flow so we never got to see real results. However, all results in user testing had extremely positive feedback. Looking forward to seeing this be developed hopefully in the near future. </p>
-            </div>
-          </div>
-        </section>
 
-        <div class="fw-2">
-          <div class="screens--screen">
-            <div class="photo-width">
-              <picture>
-                <source
-                    data-srcset="../assets/media/everwill/homepage-xl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="../assets/media/everwill/homepage-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="../assets/media/everwill/homepage-m.jpg"
-                    media="(min-width: 1000px)" />
-                <source
-                    data-srcset="../assets/media/everwill/homepage-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="../assets/media/everwill/homepage-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="../assets/media/everwill/homepage-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
-            </div>
-          </div>
-        </div>
-
-        <div class="next-project" id="nvolv">
-          <a href="/nvolv" title="Next Project" class="next--content wrap">
-            <span class="footer-label">Next Project</span>
-            <span class="next-label">Nvolv</span>
-            <div class="next-background"></div>
-          </a>
-        </div>
       </div>
 
-
-
       {% include footer.html %}
+
+      {% include menu.html %}
 
       {% include message.html %}
 

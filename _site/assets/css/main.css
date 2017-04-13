@@ -572,6 +572,14 @@ img {
   flex-basis: 5px;
 }
 
+.light .project-btn-item {
+  background-color: #fff;
+}
+
+.light #header a {
+  color: #fff;
+}
+
 .project-btn span {
   font-size: 1.25rem;
   line-height: 1;
@@ -2534,32 +2542,36 @@ a:hover .footer-contact {
 }
 
 
-#octane .project-period, #octane .main, #octane .action, #octane .close a:hover .fa, #octane a:hover, #projects #octane .action, #projects #octane .project-period, #projects #octane a:hover, #octane a:hover .footer-contact, #octane a.project-live {
+#octaneai .project-period, #octaneai .main, #octaneai .action, #octaneai .close a:hover .fa, #octaneai a:hover, #projects #octaneai .action, #projects #octaneai .project-period, #projects #octaneai a:hover, #octaneai a:hover .footer-contact, #octaneai a.project-live {
   color: #106BE0;
 }
 
-#octane .project--header {
+#octaneai .project--header {
   background-color: #106BE0;
 }
 
-#octane a:hover.project-live, #hopsy a:hover.project-live p {
+#octaneai a:hover.project-live, #hopsy a:hover.project-live p {
   color: #000;
 }
 
-#octane .message {
+#octaneai .message {
   background-color: #106BE0;
 }
 
-#octane a:hover .next-label {
+#octaneai a:hover .next-label {
   color: #FFF;
 }
 
-#dumptruck #octane .next-background {
+#dumptruck #octaneai .next-background {
   background-color: #106BE0;
 }
 
-#dumptruck .project-period, #dumptruck .main, #dumptruck .action, #dumptruck .close a:hover .fa, #dumptruck a:hover, #projects #dumptruck .action, #projects #dumptruck .project-period, #projects #dumptruck a:hover, #dumptruck a:hover .footer-contact {
+#dumptruck .project-period, #dumptruck .main, #dumptruck .action, #dumptruck .close a:hover .fa, #dumptruck a:hover, #projects #dumptruck .action, #projects #dumptruck .project-period, #projects #dumptruck a:hover, #dumptruck a:hover .footer-contact, #dumptruck a.project-live {
   color: #1C6FB3;
+}
+
+#dumptruck .project--header {
+  background-color: #1C6FB3;
 }
 
 #dumptruck .message {
@@ -2615,8 +2627,12 @@ a:hover .footer-contact {
   background-color: #F77143;
 }
 
-#vfl .project-period, #vfl .main, #vfl .action, #vfl .close a:hover .fa, #vfl a:hover, #projects #vfl .action, #projects #vfl .project-period, #projects #vfl a:hover, #vfl a:hover .footer-contact {
+#vfl .project-period, #vfl .main, #vfl .action, #vfl .close a:hover .fa, #vfl a:hover, #projects #vfl .action, #projects #vfl .project-period, #projects #vfl a:hover, #vfl a:hover .footer-contact, #vfl a.project-live p {
   color: #4268FF;
+}
+
+#vfl .project--header {
+  background-color: #4268FF;
 }
 
 #vfl .message {
@@ -2658,9 +2674,14 @@ a:hover .footer-contact {
 }
 
 
-#everwill .project-period, #everwill .main, #everwill .action, #everwill .close a:hover .fa, #everwill a:hover, #projects #everwill .action, #projects #everwill .project-period, #projects #everwill a:hover, #everwill a:hover .footer-contact {
+#everwill .project-period, #everwill .main, #everwill .action, #everwill .close a:hover .fa, #everwill a:hover, #projects #everwill .action, #projects #everwill .project-period, #projects #everwill a:hover, #everwill a:hover .footer-contact, #everwill a.project-live p {
   color: #51D39F;
 }
+
+#everwill .project--header {
+  background-color: #51D39F;
+}
+
 
 #everwill .message {
   background-color: #51D39F;

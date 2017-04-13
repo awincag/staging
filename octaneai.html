@@ -2,6 +2,7 @@
 meta_title: Octane AI | Alex Cagwin
 project: Octane AI
 nextProject: vfl
+nextProjectTitle: Virtual Fantasty League
 previousProject: dumptruck
 challenge: Allow anyone with no knowledge of chatbots, to build a chatbot in only a few minutes.
 details:
@@ -11,7 +12,7 @@ details:
     content: Jackie Cruickshank
   - label: Agency
     content: West Agile Labs
-  - label: Role
+  - label: Year
     content: Winter 2016
 menu:
   - title: Home
@@ -50,7 +51,7 @@ menu:
 
     {% include headjs.html %}
 </head>
-  <body id="octane" class="main-bg">
+  <body id="octaneai" class="main-bg">
     <div id="main" class="content flex flex-horizontal-center">
 
       {% include navigation.html %}
@@ -263,7 +264,7 @@ menu:
           </div>
           <div class="split-content">
             <div class="section-content">
-              <p>After the chatbot has been created, a user can monitor their bot from a high-level or individual plugin level. This allows for users to monitor the engagement level of their content within Facebook Messenger, previously only available through Newsfeed. From here, a user can quickly update or push new content through the plugins that have alreayd been created.</p>
+              <p>While we designed the app to make it as easy as possible for users to create responses to common messages, there's always the chance that people will be sending messages to a chatbot that it doesn't understand. We designed and created  'train your both' to quickly view and create responses to every unknown message. They can either have a singular mass response such as, "I didn't get that." Alternatively, they also have the option to build a randomized list of responses to each individual unknown message, truly allowing the users character to appear in their chatbot.</p>
             </div>
           </div>
         </section>
@@ -375,13 +376,7 @@ menu:
           </div>
         </div>
 
-        <div class="next-project" id="vfl">
-          <a href="/vfl" title="Instapark" class="next--content wrap">
-            <span class="footer-label">Next Project</span>
-            <span class="next-label">Virtual Fantasty League</span>
-            <div class="next-background"></div>
-          </a>
-        </div>
+        {% include next-project.html %}
 
 
       </div>

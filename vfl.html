@@ -1,6 +1,49 @@
 ---
 meta_title: Virtual Fantasy League | Alex Cagwin
 bg_color: 222222
+project: Virtual Fantasy League
+nextProject: everwill
+nextProjectTitle: Everwill
+previousProject: octaneai
+challenge: Design a mobile fantasty league that anyone can pick up and join.
+details:
+  - label: Role
+    content: Lead Designer
+  - label: Art Director
+    content: Jackie Cruickshank
+  - label: Product Designer
+    content: Annie Pyle
+  - label: Agency
+    content: West Agile Labs
+  - label: Year
+    content: Winter 2016
+menu:
+  - title: Home
+    link:
+  - title: About Me
+    link: about
+  - title: Hopsy
+    link: hopsy
+  - title: Dumptruck
+    link: dumptruck
+  - title: Octane AI
+    link: octaneai
+  - title: Virtual Fantasy League
+    link: vfl
+  - title: Everwill
+    link: everwill
+  - title: Nvolv
+    link: nvolv
+  - title: Instapark
+    link: instapark
+  - title: Eventyoda
+    link: eventyoda
+  - title: Dodo App
+    link: dodo
+  - title: Cal Poly Distance Club
+    link: cpdc
+  - title: The Underground Symphony
+    link: ug
 ---
 
 <!DOCTYPE html>
@@ -13,41 +56,65 @@ bg_color: 222222
 </head>
   <body id="vfl" class="main-bg">
     <div id="main" class="content flex flex-horizontal-center light">
-      <div id="header" class="nav-2 header animated header--fixed">
-        <div class="nav--content">
-          <a href="/" id="close" class="close-button" >
-            <div class="close-out"></div>
-          </a>
-          <div class="nav--break"></div>
-          <a href="/octaneai" title="Octane AI">
-            <i class="fa fa-angle-left"></i>
-            <span class="nav-tooltip">Previous Project</span>
-          </a>
-          <a href="/everwill" title="Everwill">
-            <i class="fa fa-angle-right"></i>
-            <span class="nav-tooltip">Next Project</span>
-          </a>
-          <a href="mailto:hey@acag.win" class="desktop-hide">
-            <i class="fa fa-envelope-o"></i>
-          </a>
-          <a data-clipboard-text="hey@acag.win" class="no-smoothState copied mobile-hide">
-            <i class="fa fa-envelope-o"></i>
-            <span class="nav-tooltip">Shoot Me an Email</span>
-          </a>
+
+      {% include navigation.html %}
+
+      <div class="project--header f-width">
+        <div class="header">
+          <div class="header-title block">
+            <h1 class="hidden">{{ page.project }}</h1>
+          </div>
+          <div class="header-content">
+            <span class="h4 white">Re-thinking mobile fantasty leagues.</span>
+          </div>
+        </div>
+        <div class="header-hero">
+          <picture>
+            <img src="../assets/media/vfl/main-hero.png" alt="Laptop Background">
+          </picture>
+        </div>
+        <div class="header-text">
+          <span class="header-project-text">{{ page.project }}</span>
         </div>
       </div>
 
-      <div id="header" class="project--header f-width">
-        <div class="header">
-          <div class="header-title block">
-            <h1 class="hidden">Virtual Fantasty League</h1>
-            <span class="h1">Virtual Fantasty League</span><span class="h1 project-period">.</span>
+      <section class="intro split split-p-a">
+        <div class="intro-content">
+          <div class="intro-project-header">
+            <span class="intro-project-title white">{{ page.project }}</span>
           </div>
-          <div class="header-content">
-            <span class="h4">Re-thinking mobile fantasty leagues.</span>
+          <div class="intro-break"></div>
+          <div class="intro-details">
+            <div class="intro-details-1">
+              <span class="header-label white">Challenge</span>
+              <div class="details-item">
+                <p>{{ page.challenge }}</p>
+              </div>
+            </div>
+            {% for item in page.details %}
+              <div class="intro-details-2">
+                <span class="header-label white">{{ item.label}}</span>
+                <div class="details-item">
+                  <p>{{ item.content}}</p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="intro-break"></div>
+          <div class="intro-link">
+            <a href="https://itunes.apple.com/app/id1106502140?mt=8&&referrer=click%3Dbba152e0-3e21-44e0-a431-f09c4d2bc0eb" target="_blank" title="View Live" class="project-live">
+              <p>View Live</p>
+            </a>
           </div>
         </div>
-      </div>
+        <div class="split-content">
+          <div class="section-content">
+            <p>Over 1 billion people use Facebook messenger every month. That's more than Snapchat, Instagram, and Twitter combined. At the moment, there's no sign of it slowing down. With publishers and content creators amassing fan bases as large as 34m+ followers like  Aerosmith, building chatbots provides an opportunity to engage your audience on a mass scale like never before.</p>
+            <p>At the beginning of fall 2016, Matt Schilitcht, Ben Parr, and Leif K-Brooks saw this huge market opportunity to design and build a technology to allow anyone, with or without a chatbot. After an exhaustive search, they partnered with West Agile Labs to help build out their vision of a more automated and connected messaging platform.</p>
+            <p>I oversaw the design efforts for simplifying the complex nature of chatbots. Branding and art direction was driven by Jackie Cruickshank while I lead product and interaction design with help from Danielle Hadley. With a focus on iterative prototyping and testing, we were able to design a fully responsive chatbot management platform in under 2 months. Octane AI had a successful private launch 2 months later with industry leading publishers joining the platform and a series A raise.</p>
+          </div>
+        </div>
+      </section>
 
       <section id="mocks" class="f-width mocks">
         <div class="screens--screen animation">
@@ -67,63 +134,22 @@ bg_color: 222222
         </div>
       </section>
 
-        <section class="footer" style="margin: 0">
-            <div class="footer--content">
-              <div class="footer--item-2">
-                <span class="footer-label grey">Challenge</span>
-                <div class="list-item">
-                  <p>Design a mobile fantasty league that anyone can pick up and join.</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Role</span>
-                <div class="list-item">
-                  <p>Lead Designer</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Product Designer</span>
-                <div class="list-item">
-                  <p>Annie Pyle</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Art Director</span>
-                <div class="list-item">
-                  <p>Jackie Cruickshank</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Agency</span>
-                <div class="list-item">
-                  <p>West Agile Labs</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Year</span>
-                <div class="list-item">
-                  <p>Winter 2016</p>
-                </div>
-              </div>
-              <div class="footer--item-2">
-                <a href="https://itunes.apple.com/app/id1106502140?mt=8&&referrer=click%3Dbba152e0-3e21-44e0-a431-f09c4d2bc0eb" target="_blank" title="View Live" class="project-live">
-                  <span class="view">View Live</span>
-                </a>
-              </div>
-            </div>
-        </section>
 
-        <section id="like" class="padding f-width">
-          <div class="wrap">
+      <div class="project-break m"></div>
+
+      <section class="project-section split split-p-t">
+        <div class="project-content">
+          <span class="intro-project-title white">Managing Your Bot</span>
+        </div>
+        <div class="split-content">
+          <div class="section-content">
             <div class="section-title">
-              <span class="h4 main">Overview &amp; Problem</span>
+              <span class="h4 white">Track Your Bot</span>
             </div>
-            <div class="section-content">
-              <p>Have you ever driven somewhere, only to be foiled by the lack of parking in the area. Have you ever wondering how nice it would be if someone just said, "Go to 2nd and 5th and a parking spot awaits you!" Well, Instapark aims to solve that. Initial designed and built in 2012. Instapark came to us looking to re-design their app from the ground up. They found themselves stuck and inhibited by their current design. They couldn't seem to understand why users weren't completing the sign up process, let alone booking parking spots. I sat down with Rathan to sift through data to understand what was causing issues.</p>
-              <p>As we jumped in, Rathan and I wanted to understand what the core experience needed to be before evaluating what the product currently had. This meant taking a step back and understanding what 'on-demand parking' truly meant. To us and the data that we had, we reached a couple of conclusions. One, people didn't care about parking 45 minutes in the future. They only cared about parking when they got to their destination. Two, people didn't care where the parking spot was, as long as it was the closest one to where they needed to be. Lastly, a mobile app can only solve so many problems. Having someone sit in your driveway unwarranted was not something that we were going to be able to solve. Ultimately, these key insights, we re-defined what it meant to have an on-demand parking app: People looking for parking spots wanted the closest parking spot to wherever their location is at the given moment in time.</p>
-            </div>
+            <p>After the chatbot has been created, a user can monitor their bot from a high-level or individual plugin level. This allows for users to monitor the engagement level of their content within Facebook Messenger, previously only available through Newsfeed. From here, a user can quickly update or push new content through the plugins that have alreayd been created.</p>
           </div>
-        </section>
+        </div>
+      </section>
 
         <div class="fw-2">
           <div class="screens--screen">
@@ -152,78 +178,7 @@ bg_color: 222222
             </div>
           </div>
         </div>
-        <div class="fw">
-          <div class="screens--screen">
-            <div class="photo-width">
-              <picture>
-                <source
-                    data-srcset="../assets/media/vfl/main-1-xl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="../assets/media/vfl/main-1-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="../assets/media/vfl/main-1-m.jpg"
-                    media="(min-width: 1000px)" />
-                <source
-                    data-srcset="../assets/media/vfl/main-1-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="../assets/media/vfl/main-1-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="../assets/media/vfl/main-1-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
-            </div>
-          </div>
-        </div>
 
-
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h4 main">Process</span>
-            </div>
-            <div class="section-content">
-              <p>It was clear after downloading the app that the biggest hurdle was a mandatory account creation with no less than 27 taps before a user could even 'search' for a parking spot. We discussed the need for anything of these and the first thing we did was tear everything out. There was no need for users to enter in their car details. At the end of the day, it didn't matter who parked in your parking spot, as long as you were making money off of them. If someone parked in your spot not using the app, or if it was the wrong person, you'd tow them anyways. Having in the incorrect car in your spot, this wasn't something that Instapark would be able to handle regardless. We moved on past this information.</p>
-              <p>The next step was to enter your first name, last name and some general account information. Again, we didn't feel that knowing this information mattered. The core experience for the lister was, is there or is there not someone in my parking spot and am I making money off them. To this end, the only thing that truly mattered was their phone number. This is something that managed to grab later in the process, more on that later.</p>
-              <p>After completing all the necessary steps, users were able to search for parking spots. In our discovery period, we learned that this just does not matter at all. Why is one parking spot better than another one? How often do you find yourself saying "hey, that looks like a good parking spot, but I'm going to find one a bit more suitable for me". No, never. When you're looking for parking, all you want to do is park your car and get on with your life. With the data in hand and interviews we conducted, we knew that this just wasn't necessary.</p>
-              <p>We ultimately were able to rip out all the 'mandatory' sign up steps as well as the search feature. After we did all of this, the only thing necessary was to capture credit card information for payment and a phone number. We decided that those aren't that important for booking either so we put that post booking. That enabled us to widdle it down quite a bit. When new users downloaded the app and they were looking for parking, they had a total of 5 taps before they were out of the car and on their way.</p>
-              <p>Steps for a new user: A user would tap "Instapark", or find the closest parking to your current location, accept that the app needs to user your location, request to book a spot for n minutes (in batches of 10), add payment information and finally add a phone number. We were able to reduce the total taps from 47 to 5. After the user had entered in their information, we were able to match that with their UDID. For the general parking audience (someone who doesn't list their parking spot), they would never have to enter in any more information.</p>
-            </div>
-          </div>
-        </section>
-
-
-        <div class="fw-2">
-          <div class="screens--screen">
-            <div class="photo-width">
-              <picture>
-                <source
-                    data-srcset="../assets/media/vfl/huge-xl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="../assets/media/vfl/huge-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="../assets/media/vfl/huge-m.jpg"
-                    media="(min-width: 1000px)" />
-                <source
-                    data-srcset="../assets/media/vfl/huge-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="../assets/media/vfl/huge-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="../assets/media/vfl/huge-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
-            </div>
-          </div>
-        </div>
         <div class="fw-2">
           <div class="screens--screen">
             <div class="photo-width">
@@ -252,17 +207,14 @@ bg_color: 222222
           </div>
         </div>
 
-        <div class="next-project" id="everwill">
-          <a href="/everwill" title="Enhance Physical Therapy" class="next--content wrap">
-            <span class="footer-label">Next Project</span>
-            <span class="next-label">Everwill</span>
-            <div class="next-background"></div>
-          </a>
-        </div>
+        {% include next-project.html %}
+
+
       </div>
 
-
       {% include footer.html %}
+
+      {% include menu.html %}
 
       {% include message.html %}
 
