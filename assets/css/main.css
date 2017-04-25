@@ -2599,8 +2599,12 @@ a:hover .footer-contact {
 }
 
 
-#nvolv .project-period, #nvolv .main, #nvolv .action, #nvolv .close a:hover .fa, #nvolv a:hover, #projects #nvolv .action, #projects #nvolv .project-period, #projects #nvolv a:hover, #nvolv a:hover .footer-contact {
+#nvolv .project-period, #nvolv .main, #nvolv .action, #nvolv .close a:hover .fa, #nvolv a:hover, #projects #nvolv .action, #projects #nvolv .project-period, #projects #nvolv a:hover, #nvolv a:hover .footer-contact, #nvolv a.project-live {
   color: #F77143;
+}
+
+#nvolv .project--header {
+  background-color: #F77143;
 }
 
 #nvolv .message {
@@ -2693,35 +2697,6 @@ a:hover .footer-contact {
 
 #vfl #everwill .next-background {
   background-color: #224E5B;
-}
-
-#iwaboo .project-period, #iwaboo .main, #iwaboo .action, #iwaboo .close a:hover .fa, #iwaboo a:hover, #projects #iwaboo .action, #projects #iwaboo .project-period, #projects #iwaboo a:hover, #iwaboo a:hover .footer-contact {
-  color: #FFF041;
-}
-
-#iwaboo .mocks {
-  background-color: #FFF041;
-}
-
-#iwaboo .mocks.alt-2 {
-  background-color: #2D2D2D;
-}
-
-#iwaboo .mocks-light {
-  background-color: #222;
-}
-
-#iwaboo .light .footer, #vfl .mocks-dark {
-  background-color: #222;
-}
-
-
-#iwaboo a:hover .next-label {
-  color: #111;
-}
-
-#westagile #iwaboo .next-background {
-  background-color: #F77143;
 }
 
 #breakfast .project-period, #breakfast .main, #breakfast .action, #breakfast .close a:hover .fa, #breakfast a:hover, #projects #breakfast .action, #projects #breakfast .project-period, #projects #breakfast a:hover, #breakfast a:hover .footer-contact {

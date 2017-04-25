@@ -1,5 +1,46 @@
 ---
 meta_title: Nvolv | Alex Cagwin
+project: Nvolv
+nextProject: instapark
+nextProjectTitle: Instapark
+previousProject: everwill
+challenge: Help conference attendees maximize their time while at large scale events.
+details:
+  - label: Role
+    content: Lead Designer
+  - label: Art Director
+    content: Jackie Cruickshank
+  - label: Agency
+    content: West Agile Labs
+  - label: Year
+    content: Summer 2016
+menu:
+  - title: Home
+    link:
+  - title: About Me
+    link: about
+  - title: Hopsy
+    link: hopsy
+  - title: Dumptruck
+    link: dumptruck
+  - title: Octane AI
+    link: octaneai
+  - title: Virtual Fantasy League
+    link: vfl
+  - title: Everwill
+    link: everwill
+  - title: Nvolv
+    link: nvolv
+  - title: Instapark
+    link: instapark
+  - title: Eventyoda
+    link: eventyoda
+  - title: Dodo App
+    link: dodo
+  - title: Cal Poly Distance Club
+    link: cpdc
+  - title: The Underground Symphony
+    link: ug
 ---
 
 <!DOCTYPE html>
@@ -12,208 +53,121 @@ meta_title: Nvolv | Alex Cagwin
 </head>
   <body id="nvolv" class="main-bg">
     <div id="main" class="content flex flex-horizontal-center">
-      <div id="header" class="nav-2 header animated header--fixed">
-        <div class="nav--content">
-          <a href="/" id="close" class="close-button" >
-            <div class="close-out"></div>
-          </a>
-          <div class="nav--break"></div>
-          <a href="/everwill" title="Previous Project">
-            <i class="fa fa-angle-left"></i>
-            <span class="nav-tooltip">Previous Project</span>
-          </a>
-          <a href="/instapark"title="Next Project">
-            <i class="fa fa-angle-right"></i>
-            <span class="nav-tooltip">Next Project</span>
-          </a>
-          <a href="mailto:hey@acag.win" class="desktop-hide">
-            <i class="fa fa-envelope-o"></i>
-          </a>
-          <a data-clipboard-text="hey@acag.win" class="no-smoothState copied mobile-hide">
-            <i class="fa fa-envelope-o"></i>
-            <span class="nav-tooltip">Shoot Me an Email</span>
-          </a>
-        </div>
-      </div>
 
-      <div id="header" class="project--header f-width">
-        <div class="header">
-          <div class="header-title block">
-            <h1 class="hidden">Nvolv</h1>
-            <span class="h1">Nvolv</span><span class="h1 project-period">.</span>
-          </div>
-          <div class="header-content">
-            <span class="h4">Make conferences worthwhile.</span>
-          </div>
-        </div>
-      </div>
+            {% include navigation.html %}
 
-      <div class="fw">
-        <div class="screens--screen">
-          <div class="photo-width">
-            <picture>
-              <source
-                  data-srcset="../assets/media/nvolv/hero-xl.jpg"
-                  media="(min-width: 1500px)" />
-              <source
-                  data-srcset="../assets/media/nvolv/hero-l.jpg"
-                  media="(min-width: 1200px)" />
-              <source
-                  data-srcset="../assets/media/nvolv/hero-m.jpg"
-                  media="(min-width: 1000px)" />
-              <source
-                  data-srcset="../assets/media/nvolv/hero-s.jpg"
-                  media="(min-width: 700px)" />
-              <source
-                  data-srcset="../assets/media/nvolv/hero-p.jpg"
-                  media="(min-width: 100px)" />
-              <img
-                  data-sizes="auto"
-                  data-src="../assets/media/nvolv/hero-large.jpg"
-                  class="lazyload blur-up" />
-            </picture>
-          </div>
-        </div>
-      </div>
-
-        <section class="footer" style="margin: 0">
-            <div class="footer--content">
-              <div class="footer--item-2">
-                <span class="footer-label grey">Challenge</span>
-                <div class="list-item">
-                  <p>Conference attendees cannot maximize their time while at large scale events.</p>
+            <div class="project--header f-width">
+              <div class="header">
+                <div class="header-title block">
+                  <h1 class="hidden">{{ page.project }}</h1>
+                </div>
+                <div class="header-content">
+                  <span class="h4 white">Make conferences worth while.</span>
                 </div>
               </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Role</span>
-                <div class="list-item">
-                  <p>Product Designer</p>
+              <div class="header-hero">
+                <picture>
+                  <img src="../assets/media/nvolv/main-hero.png" alt="Laptop Background">
+                </picture>
+              </div>
+              <div class="header-text">
+                <span class="header-project-text">{{ page.project }}</span>
+              </div>
+            </div>
+
+            <section class="intro split split-p-a">
+              <div class="intro-content">
+                <div class="intro-project-header">
+                  <span class="intro-project-title">{{ page.project }}</span>
+                </div>
+                <div class="intro-break"></div>
+                <div class="intro-details">
+                  <div class="intro-details-1">
+                    <span class="header-label">Challenge</span>
+                    <div class="details-item">
+                      <p>{{ page.challenge }}</p>
+                    </div>
+                  </div>
+                  {% for item in page.details %}
+                    <div class="intro-details-2">
+                      <span class="header-label">{{ item.label}}</span>
+                      <div class="details-item">
+                        <p>{{ item.content}}</p>
+                      </div>
+                    </div>
+                  {% endfor %}
+                </div>
+                <div class="intro-break"></div>
+                <div class="intro-link">
+                  <a href="https://itunes.apple.com/us/app/nvolv-experience-events-amazing/id998331446?mt=8" target="_blank" title="View Live" class="project-live">
+                    <p>View Live</p>
+                  </a>
                 </div>
               </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Art Director</span>
-                <div class="list-item">
-                  <p>Jackie Cruickshank</p>
+              <div class="split-content">
+                <div class="section-content">
+                  <p>According to conventionindustry.org, 205 Million people in the United States attend "the 1.8M conventions, conferences, congresses, trade shows and exhibitions, incentive events and corporate/business meetings" each year.</p>
+                  <p>How often would you say that when you go to a conference, you were able to capitalize and maximize the value of that trip? Were you able to get all those business cards you wanted? Were you able to keep track of all the events you wanted to go to? Did you have to read through a crumpled up, back-pocket worn conference guide?</p>
+                  <p>Nvolv aims to solve for all those problems. By creating a bespoke conference mobile application, conference organizers can leverage the platform to push content and information, connect attendenees, and create an infrastructure for sponsors to help leverage their brand.</p>
                 </div>
               </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Agency</span>
-                <div class="list-item">
-                  <p>West Agile Labs</p>
+            </section>
+
+
+            <div id="mocks" class="f-width" style="margin-bottom: 5em">
+              <div class="section-title">
+                <span class="h5 t-center">Core Flow</span>
+              </div>
+              <div class="screens--screen animation">
+                <div class="photo-width phone-flow">
+                  <picture>
+                    <video width="100%" height="80%" src="../assets/media/nvolv/nvolv-flow-2.mov" autoplay="auto" loop muted class="nvolv-video"></video>
+                  </picture>
+                </div>
+                <div class="photo-width phone-bg-2">
+                  <picture>
+                    <img src="../assets/media/nvolv/phone-bg.png" alt="Phone Background">
+                  </picture>
                 </div>
               </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Year</span>
-                <div class="list-item">
-                  <p>Summer 2016</p>
+            </div>
+
+            <div class="project-break"></div>
+
+            <section class="project-section split split-p-a">
+              <div class="project-content">
+                <span class="intro-project-title">Focused Measures of Success</span>
+              </div>
+              <div class="split-content">
+                <div class="section-content">
+                  <p>Utilizing a variation of Google's Design Sprint, Jackie and myself worked in extremely close collaboration with the client over a period of 2 weeks. Typically, we have clients come in the first couple of days to kick off the project. However, for Nvolv, the client was working with us everyday, embedded into our workflow.</p>
+                  <p>To kick off the project, we started out aiming to understand the core problems and metrics that were going to drive all design decisions and structures. After a very long day's session discussioning the merits and pitfalls of the various business strategies, we chose 2 core phases: (1) Attendee and (2) Sponsor Experience. We focused on three key metrics for each experience.</p>
+                  <p>Attendee Experience</p>
+                  <div class="p-process flex">
+                    <div class="list-column">
+                        <ul>
+                          <li>– % Of Attendees attending sessions that have been saved</li>
+                          <li>– % of Attendees visiting brand pages</li>
+                          <li>– Avg # of Messages sent between two attendees</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <p>Sponsorship Experience</p>
+                  <div class="p-process flex">
+                    <div class="list-column">
+                        <ul>
+                          <li>– # Messages per brand amabssador</li>
+                          <li>– # of attendee saves of sponsors events</li>
+                          <li>– # of sponsor ads</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <p>With the close collaboration with Nvolv, we were able to knock out 3 full, low-fidelity protoypes by the end of the first week. Each protoyped was tested by a group of 5 potential attendees, selected by the client. This allowed us to rapidly try and evolve initial ideas.</p>
+                  <p>While half of the team was working on low-fidelity wireframes, the other half focused on creating and developing a brand system that could easily pair with almost any conference. Whether it be Dreamforce, SF Design Week, Oracle Open World, we designed a type system that was flexible to enough to pair with any of the large scale corporate identities.</p>
+                  <p>The second week was full production mode, iterating on the brand as well as implementing every iteration across the prototypes we had developed. Luckily, with the client in the office everyday, we could move rapidly and hit our 2 week deadline. The product has recently launch and is currently in full beta testing mode.</p>
                 </div>
               </div>
-              <div class="footer--item-2">
-                <a href="https://itunes.apple.com/us/app/nvolv-experience-events-amazing/id998331446?mt=8" target="_blank" title="View Live" class="project-live">
-                  <span class="view">View Live</span>
-                </a>
-              </div>
-            </div>
-        </section>
-
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h4 main">Overview &amp; Problem</span>
-            </div>
-            <div class="section-content">
-              <p>According to conventionindustry.org, 205 Million people in the United States attend "the 1.8M conventions, conferences, congresses, trade shows and exhibitions, incentive events and corporate/business meetings" each year.</p>
-              <p>How often would you say that when you go to a conference, you were able to capitalize and maximize the value of that trip? Were you able to get all those business cards you wanted? Were you able to keep track of all the events you wanted to go to? Did you have to read through a crumpled up, back-pocket worn conference guide?</p>
-              <p>Nvolv aims to solve for all those problems. By creating a bespoke conference mobile application, conference organizers can leverage the platform to push content and information, connect attendenees, and create an infrastructure for sponsors to help leverage their brand.</p>
-            </div>
-          </div>
-        </section>
-
-        <div id="mocks" class="f-width" style="margin-bottom: 5em">
-          <div class="section-title">
-            <span class="h5 t-center">Core Flow</span>
-          </div>
-          <div class="screens--screen animation">
-            <div class="photo-width phone-flow">
-              <!-- <picture>
-                <img src="media/nvolv/nvolv-flow.gif" alt="Nvolv Flow">
-              </picture> -->
-              <picture>
-                <video width="100%" height="80%" src="../assets/media/nvolv/nvolv-flow-2.mov" autoplay="auto" loop muted class="nvolv-video"></video>
-              </picture>
-            </div>
-            <div class="photo-width phone-bg-2">
-              <picture>
-                <img src="../assets/media/nvolv/phone-bg.png" alt="Phone Background">
-              </picture>
-            </div>
-          </div>
-        </div>
-
-        <div class="fw-2">
-          <div class="screens--screen">
-            <div class="photo-width">
-              <picture>
-                <source
-                    data-srcset="../assets/media/nvolv/side-xl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="../assets/media/nvolv/side-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="../assets/media/nvolv/side-m.jpg"
-                    media="(min-width: 1000px)" />
-                <source
-                    data-srcset="../assets/media/nvolv/side-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="../assets/media/nvolv/side-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="../assets/media/nvolv/side-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
-            </div>
-          </div>
-        </div>
-
-
-
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h4 main">Process</span>
-            </div>
-            <div class="section-content">
-              <p>Utilizing a variation of Google's Design Sprint, Jackie and myself worked in extremely close collaboration with the client over a period of 2 weeks. Typically, we have clients come in the first couple of days to kick off the project. However, for Nvolv, the client was working with us everyday, embedded into our workflow.</p>
-              <p>To kick off the project, we started out aiming to understand the core problems and metrics that were going to drive all design decisions and structures. After a very long day's session discussioning the merits and pitfalls of the various business strategies, we chose 2 core phases: (1) Attendee and (2) Sponsor Experience. We focused on three key metrics for each experience.</p>
-              <p>Attendee Experience</p>
-              <div class="p-process flex">
-                <div class="list-column">
-                    <ul>
-                      <li>– % Of Attendees attending sessions that have been saved</li>
-                      <li>– % of Attendees visiting brand pages</li>
-                      <li>– Avg # of Messages sent between two attendees</li>
-                    </ul>
-                </div>
-              </div>
-              <p>Sponsorship Experience</p>
-              <div class="p-process flex">
-                <div class="list-column">
-                    <ul>
-                      <li>– # Messages per brand amabssador</li>
-                      <li>– # of attendee saves of sponsors events</li>
-                      <li>– # of sponsor ads</li>
-                    </ul>
-                </div>
-              </div>
-              <p>With the close collaboration with Nvolv, we were able to knock out 3 full, low-fidelity protoypes by the end of the first week. Each protoyped was tested by a group of 5 potential attendees, selected by the client. This allowed us to rapidly try and evolve initial ideas.</p>
-              <p>While half of the team was working on low-fidelity wireframes, the other half focused on creating and developing a brand system that could easily pair with almost any conference. Whether it be Dreamforce, SF Design Week, Oracle Open World, we designed a type system that was flexible to enough to pair with any of the large scale corporate identities.</p>
-              <p>The second week was full production mode, iterating on the brand as well as implementing every iteration across the prototypes we had developed. Luckily, with the client in the office everyday, we could move rapidly and hit our 2 week deadline. The product has recently launch and is currently in full beta testing mode.</p>
-            </div>
-          </div>
-        </section>
+            </section>
 
         <div class="fw-2">
           <div class="screens--screen">
@@ -243,45 +197,110 @@ meta_title: Nvolv | Alex Cagwin
           </div>
         </div>
 
+        <div class="project-break m"></div>
 
-        <section id="mocks" class="f-width mocks alt-2">
-            <div class="screens--screen double">
-              <div class="photo-width left">
-                <picture>
-                  <source
-                      data-srcset="../assets/media/nvolv/1-l.jpg"
-                      media="(min-width: 100px)" />
-                  <img
-                      data-sizes="auto"
-                      data-src="../assets/media/nvolv/1-l.jpg"
-                      class="lazyload blur-up" />
-                </picture>
-              </div>
-              <div class="photo-width right">
-                <picture>
-                  <source
-                      data-srcset="../assets/media/nvolv/2-l.jpg"
-                      media="(min-width: 100px)" />
-                  <img
-                      data-sizes="auto"
-                      data-src="../assets/media/nvolv/2-l.jpg"
-                      class="lazyload blur-up" />
-                </picture>
-              </div>
-            </div>
+        <section class="project-section split split-p-t">
+          <div class="project-content">
+            <span class="intro-project-title">Connecting Attendees</span>
+          </div>
+          <div class="split-content">
+              <p>Utilizing a variation of Google's Design Sprint, Jackie and myself worked in extremely close collaboration with the client over a period of 2 weeks. Typically, we have clients come in the first couple of days to kick off the project. However, for Nvolv, the client was working with us everyday, embedded into our workflow.</p>
+              <p>To kick off the project, we started out aiming to understand the core problems and metrics that were going to drive all design decisions and structures. After a very long day's session discussioning the merits and pitfalls of the various business strategies, we chose 2 core phases: (1) Attendee and (2) Sponsor Experience. We focused on three key metrics for each experience.</p>
+          </div>
         </section>
 
-        <div class="next-project" id="instapark">
-          <a href="/instapark" title="Next Project" class="next--content wrap">
-            <span class="footer-label">Next Project</span>
-            <span class="next-label">Instapark</span>
-            <div class="next-background"></div>
-          </a>
+        <div class="fw-2 fw-p">
+          <div class="screens--screen">
+            <div class="photo-width">
+              <picture>
+                <source
+                    data-srcset="../assets/media/nvolv/connect-xl.jpg"
+                    media="(min-width: 1500px)" />
+                <source
+                    data-srcset="../assets/media/nvolv/connect-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/nvolv/connect-m.jpg"
+                    media="(min-width: 1000px)" />
+                <source
+                    data-srcset="../assets/media/nvolv/connect-s.jpg"
+                    media="(min-width: 700px)" />
+                <source
+                    data-srcset="../assets/media/nvolv/connect-p.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/nvolv/connect-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+          </div>
         </div>
+
+        <div class="project-break"></div>
+
+        <section class="project-section split split-p-a">
+          <div class="project-content">
+            <span class="intro-project-title">Results</span>
+          </div>
+          <div class="split-content">
+            <div class="section-content">
+              <p>Octane AI had a successful beta launch and quickly raised a series A round. However, some of their beta users include: 50 Cent, Aerosmith, Kiss, 30 Seconds to Mars, SPiN and Magic Mike Live. Their current focus is to market to content producers and publishers to manage their high volume of fans. The successful beta launch of their MVP allowed Octane AI to raise a significant amount of capital to slowly start building out their team. They currently have a team of 10 designing out building the product further. Excited to see where this goes in the future.</p>
+            </div>
+            <div class="section-results">
+              <div class="result-item">
+                <span class="result-stat main">43,851+</span>
+                <span class="result-label">Attendees</span>
+              </div>
+              <div class="result-item">
+                <span class="result-stat main">1,405</span>
+                <span class="result-label">Sponsors</span>
+              </div>
+              <div class="result-item">
+                <span class="result-stat main">839</span>
+                <span class="result-label">Speakers</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <div class="fw-2">
+          <div class="screens--screen">
+            <div class="photo-width">
+              <picture>
+                <source
+                    data-srcset="../assets/media/nvolv/side-xl.jpg"
+                    media="(min-width: 1500px)" />
+                <source
+                    data-srcset="../assets/media/nvolv/side-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/nvolv/side-m.jpg"
+                    media="(min-width: 1000px)" />
+                <source
+                    data-srcset="../assets/media/nvolv/side-s.jpg"
+                    media="(min-width: 700px)" />
+                <source
+                    data-srcset="../assets/media/nvolv/side-p.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/nvolv/side-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        {% include next-project.html %}
+
+
       </div>
 
-
       {% include footer.html %}
+
+      {% include menu.html %}
 
       {% include message.html %}
 
