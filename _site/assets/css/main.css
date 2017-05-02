@@ -32,7 +32,7 @@ p{
   }
   @media only screen and (min-width: 1800px) {
     p {
-      font-size: 1.5rem;
+      font-size: 1.65rem;
     }
 }
 
@@ -2703,8 +2703,12 @@ a:hover .footer-contact {
   color: #000;
 }
 
-#cpdc .project-period, #cpdc .main, #cpdc .action, #cpdc .close a:hover .fa, #cpdc a:hover, #projects #cpdc .action, #projects #cpdc .project-period, #projects #cpdc a:hover, #cpdc a:hover .footer-contact {
+#cpdc .project-period, #cpdc .main, #cpdc .action, #cpdc .close a:hover .fa, #cpdc a:hover, #projects #cpdc .action, #projects #cpdc .project-period, #projects #cpdc a:hover, #cpdc a:hover .footer-contact, #cpdc a.project-live p  {
   color: #035642;
+}
+
+#cpdc .project--header {
+  background-color: #035642;
 }
 
 #cpdc .message {
@@ -2733,8 +2737,12 @@ a:hover .footer-contact {
 
 
 
-#ug .project-period, #ug .main, #ug .action, #ug .close a:hover .fa, #ug a:hover, #projects #ug .action, #projects #ug .project-period, #projects #ug a:hover, #ug a:hover .footer-contact {
+#ug .project-period, #ug .main, #ug .action, #ug .close a:hover .fa, #ug a:hover, #projects #ug .action, #projects #ug .project-period, #projects #ug a:hover, #ug a:hover .footer-contact, #ug a.project-live p  {
   color: #b0973c;
+}
+
+#ug .project--header {
+  background-color: #b0973c;
 }
 
 #ug .next-background {
@@ -2749,11 +2757,11 @@ a:hover .footer-contact {
   #ug .light .nav--content {
     background-color: #1A1A1A;
   }
+  #ug .light .nav--content {
+    border-top: 1px solid #111;
+  }
 }
 
-#ug .light .nav--content {
-  border-top: 1px solid #111;
-}
 
 #ug .message {
   background-color: #b0973c;
@@ -2767,7 +2775,7 @@ a:hover .footer-contact {
 
 
 
-#instapark .project-period, #instapark .main, #instapark .action, #instapark .close a:hover .fa, #instapark a:hover, #projects #instapark .action, #projects #instapark .project-period, #projects #instapark a:hover, #instapark a:hover .footer-contact {
+#instapark .project-period, #instapark .main, #instapark .action, #instapark .close a:hover .fa, #instapark a:hover, #projects #instapark .action, #projects #instapark .project-period, #projects #instapark a:hover, #instapark a:hover .footer-contact, #instapark a.project-live p  {
   color: #29abe2;
 }
 
@@ -2790,7 +2798,7 @@ a:hover .footer-contact {
 }
 
 #instapark .mocks {
-  background-color: #29abe2;
+  background-color: ;
 }
 
 #instapark .mocks-light {
@@ -2805,22 +2813,6 @@ a:hover .footer-contact {
   background-color: #f2f2f2;
 }
 
-
-#enhance .project-period, #enhance .main, #enhance .action, #enhance .close a:hover .fa, #enhance a:hover, #projects #enhance .action, #projects #enhance .project-period, #projects #enhance a:hover, #enhance a:hover .footer-contact {
-  color: #45DDA6;
-}
-
-#enhance .message {
-  background-color: #45DDA6;
-}
-
-#enhance .line-break, #enhance .label-break, #enhance .header-line {
-  background-color: #ffffff;
-}
-
-#enhance .mocks {
-  background-color: #3C4255;
-}
 
 @media only screen and (max-width: 700px) {
   #enhance .light .nav--content {
@@ -2887,26 +2879,6 @@ a:hover .footer-contact {
   color: #4ea583;
 }
 
-#westagile .message {
-  background-color: #4ea583;
-}
-
-#westagile .next-background, #westagile .mocks {
-  background-color: #50a585;
-}
-
-#westagile .mocks-dark {
-  background-color: #353332;
-}
-
-#westagile .mocks-light {
-  background-color: #f9f9f9;
-}
-
-
-#westagile a:hover .next-label {
-  color: #353332;
-}
 
 #natera .project-period, #natera .main, #natera .action, #natera .close a:hover .fa, #natera a:hover, #natera a:hover, #projects #natera .action, #projects #natera .project-period, #natera a:hover, #natera a:hover .footer-contact {
   color: #00AA49;
@@ -2921,12 +2893,16 @@ a:hover .footer-contact {
   color: #f6921e;
 }
 
+#dodo .project--header {
+  background-color: #f6921e;
+}
+
 #dodo .message {
   background-color: #f6921e;
 }
 
 #dodo .mocks {
-  background-color: #f6921e;
+  background-color: ;
 }
 
 #dodo .mocks-light {

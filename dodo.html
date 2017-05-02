@@ -1,5 +1,44 @@
 ---
 meta_title: Dodo App | Alex Cagwin
+project: Dodo App
+nextProject: cpdc
+nextProjectTitle: Cal Poly Distance Club
+previousProject: instapark
+challenge: Significantly reduce the effort and time to report mobile app bugs.
+details:
+  - label: Role
+    content: Product Designer
+  - label: Art Director
+    content: Jackie Cruickshank
+  - label: Product Manager
+    content: Rathan Haran
+  - label: Year
+    content: Winter 2016
+menu:
+  - title: Home
+    link:
+  - title: About Me
+    link: about
+  - title: Hopsy
+    link: hopsy
+  - title: Dumptruck
+    link: dumptruck
+  - title: Octane AI
+    link: octaneai
+  - title: Virtual Fantasy League
+    link: vfl
+  - title: Everwill
+    link: everwill
+  - title: Nvolv
+    link: nvolv
+  - title: Instapark
+    link: instapark
+  - title: Dodo App
+    link: dodo
+  - title: Cal Poly Distance Club
+    link: cpdc
+  - title: The Underground Symphony
+    link: ug
 ---
 
 
@@ -13,146 +52,99 @@ meta_title: Dodo App | Alex Cagwin
 </head>
   <body id="dodo" class="main-bg">
     <div id="main" class="content flex flex-horizontal-center">
-      <div id="header" class="nav-2 header animated header--fixed">
-        <div class="nav--content">
-          <a href="/" id="close" class="close-button" >
-            <div class="close-out"></div>
-          </a>
-          <div class="nav--break"></div>
-          <a href="/eventyoda" title="Previous Project">
-            <i class="fa fa-angle-left"></i>
-            <span class="nav-tooltip">Previous Project</span>
-          </a>
-          <a href="/cpdc"title="Next Project">
-            <i class="fa fa-angle-right"></i>
-            <span class="nav-tooltip">Next Project</span>
-          </a>
-          <a href="mailto:hey@acag.win" class="desktop-hide">
-            <i class="fa fa-envelope-o"></i>
-          </a>
-          <a data-clipboard-text="hey@acag.win" class="no-smoothState copied mobile-hide">
-            <i class="fa fa-envelope-o"></i>
-            <span class="nav-tooltip">Shoot Me an Email</span>
-          </a>
-        </div>
-      </div>
 
-      <div id="header" class="project--header f-width">
+      {% include navigation.html %}
+
+      <div class="project--header f-width">
         <div class="header">
           <div class="header-title block">
-            <h1 class="hidden">Dodo App</h1>
-            <span class="h1">Dodo App</span><span class="h1 project-period">.</span>
+            <h1 class="hidden">{{ page.project }}</h1>
           </div>
           <div class="header-content">
-            <span class="h4">Making mobile bug reporting less painful.</span>
+            <span class="h4 white">Making mobile bug reporting less painful.</span>
           </div>
+        </div>
+        <div class="header-hero">
+          <picture>
+            <img src="../assets/media/dodo/main.png" alt="Dodo Logo">
+          </picture>
+        </div>
+        <div class="header-text">
+          <span class="header-project-text">{{ page.project }}</span>
         </div>
       </div>
 
+      <section class="intro split split-p-a">
+        <div class="intro-content">
+          <div class="intro-project-header">
+            <span class="intro-project-title">{{ page.project }}</span>
+          </div>
+          <div class="intro-break"></div>
+          <div class="intro-details">
+            <div class="intro-details-1">
+              <span class="header-label">Challenge</span>
+              <div class="details-item">
+                <p>{{ page.challenge }}</p>
+              </div>
+            </div>
+            {% for item in page.details %}
+              <div class="intro-details-2">
+                <span class="header-label">{{ item.label}}</span>
+                <div class="details-item">
+                  <p>{{ item.content}}</p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="intro-break"></div>
+        </div>
+        <div class="split-content">
+          <div class="section-content">
+            <p>The average time it takes to report a bug on a mobile device is more than a minute. When you have upwards of a few bugs that you need to translate from your device into your development management tools like Jira, Trello, Slack or Pivotal, that can take an excessive amount of time. Core Problem: How do you reduce that time significantly for project &amp; product managers?</p>
+            <p>Working product and project management at a development agency, my partner and I knew that we had to remove the need to upload screenshots to your computer before making annotations.</p>
+            <p>The previous process included:</p>
+            <div class="p-process flex">
+              <div class="list-column">
+                  <ul>
+                    <li>1. Take a screenshot of the bugs</li>
+                    <li>2a. Plug phone into computer</li>
+                    <li>2b. Upload photos to google drive or dropbox using native apps</li>
+                    <li>3. Download / preview photo</li>
+                    <li>4. Take screenshot</li>
+                  </ul>
+              </div>
+              <div class="list-column">
+                  <ul>
+                    <li>5. Annotate screenshot</li>
+                    <li>6. Open up project management tool (Slack, Jira, Trello, Pivotal Tracker)</li>
+                    <li>7. Create Ticket &amp; add description</li>
+                    <li>8. Attach photo with annotations</li>
+                    <li>9. Complete</li>
+                  </ul>
+              </div>
+            </div>
+            <p>After about 16 rounds of iterations, we were able to get the flow down to less than half that. Our new flow included:</p>
+            <div class="p-process flex">
+              <div class="list-column">
+                  <ul>
+                    <li>1. Take a screenshot of the bugs</li>
+                    <li>2. Open Up Dodo</li>
+                    <li>3. Choose Photo</li>
+                  </ul>
+              </div>
+              <div class="list-column">
+                  <ul>
+                    <li>4. Tap Bug Area to add comment (which is optional)</li>
+                    <li>5. Post to integration (Slack, Jira, Trello or Pivotal Tracker)</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
         <section id="mocks" class="f-width mocks">
-            <div class="screens--screen">
-              <div class="photo-width" style="display: flex;">
-                <picture class="logo-center">
-                    <img src="../assets/media/dodo/main.png" alt="Dodo Logo" class="logo">
-                </picture>
-              </div>
-            </div>
-        </section>
-
-        <section class="footer" style="margin: 0">
-            <div class="footer--content">
-              <div class="footer--item-2">
-                <span class="footer-label grey">Challenge</span>
-                <div class="list-item">
-                  <p>Significantly reduce the effort and time to report mobile app bugs.</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Role</span>
-                <div class="list-item">
-                  <p>Product Designer</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Product Manager</span>
-                <div class="list-item">
-                  <p>Rathan Haran</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Art Director</span>
-                <div class="list-item">
-                  <p>Jackie Cruickshank</p>
-                </div>
-              </div>
-              <div class="footer--item-2">
-                <div class="project-live">
-                  <span class="view main">Coming Soon</span>
-                </div>
-              </div>
-            </div>
-        </section>
-
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h4 main">Solution</span>
-            </div>
-            <div class="section-content">
-              <p>Working product and project management at a development agency, My partner and I knew that we had to remove the need to upload screenshots to your computer before making annotations.</p>
-              <p>The previous process included:</p>
-              <div class="p-process flex">
-                <div class="list-column">
-                    <ul>
-                      <li>1. Take a screenshot of the bugs</li>
-                      <li>2a. Plug phone into computer</li>
-                      <li>2b. Upload photos to google drive or dropbox using native apps</li>
-                      <li>3. Download / preview photo</li>
-                      <li>4. Take screenshot</li>
-                    </ul>
-                </div>
-                <div class="list-column">
-                    <ul>
-                      <li>5. Annotate screenshot</li>
-                      <li>6. Open up project management tool (Slack, Jira, Trello, Pivotal Tracker)</li>
-                      <li>7. Create Ticket &amp; add description</li>
-                      <li>8. Attach photo with annotations</li>
-                      <li>9. Complete</li>
-                    </ul>
-                </div>
-              </div>
-              <p>After about 16 rounds of iterations, we were able to get the flow down to less than half that. Our new flow included:</p>
-              <div class="p-process flex">
-                <div class="list-column">
-                    <ul>
-                      <li>1. Take a screenshot of the bugs</li>
-                      <li>2. Open Up Dodo</li>
-                      <li>3. Choose Photo</li>
-                    </ul>
-                </div>
-                <div class="list-column">
-                    <ul>
-                      <li>4. Tap Bug Area to add comment (which is optional)</li>
-                      <li>5. Post to integration (Slack, Jira, Trello or Pivotal Tracker)</li>
-                    </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!--
-        <section id="mocks" class="f-width mocks-light">
-          <div class="screens--screen">
-            <div class="photo-width phone-bg">
-              <picture>
-                <img src="media/dodo/dodo-1-l.gif" alt="Dodo Flow">
-              </picture>
-            </div>
-          </div>
-        </section> -->
-
-        <section id="mocks" class="f-width mocks-light">
           <div class="screens--screen animation">
             <div class="photo-width phone-flow">
               <picture>
@@ -167,17 +159,14 @@ meta_title: Dodo App | Alex Cagwin
           </div>
         </section>
 
-        <div class="next-project" id="cpdc">
-          <a href="/cpdc" title="Cal Poly Distance Club" class="next--content wrap">
-            <span class="footer-label">Next Project</span>
-            <span class="next-label">Cal Poly Distance Club</span>
-            <div class="next-background"></div>
-          </a>
-        </div>
+        {% include next-project.html %}
+
+
       </div>
 
-
       {% include footer.html %}
+
+      {% include menu.html %}
 
       {% include message.html %}
 

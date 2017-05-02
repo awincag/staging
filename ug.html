@@ -1,6 +1,43 @@
 ---
 meta_title: The Underground Symphony | Alex Cagwin
 bg_color: 1A1A1A
+project: The Underground Symphony
+nextProject:
+nextProjectTitle: All Projects
+previousProject: cpdc
+challenge: To introduce and educate people about New York's subway's musicians.
+details:
+  - label: Role
+    content: Lead Designer
+  - label: Art Director
+    content: Nathan Podshadley
+  - label: Year
+    content: Summer 2016
+menu:
+  - title: Home
+    link:
+  - title: About Me
+    link: about
+  - title: Hopsy
+    link: hopsy
+  - title: Dumptruck
+    link: dumptruck
+  - title: Octane AI
+    link: octaneai
+  - title: Virtual Fantasy League
+    link: vfl
+  - title: Everwill
+    link: everwill
+  - title: Nvolv
+    link: nvolv
+  - title: Instapark
+    link: instapark
+  - title: Dodo App
+    link: dodo
+  - title: Cal Poly Distance Club
+    link: cpdc
+  - title: The Underground Symphony
+    link: ug
 ---
 
 <!DOCTYPE html>
@@ -13,41 +50,67 @@ bg_color: 1A1A1A
 </head>
   <body id="ug" class="main-bg">
     <div id="main" class="content flex flex-horizontal-center light">
-      <div id="header" class="nav-2 header animated header--fixed">
-        <div class="nav--content">
-          <a href="/" id="close" class="close-button" >
-            <div class="close-out"></div>
-          </a>
-          <div class="nav--break"></div>
-          <a href="/cpdc" title="Previous Project">
-            <i class="fa fa-angle-left"></i>
-            <span class="nav-tooltip">Previous Project</span>
-          </a>
-          <a href="/eventyoda" title="Next Project">
-            <i class="fa fa-angle-right"></i>
-            <span class="nav-tooltip">Next Project</span>
-          </a>
-          <a href="mailto:hey@acag.win" class="desktop-hide">
-            <i class="fa fa-envelope-o"></i>
-          </a>
-          <a data-clipboard-text="hey@acag.win" class="no-smoothState copied mobile-hide">
-            <i class="fa fa-envelope-o"></i>
-            <span class="nav-tooltip">Shoot Me an Email</span>
-          </a>
-        </div>
-      </div>
 
-      <div id="header" class="project--header f-width">
-        <div class="header">
-          <div class="header-title block an-s-1 page-animation-1">
-            <h1 class="hidden">The Underground Symphony</h1>
-            <span class="h1">The Underground Symphony</span><span class="h1 project-period">.</span>
+        {% include navigation.html %}
+
+        <div class="project--header f-width">
+          <div class="header">
+            <div class="header-title block">
+              <h1 class="hidden">{{ page.project }}</h1>
+            </div>
+            <div class="header-content">
+              <span class="h4 white">Explore the musical jungle of New York’s subways.</span>
+            </div>
           </div>
-          <div class="header-content an-s page-animation-2">
-            <span class="h4">Explore the musical jungle of New York’s subways.</span>
+          <div class="header-hero">
+            <picture>
+              <img src="../assets/media/octane/main-hero.png" alt="Laptop Background">
+            </picture>
+          </div>
+          <div class="header-text">
+            <span class="header-project-text">{{ page.project }}</span>
           </div>
         </div>
-      </div>
+
+        <section class="intro split split-p-a">
+          <div class="intro-content">
+            <div class="intro-project-header">
+              <span class="intro-project-title white">{{ page.project }}</span>
+            </div>
+            <div class="intro-break"></div>
+            <div class="intro-details">
+              <div class="intro-details-1">
+                <span class="header-label white">Challenge</span>
+                <div class="details-item">
+                  <p>{{ page.challenge }}</p>
+                </div>
+              </div>
+              {% for item in page.details %}
+                <div class="intro-details-2">
+                  <span class="header-label white">{{ item.label}}</span>
+                  <div class="details-item">
+                    <p>{{ item.content}}</p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+            <div class="intro-break"></div>
+            <div class="intro-link">
+              <a title="View Live" class="project-live">
+                <p>Coming Soon</p>
+              </a>
+            </div>
+          </div>
+          <div class="split-content">
+            <div class="section-content">
+              <p>Have you ever been walking in your city and you pass a street musician? More often than not, you'll only quickly glance and continue on your way, not really stopping to observe and listen. However, every once in awhile, you'll notice that one of those street musicians is insanely talented. What if you wanted to go back and find that same musician?</p>
+              <p>Currently, there's no central location to viewing and exploring the musicians of the New York Subway system. I got together with an old buddy, Nathan, who came up with the idea. We wanted to create a exploratory map of New York which allows anyone to check out and discover the talented artists of New York's music scene.</p>
+              <p>The project is still in it's infancy but we're pushing it forward every week. If you want to help us out, shoot me a quick note and we can see how we can work together.</p>
+            </div>
+          </div>
+        </section>
+
+
 
         <section id="mocks" class="f-width mocks an-s page-animation-3">
             <div class="screens--screen an-s page-animation-4">
@@ -75,48 +138,6 @@ bg_color: 1A1A1A
                 </picture>
               </div>
             </div>
-        </section>
-
-        <section class="footer" style="margin: 0">
-            <div class="footer--content">
-              <div class="footer--item-2">
-                <span class="footer-label grey">Challenge</span>
-                <div class="list-item">
-                  <p>To introduce and educate people about New York's subway's musicians.</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Role</span>
-                <div class="list-item">
-                  <p>Product Designer</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Art Director</span>
-                <div class="list-item">
-                  <p>Nathan Podshadley</p>
-                </div>
-              </div>
-              <div class="footer--item-2">
-                <div class="project-live">
-                  <span class="view main">Coming Soon</span>
-                </div>
-              </div>
-            </div>
-        </section>
-
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h4 main">Overview</span>
-            </div>
-            <div class="section-content">
-              <p>Have you ever been walking in your city and you pass a street musician? More often than not, you'll only quickly glance and continue on your way, not really stopping to observe and listen. However, every once in awhile, you'll notice that one of those street musicians is insanely talented. What if you wanted to go back and find that same musician?</p>
-              <p>Currently, there's no central location to viewing and exploring the musicians of the New York Subway system. I got together with an old buddy, Nathan, who came up with the idea. We wanted to create a exploratory map of New York which allows anyone to check out and discover the talented artists of New York's music scene.</p>
-              <p>The project is still in it's infancy but we're pushing it forward every week. If you want to help us out, shoot me a quick note and we can see how we can work together.</p>
-
-            </div>
-          </div>
         </section>
 
         <section id="mocks" class="f-width mocks">
@@ -193,17 +214,14 @@ bg_color: 1A1A1A
             </div>
         </section>
 
-        <div class="next-project" id="all">
-          <a href="/" title="Return to All Projects" class="next--content wrap">
-            <span class="footer-label">Return to</span>
-            <span class="next-label">All Projects</span>
-            <div class="next-background"></div>
-          </a>
-        </div>
+        {% include next-project.html %}
+
+
       </div>
 
-
       {% include footer.html %}
+
+      {% include menu.html %}
 
       {% include message.html %}
 
