@@ -1,16 +1,12 @@
 <script src="../assets/js/headroom.min.js"></script>
 <script src="../assets/js/smooth-scroll.min.js"></script>
 <script src="../assets/js/clipboard.min.js"></script>
-<script src="../assets/js/jquery-2.1.1.js"></script>
 <script src="../assets/js/main.js"></script>
 <script>
   (function() {
     var header = new Headroom(document.querySelector("#header"), {
-        tolerance: {
-          up : 5,
-          down : 5
-        },
-        offset: 150,
+        tolerance: 3,
+        offset: 50,
         classes: {
           initial: "animated",
           pinned: "slideDown",

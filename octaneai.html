@@ -1,51 +1,44 @@
 ---
 meta_title: Octane AI | Alex Cagwin
 project: Octane AI
-nextProject: babynoggin
-nextProjectTitle: BabyNoggin
-previousProject: marcel
-highlight: Build your audience on Facebook Messenger.
-challenge: Allow publishers without coding experience, create and manage a Facebook Messenger chatbot.
+nextProject: vfl
+nextProjectTitle: Virtual Fantasty League
+previousProject: dumptruck
+challenge: Allow anyone with no knowledge of chatbots, to build a chatbot in only a few minutes.
 details:
   - label: Role
-    content: Design Lead
-  - label: Timeline
-    content: Sep '16 – Dec '16
-  - label: Delivery
-    content: Responsive Web
-credits:
+    content: Lead Designer
+  - label: Art Director
+    content: Jackie Cruickshank
   - label: Agency
     content: West Agile Labs
-  - label: Jackie Cruickshank
-    content: Art Director
-  - label: Danielle Hadley
-    content: Product Designer
-contributions:
-  - item: Product Design
-  - item: Interaction Design
-  - item: Feature Prioritization
-  - item: Prototyping
-  - item: Kick Off Facilitation
-  - item: KPI Definition
-  - item: Front-end Development
+  - label: Year
+    content: Winter 2016
 menu:
   - title: Home
     link:
   - title: About Me
     link: about
-  - title: Harley-Davidson
-    link: harleydavidson
-  - title: Marcel
-    link: marcel
-  - title: Octane AI
-    link: octaneai
-  - title: BabyNoggin
-    link: babynoggin
+  - title: Hopsy
+    link: hopsy
   - title: Dumptruck
     link: dumptruck
-  - title: Archive & Fun
-    link: archive
-
+  - title: Octane AI
+    link: octaneai
+  - title: Virtual Fantasy League
+    link: vfl
+  - title: Everwill
+    link: everwill
+  - title: Nvolv
+    link: nvolv
+  - title: Instapark
+    link: instapark
+  - title: Dodo App
+    link: dodo
+  - title: Cal Poly Distance Club
+    link: cpdc
+  - title: The Underground Symphony
+    link: ug
 ---
 
 <!DOCTYPE html>
@@ -56,590 +49,337 @@ menu:
 
     {% include headjs.html %}
 </head>
-  <body id="main" class="main-bg">
-    <div id="octaneai">
+  <body id="octaneai" class="main-bg">
+    <div id="main" class="content flex flex-horizontal-center">
 
       {% include navigation.html %}
 
-      <div class="hero-banner octane-bg"></div>
-
-      <div class="home-padding project-hero" style="background-color: #106BE0">
-        <div class="hero">
+      <div class="project--header f-width">
+        <div class="header">
           <div class="header-title block">
             <h1 class="hidden">{{ page.project }}</h1>
           </div>
           <div class="header-content">
-            <span class="header-project-text white">{{ page.project }}</span>
-            <span class="header-project-desc white">{{ page.highlight }}</span>
+            <span class="h4 white">The easiest way to create a chatbot.</span>
           </div>
         </div>
-        <div class="header--details">
-          {% for item in page.details %}
-            <div class="header--details-item">
-              <span class="header--details-label">{{ item.label }}</span>
-              <span class="header--details-content">{{ item.content}}</span>
-            </div>
-          {% endfor %}
-        </div>
-        <div class="header-hero monitor">
+        <div class="header-hero">
           <picture>
-            <img src="../assets/media/octane/main-hero.png" alt="Screenshot of BabyNoggin on iPad">
+            <img src="../assets/media/octane/main-hero.png" alt="Laptop Background">
           </picture>
+        </div>
+        <div class="header-text">
+          <span class="header-project-text">{{ page.project }}</span>
         </div>
       </div>
 
-      <section class="intro content-padding">
-
-        <div class="intro-content">
-
-          <div class="project-break desktop-hide-2"></div>
-
-          <!-- <div class="intro-break header desktop-hide"></div> -->
-
-          <div class="intro-details-split">
+        <section class="intro split split-p-a">
+          <div class="intro-content">
+            <div class="intro-project-header">
+              <span class="intro-project-title">{{ page.project }}</span>
+            </div>
+            <div class="intro-break"></div>
             <div class="intro-details">
-
-              <span class="project-label">Credits</span>
-
-              {% for item in page.credits %}
-
-                <div class="intro-details-2">
-                  <span class="list-label">{{ item.label}}</span>
-                  <span class="list-item">{{ item.content}}</span>
+              <div class="intro-details-1">
+                <span class="header-label">Challenge</span>
+                <div class="details-item">
+                  <p>{{ page.challenge }}</p>
                 </div>
-
-              {% endfor %}
-
-            </div>
-
-            <div class="intro-details">
-
-              <span class="project-label">Contributions</span>
-
-              {% for item in page.contributions %}
-
-                <div class="intro-details-2">
-                  <span class="list-label">{{ item.item }}</span>
-                </div>
-
-              {% endfor %}
-
-            </div>
-            <a href="http://www.octaneai.com/" target="_blank" title="View Live" class="header-project-live main">View Live</a>
-          </div>
-
-
-        </div>
-
-        <div class="body-content">
-          <div>
-            <span class="project-label">Challenge</span>
-            <span class="project-challenge">{{ page.challenge }}</span>
-          </div>
-
-          <div class="project-break"></div>
-
-          <div class="section-content">
-            <span class="project-label">Overview</span>
-            <p>At the beginning of fall 2016, Octane AI saw an opportunity for content creators to interact with their millions of fans on Facebook. They partnered with West Agile Labs to help build out their first vision chatbot builder and manager.</p>
-            <p>I oversaw the design efforts for simplifying the complex nature of chatbots. Branding and art direction was driven by Jackie Cruickshank while I lead product and interaction design with help from Danielle Hadley. </p>
-          </div>
-
-          <div class="project-break"></div>
-
-          <div class="section-content">
-            <span class="project-label">Results</span>
-            <div class="section-results">
-              <div class="result-item">
-                <div class="result-stat main">
-                  <span>100</span>
-                  <span class="result-stat-add">m</span>
-                </div>
-                <span class="result-label">Fans Interacting with Octane AI Chatbots</span>
               </div>
-              <div class="result-item">
-                <span class="result-stat main">3:00</span>
-                <span class="result-label">Average Time to Set up a Chatbot</span>
-              </div>
+              {% for item in page.details %}
+                <div class="intro-details-2">
+                  <span class="header-label">{{ item.label}}</span>
+                  <div class="details-item">
+                    <p>{{ item.content}}</p>
+                  </div>
+                </div>
+              {% endfor %}
             </div>
-            <p style="margin: 0">Octane AI had a successful beta launch and quickly raised a series A round. Some of their beta users included: 50 Cent, Aerosmith, Kiss, 30 Seconds to Mars, SPiN and Magic Mike Live. </p>
-          </div>
-
-          <div class="project-break"></div>
-
-          <div class="press">
-            <span class="project-label">Press</span>
-            <div class="press-item">
-              <span class="press-quote">&ldquo;</span>
-              <p>Their business is like web design platforms Wix or Weebly, but for chatbots. It’s a paint-by-numbers for bot creation that’s so easy, I could do it.</p>
-              <a href="https://techcrunch.com/2016/11/02/general-catalyst-backed-octane-will-make-you-a-bot/" title="Tech Crunch" target="_blank">Katie Roof — TechCrunch</a>
-            </div>
-            <div class="press-item">
-              <span class="press-quote">&ldquo;</span>
-              <p>Octane AI is a platform that enables businesses to set up powerful chatbots on Facebook Messenger in just a few minutes.</p>
-              <a href="http://tech.co/octane-ai-makes-chatbots-easier-everyone-2016-11" title="Tech Crunch" target="_blank">Tech.Co</a>
-            </div>
-            <div class="press-item">
-              <span class="press-quote">&ldquo;</span>
-              <p>Octane keeps that promise of five minutes or less</p>
-              <a href="http://venturebeat.com/2016/11/02/octane-ai-launches-with-bots-for-50-cent-kiss-and-aerosmith/" title="VentureBeat" target="_blank">VentureBeat</a>
-            </div>
-            <div class="press-item">
-              <span class="press-quote">&ldquo;</span>
-              <p>I built a chatbot. It can only do a handful of things, and it’s even dumber than the average chatbot. But it works, and I can talk to it through Facebook Messenger. More importantly, I’m not a coder.</p>
-              <a href="https://www.bloomberg.com/news/articles/2016-11-02/these-apps-let-anyone-build-a-dumb-chatbot" title="Bloomberg" target="_blank">Ellen Huet — Bloomberg</a>
+            <div class="intro-break"></div>
+            <div class="intro-link">
+              <a href="http://www.octaneai.com/" target="_blank" title="View Live" class="project-live">
+                <p>View Live</p>
+              </a>
             </div>
           </div>
-        </div>
-      </section>
-
-      <div class="home-padding mocks-proto" style="background-color: #014AA8">
-        <div class="prototype">
-          <picture>
-            <video width="100%" height="100%" src="../assets/media/octane/Octane.mov" autoplay="auto" loop muted class="laptop-video"></video>
-          </picture>
-        </div>
-      </div>
-
-
-      <section class="content-padding">
-        <div class="section-hero">
-          <div class="section-hero-title">
-            <div class="section-number sn-10">
-              <span class="section-number-item">0</span>
-              <span class="section-number-item">1</span>
+          <div class="split-content">
+            <div class="section-content">
+              <p>Over 1 billion people use Facebook messenger every month. That's more than Snapchat, Instagram, and Twitter combined. At the moment, there's no sign of it slowing down. With publishers and content creators amassing fan bases as large as 34m+ followers like  Aerosmith, building chatbots provides an opportunity to engage your audience on a mass scale like never before.</p>
+              <p>At the beginning of fall 2016, Matt Schilitcht, Ben Parr, and Leif K-Brooks saw this huge market opportunity to design and build a technology to allow anyone, with or without a chatbot. After an exhaustive search, they partnered with West Agile Labs to help build out their vision of a more automated and connected messaging platform.</p>
+              <p>I oversaw the design efforts for simplifying the complex nature of chatbots. Branding and art direction was driven by Jackie Cruickshank while I lead product and interaction design with help from Danielle Hadley. With a focus on iterative prototyping and testing, we were able to design a fully responsive chatbot management platform in under 2 months. Octane AI had a successful private launch 2 months later with industry leading publishers joining the platform and a series A raise.</p>
             </div>
-            <span class="section-hero-header">Bot Building</span>
           </div>
-          <div class="section-hero-content">
-            <p class="content-header">Publishers had 6 types of chatbots each with a particular focus. Each type of chatbot had a similar flow that took the creator step by step, starting with type and ending with final details. We modeled this similar to an airline or e-commerce checkout so that it would be familar and understandable.</p>
-          </div>
+        </section>
 
-        </div>
-
-        <div class="content-item">
-          <div class="content-item-img straight">
-            <picture>
-              <source
-                  data-srcset="../assets/media/octane/1-xxl.jpg"
-                  media="(min-width: 1900px)" />
-              <source
-                  data-srcset="../assets/media/octane/1-xl.jpg"
-                  media="(min-width: 1500px)" />
-              <source
-                  data-srcset="../assets/media/octane/1-l.jpg"
-                  media="(min-width: 1200px)" />
-              <source
-                  data-srcset="../assets/media/octane/1-m.jpg"
-                  media="(min-width: 1000px)" />
-              <source
-                  data-srcset="../assets/media/octane/1-s.jpg"
-                  media="(min-width: 700px)" />
-              <source
-                  data-srcset="../assets/media/octane/1-p.jpg"
-                  media="(min-width: 100px)" />
-              <img
-                  data-sizes="auto"
-                  data-src="../assets/media/octane/1-l.jpg"
-                  class="lazyload blur-up" />
-            </picture>
+        <div id="mocks" class="f-width">
+          <div class="screens--screen l-animation">
+            <div class="laptop-flow">
+              <picture>
+                <video width="100%" height="80%" src="../assets/media/octane/Octane.mov" autoplay="auto" loop muted class="laptop-video"></video>
+              </picture>
+            </div>
+            <div class="laptop-bg">
+              <picture>
+                <img src="../assets/media/octane/laptop-bg.png" alt="Laptop Background">
+              </picture>
+            </div>
           </div>
         </div>
 
-        <div class="tri-grid spacing">
-          <picture>
-            <source
-                data-srcset="../assets/media/octane/2-xxl.jpg"
-                media="(min-width: 1500px)" />
-            <source
-                data-srcset="../assets/media/octane/2-l.jpg"
-                media="(min-width: 1200px)" />
-            <source
-                data-srcset="../assets/media/octane/2-s.jpg"
-                media="(min-width: 700px)" />
-            <source
-                data-srcset="../assets/media/octane/2-p.jpg"
-                media="(min-width: 100px)" />
-            <img
-                data-sizes="auto"
-                data-src="../assets/media/octane/2-l.jpg"
-                class="lazyload blur-up" />
-          </picture>
-          <picture>
-            <source
-                data-srcset="../assets/media/octane/3-xxl.jpg"
-                media="(min-width: 1500px)" />
-            <source
-                data-srcset="../assets/media/octane/3-l.jpg"
-                media="(min-width: 1200px)" />
-            <source
-                data-srcset="../assets/media/octane/3-s.jpg"
-                media="(min-width: 700px)" />
-            <source
-                data-srcset="../assets/media/octane/3-p.jpg"
-                media="(min-width: 100px)" />
-            <img
-                data-sizes="auto"
-                data-src="../assets/media/octane/3-l.jpg"
-                class="lazyload blur-up" />
-          </picture>
-          <picture>
-            <source
-                data-srcset="../assets/media/octane/4-xxl.jpg"
-                media="(min-width: 1500px)" />
-            <source
-                data-srcset="../assets/media/octane/4-l.jpg"
-                media="(min-width: 1200px)" />
-            <source
-                data-srcset="../assets/media/octane/4-s.jpg"
-                media="(min-width: 700px)" />
-            <source
-                data-srcset="../assets/media/octane/4-p.jpg"
-                media="(min-width: 100px)" />
-            <img
-                data-sizes="auto"
-                data-src="../assets/media/octane/4-l.jpg"
-                class="lazyload blur-up" />
-          </picture>
-        </div>
+        <div class="project-break"></div>
 
-        <div class="content-item">
-          <div class="content-item-img">
-            <picture>
-              <source
-                  data-srcset="../assets/media/octane/5-xxl.jpg"
-                  media="(min-width: 1900px)" />
-              <source
-                  data-srcset="../assets/media/octane/5-xl.jpg"
-                  media="(min-width: 1500px)" />
-              <source
-                  data-srcset="../assets/media/octane/5-l.jpg"
-                  media="(min-width: 1200px)" />
-              <source
-                  data-srcset="../assets/media/octane/5-m.jpg"
-                  media="(min-width: 1000px)" />
-              <source
-                  data-srcset="../assets/media/octane/5-s.jpg"
-                  media="(min-width: 700px)" />
-              <source
-                  data-srcset="../assets/media/octane/5-p.jpg"
-                  media="(min-width: 100px)" />
-              <img
-                  data-sizes="auto"
-                  data-src="../assets/media/octane/5-l.jpg"
-                  class="lazyload blur-up" />
-            </picture>
+        <section class="project-section split split-p-a">
+          <div class="project-content">
+            <span class="intro-project-title">Building Chatbots</span>
           </div>
-        </div>
-      </section>
-
-      <div>
-        <div class="content-break"></div>
-      </div>
-
-      <section class="content-padding">
-
-        <div class="section-hero">
-          <div class="section-hero-title vertical-split">
-            <div class="section-number sn-10">
-              <span class="section-number-item">0</span>
-              <span class="section-number-item">2</span>
-            </div>
-            <span class="section-hero-header">Track Your Bot</span>
-            <div class="section-hero-content mb grid-6">
-              <p class="content-header col-1-6">After creating a bot, publisher had the ability to view and track against the performance of their bots.</p>
+          <div class="split-content">
+            <div class="section-content">
+              <p>Due to the complex nature of chatbots and artificial intelligence, the core focus of the project was to simplify and humanize every step of creating a chatbot. The solution needed to clearly articulate how it was being built and what that meant for people interacting with it. This was the primary driver of every design decision.</p>
+              <p>After 7 rounds of low fidelity wireframes and usability tests, we designed a solution that allowed people to build a chatbot piece by piece, tailored to their needs. This solution came in the form of plugins that allows users to which type of content they'd like their audience to interact with. Plugins can manifest as notifications and messaging-allowing chatbots to blast a users updates to their audience, generate launch campaigns to promote upcoming events or content, or showcase merchandise to sell a users's latest items. Each plugin has it's own unique construction, whether it be messaging, images, content integrations (e.g, Spotify, Ticketmaster, Soundcloud, YouTube) or links that allow content to be pushed down to the audience. Ultimatley, the deconstruction of a chatbot into plugins allows for a step by step walkthrough eliminating and confusion when building your chatbot. Lastly, each plugin has a set of defaults that allows users to quickly build and edit from a template without every having to worry about starting completely from scratch.</p>
             </div>
           </div>
-          <div class="section-hero-content grid-6">
-            <div class="hero-item col-2">
-              <div class="content-item-img">
+        </section>
+
+        <div class="fw-2">
+            <div class="screens--screen">
+              <div class="photo-width">
                 <picture>
                   <source
-                      data-srcset="../assets/media/octane/6-xxl.jpg"
+                      data-srcset="../assets/media/octane/hero-xl.jpg"
                       media="(min-width: 1500px)" />
                   <source
-                      data-srcset="../assets/media/octane/6-l.jpg"
+                      data-srcset="../assets/media/octane/hero-l.jpg"
                       media="(min-width: 1200px)" />
                   <source
-                      data-srcset="../assets/media/octane/6-s.jpg"
+                      data-srcset="../assets/media/octane/hero-m.jpg"
+                      media="(min-width: 1000px)" />
+                  <source
+                      data-srcset="../assets/media/octane/hero-s.jpg"
                       media="(min-width: 700px)" />
                   <source
-                      data-srcset="../assets/media/octane/6-p.jpg"
+                      data-srcset="../assets/media/octane/hero-p.jpg"
                       media="(min-width: 100px)" />
                   <img
                       data-sizes="auto"
-                      data-src="../assets/media/octane/6-l.jpg"
+                      data-src="../assets/media/octane/hero-l.jpg"
                       class="lazyload blur-up" />
                 </picture>
               </div>
             </div>
-          </div>
-
         </div>
 
+        <div class="project-break m"></div>
 
-        <div class="content-item">
-          <div class="content-item-img">
-            <picture>
-              <source
-                  data-srcset="../assets/media/octane/7-xxl.jpg"
-                  media="(min-width: 1900px)" />
-              <source
-                  data-srcset="../assets/media/octane/7-xl.jpg"
-                  media="(min-width: 1500px)" />
-              <source
-                  data-srcset="../assets/media/octane/7-l.jpg"
-                  media="(min-width: 1200px)" />
-              <source
-                  data-srcset="../assets/media/octane/7-m.jpg"
-                  media="(min-width: 1000px)" />
-              <source
-                  data-srcset="../assets/media/octane/7-s.jpg"
-                  media="(min-width: 700px)" />
-              <source
-                  data-srcset="../assets/media/octane/7-p.jpg"
-                  media="(min-width: 100px)" />
-              <img
-                  data-sizes="auto"
-                  data-src="../assets/media/octane/7-l.jpg"
-                  class="lazyload blur-up" />
-            </picture>
+        <section class="project-section split split-p-t">
+          <div class="project-content">
+            <span class="intro-project-title">Managing Your Bot</span>
           </div>
-        </div>
-
-        <div class="content-item">
-          <div class="content-item-img">
-            <picture>
-              <source
-                  data-srcset="../assets/media/octane/8-xxl.jpg"
-                  media="(min-width: 1900px)" />
-              <source
-                  data-srcset="../assets/media/octane/8-xl.jpg"
-                  media="(min-width: 1500px)" />
-              <source
-                  data-srcset="../assets/media/octane/8-l.jpg"
-                  media="(min-width: 1200px)" />
-              <source
-                  data-srcset="../assets/media/octane/8-m.jpg"
-                  media="(min-width: 1000px)" />
-              <source
-                  data-srcset="../assets/media/octane/8-s.jpg"
-                  media="(min-width: 700px)" />
-              <source
-                  data-srcset="../assets/media/octane/8-p.jpg"
-                  media="(min-width: 100px)" />
-              <img
-                  data-sizes="auto"
-                  data-src="../assets/media/octane/8-l.jpg"
-                  class="lazyload blur-up" />
-            </picture>
-          </div>
-        </div>
-
-      </section>
-
-
-      <div>
-        <div class="content-break"></div>
-      </div>
-
-
-      <section class="content-padding">
-        <div class="section-hero">
-          <div class="section-hero-title">
-            <div class="section-number sn-10">
-              <span class="section-number-item">0</span>
-              <span class="section-number-item">3</span>
+          <div class="split-content">
+            <div class="section-content">
+              <div class="section-title">
+                <span class="h4">Track Your Bot</span>
+              </div>
+              <p>After the chatbot has been created, a user can monitor their bot from a high-level or individual plugin level. This allows for users to monitor the engagement level of their content within Facebook Messenger, previously only available through Newsfeed. From here, a user can quickly update or push new content through the plugins that have alreayd been created.</p>
             </div>
-            <span class="section-hero-header">Content Integrations & Plugin Health</span>
           </div>
-          <div class="section-hero-content">
-            <p class="content-header">We designed a solution that enables developers to build and add integrations to the Octane AI ecosystem. This enabled chatbot managers to elevate their messenger bot to pull in content from a variety of sources, such as Spotify and Soundcloud.</p>
-          </div>
-        </div>
+        </section>
 
-        <div class="content-split">
-          <div class="content-item">
-            <div class="content-item-img straight">
+
+        <div class="fw-2 fw-p">
+          <div class="screens--screen">
+            <div class="photo-width">
               <picture>
                 <source
-                    data-srcset="../assets/media/octane/9-xxl.jpg"
+                    data-srcset="../assets/media/octane/2-xl.jpg"
                     media="(min-width: 1500px)" />
                 <source
-                    data-srcset="../assets/media/octane/9-l.jpg"
+                    data-srcset="../assets/media/octane/2-l.jpg"
                     media="(min-width: 1200px)" />
                 <source
-                    data-srcset="../assets/media/octane/9-s.jpg"
+                    data-srcset="../assets/media/octane/2-m.jpg"
+                    media="(min-width: 1000px)" />
+                <source
+                    data-srcset="../assets/media/octane/2-s.jpg"
                     media="(min-width: 700px)" />
                 <source
-                    data-srcset="../assets/media/octane/9-p.jpg"
+                    data-srcset="../assets/media/octane/2-p.jpg"
                     media="(min-width: 100px)" />
                 <img
                     data-sizes="auto"
-                    data-src="../assets/media/octane/9-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
-            </div>
-          </div>
-
-          <div class="content-item">
-            <div class="content-item-img">
-              <picture>
-                <source
-                    data-srcset="../assets/media/octane/10-xxl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="../assets/media/octane/10-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="../assets/media/octane/10-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="../assets/media/octane/10-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="../assets/media/octane/10-l.jpg"
+                    data-src="../assets/media/octane/2-l.jpg"
                     class="lazyload blur-up" />
               </picture>
             </div>
           </div>
         </div>
-      </section>
 
-      <div>
-        <div class="content-break"></div>
-      </div>
-
-
-      <section class="content-padding">
-        <div class="section-hero">
-          <div class="section-hero-title">
-            <div class="section-number sn-10">
-              <span class="section-number-item">0</span>
-              <span class="section-number-item">4</span>
+        <section class="project-section split split-p-b">
+          <div class="project-content">
+          </div>
+          <div class="split-content">
+            <div class="section-content">
+              <div class="section-title">
+                <span class="h4">Plugin Health</span>
+              </div>
+              <p>While we designed the app to make it as easy as possible for users to create responses to common messages, there's always the chance that people will be sending messages to a chatbot that it doesn't understand. We designed and created  'train your both' to quickly view and create responses to every unknown message. They can either have a singular mass response such as, "I didn't get that." Alternatively, they also have the option to build a randomized list of responses to each individual unknown message, truly allowing the users character to appear in their chatbot.</p>
             </div>
-            <span class="section-hero-header">Custom Responses</span>
           </div>
-          <div class="section-hero-content">
-            <p class="content-header">We designed away for publishers to add in custom responses. They have the ability to view unkonwn responses by popularity and generate responses accordingly. They also had the ability to generate randomized messages for any other message.</p>
-          </div>
+        </section>
 
-        </div>
-
-
-        <div class="content-split-2">
-          <div class="content-item-img height col-2">
-            <picture>
-              <source
-                  data-srcset="../assets/media/octane/11-xxl.jpg"
-                  media="(min-width: 1500px)" />
-              <source
-                  data-srcset="../assets/media/octane/11-l.jpg"
-                  media="(min-width: 1200px)" />
-              <source
-                  data-srcset="../assets/media/octane/11-s.jpg"
-                  media="(min-width: 700px)" />
-              <source
-                  data-srcset="../assets/media/octane/11-p.jpg"
-                  media="(min-width: 100px)" />
-              <img
-                  data-sizes="auto"
-                  data-src="../assets/media/octane/11-l.jpg"
-                  class="lazyload blur-up" />
-            </picture>
-          </div>
-          <div class="content-item-img spacing col-3">
-            <picture>
-              <source
-                  data-srcset="../assets/media/octane/12-xxl.jpg"
-                  media="(min-width: 1500px)" />
-              <source
-                  data-srcset="../assets/media/octane/12-l.jpg"
-                  media="(min-width: 1200px)" />
-              <source
-                  data-srcset="../assets/media/octane/12-s.jpg"
-                  media="(min-width: 700px)" />
-              <source
-                  data-srcset="../assets/media/octane/11-p.jpg"
-                  media="(min-width: 100px)" />
-              <img
-                  data-sizes="auto"
-                  data-src="../assets/media/octane/11-l.jpg"
-                  class="lazyload blur-up" />
-            </picture>
-
+        <div class="fw-2 fw-p">
+          <div class="screens--screen">
+            <div class="photo-width">
+              <picture>
+                <source
+                    data-srcset="../assets/media/octane/4-xl.jpg"
+                    media="(min-width: 1500px)" />
+                <source
+                    data-srcset="../assets/media/octane/4-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/octane/4-m.jpg"
+                    media="(min-width: 1000px)" />
+                <source
+                    data-srcset="../assets/media/octane/4-s.jpg"
+                    media="(min-width: 700px)" />
+                <source
+                    data-srcset="../assets/media/octane/4-p.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/octane/4-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
           </div>
         </div>
 
+        <div class="project-break"></div>
 
-        <div class="content-item">
-          <div class="content-item-img">
-            <picture>
-              <source
-                  data-srcset="../assets/media/octane/13-xxl.jpg"
-                  media="(min-width: 1900px)" />
-              <source
-                  data-srcset="../assets/media/octane/13-xl.jpg"
-                  media="(min-width: 1500px)" />
-              <source
-                  data-srcset="../assets/media/octane/13-l.jpg"
-                  media="(min-width: 1200px)" />
-              <source
-                  data-srcset="../assets/media/octane/13-m.jpg"
-                  media="(min-width: 1000px)" />
-              <source
-                  data-srcset="../assets/media/octane/13-s.jpg"
-                  media="(min-width: 700px)" />
-              <source
-                  data-srcset="../assets/media/octane/13-p.jpg"
-                  media="(min-width: 100px)" />
-              <img
-                  data-sizes="auto"
-                  data-src="../assets/media/octane/13-l.jpg"
-                  class="lazyload blur-up" />
-            </picture>
+        <section class="project-section split split-p-t">
+          <div class="project-content">
+            <span class="intro-project-title">Custom Responses</span>
+          </div>
+          <div class="split-content">
+            <div class="section-content">
+              <p>While we designed the app to make it as easy as possible for users to create responses to common messages, there's always the chance that people will be sending messages to a chatbot that it doesn't understand. We designed and created  'train your both' to quickly view and create responses to every unknown message. They can either have a singular mass response such as, "I didn't get that." Alternatively, they also have the option to build a randomized list of responses to each individual unknown message, truly allowing the users character to appear in their chatbot.</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="fw-2 fw-p">
+          <div class="screens--screen">
+            <div class="photo-width">
+              <picture>
+                <source
+                    data-srcset="../assets/media/octane/3-xl.jpg"
+                    media="(min-width: 1500px)" />
+                <source
+                    data-srcset="../assets/media/octane/3-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/octane/3-m.jpg"
+                    media="(min-width: 1000px)" />
+                <source
+                    data-srcset="../assets/media/octane/3-s.jpg"
+                    media="(min-width: 700px)" />
+                <source
+                    data-srcset="../assets/media/octane/3-p.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/octane/3-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
           </div>
         </div>
 
-      </section>
+        <div class="project-break"></div>
 
+        <section class="project-section split split-p-t">
+          <div class="project-content">
+            <span class="intro-project-title">Results</span>
+          </div>
+          <div class="split-content">
+            <div class="section-content">
+              <p>Octane AI had a successful beta launch and quickly raised a series A round. However, some of their beta users include: 50 Cent, Aerosmith, Kiss, 30 Seconds to Mars, SPiN and Magic Mike Live. Their current focus is to market to content producers and publishers to manage their high volume of fans. The successful beta launch of their MVP allowed Octane AI to raise a significant amount of capital to slowly start building out their team. They currently have a team of 10 designing out building the product further. Excited to see where this goes in the future.</p>
+            </div>
+            <div class="section-results">
+              <div class="result-item">
+                <span class="result-stat main">100+</span>
+                <span class="result-label">Million fans interacting with Octane AI Chatbots</span>
+              </div>
+              <div class="result-item">
+                <span class="result-stat main"> <3:00</span>
+                <span class="result-label">Average time to set up a chatbot</span>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <div class="project-break m"></div>
 
-      <section class="final-content">
-        <picture>
-          <source
-              data-srcset="../assets/media/octane/multiple-xxl.jpg"
-              media="(min-width: 1900px)" />
-          <source
-              data-srcset="../assets/media/octane/multiple-xl.jpg"
-              media="(min-width: 1500px)" />
-          <source
-              data-srcset="../assets/media/octane/multiple-l.jpg"
-              media="(min-width: 1200px)" />
-          <source
-              data-srcset="../assets/media/octane/multiple-m.jpg"
-              media="(min-width: 1000px)" />
-          <source
-              data-srcset="../assets/media/octane/multiple-s.jpg"
-              media="(min-width: 700px)" />
-          <source
-              data-srcset="../assets/media/octane/multiple-p.jpg"
-              media="(min-width: 100px)" />
-          <img
-              data-sizes="auto"
-              data-src="../assets/media/octane/multiple-l.jpg"
-              class="lazyload blur-up" />
-        </picture>
-      </section>
+        <section class="project-section split split-p-a">
+          <div class="project-content">
+            <span class="intro-project-title">Industry Responses</span>
+          </div>
+          <div class="split-content">
+            <div class="press">
+              <div class="press-item-1">
+                <p>“Their business is like web design platforms Wix or Weebly, but for chatbots. It’s a paint-by-numbers for bot creation that’s so easy, I could do it. (I did it! I programmed the Katie Roof bot to respond with “raise the roof” as my greeting. Sorry but not sorry).”</p>
+                <a href="https://techcrunch.com/2016/11/02/general-catalyst-backed-octane-will-make-you-a-bot/" title="Tech Crunch" target="_blank">Katie Roof — TechCrunch</a>
+              </div>
+              <div class="press-item-1">
+                <p>“Octane AI is a platform that enables businesses to set up powerful chatbots on Facebook Messenger in just a few minutes.”</p>
+                <a href="http://tech.co/octane-ai-makes-chatbots-easier-everyone-2016-11" title="Tech Crunch" target="_blank">Tech.Co</a>
+              </div>
+              <div class="press-item-1">
+                <p>“Octane keeps that promise of five minutes or less”</p>
+                <a href="http://venturebeat.com/2016/11/02/octane-ai-launches-with-bots-for-50-cent-kiss-and-aerosmith/" title="VentureBeat" target="_blank">VentureBeat</a>
+              </div>
+              <div class="press-item-1">
+                <p>“I built a chatbot. It can only do a handful of things, and it’s even dumber than the average chatbot. But it works, and I can talk to it through Facebook Messenger. More importantly, I’m not a coder.”</p>
+                <a href="https://www.bloomberg.com/news/articles/2016-11-02/these-apps-let-anyone-build-a-dumb-chatbot" title="Bloomberg" target="_blank">Ellen Huet — Bloomberg</a>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <div class="fw-2">
+          <div class="screens--screen">
+            <div class="photo-width">
+              <picture>
+                <source
+                    data-srcset="../assets/media/octane/multiple-xl.jpg"
+                    media="(min-width: 1500px)" />
+                <source
+                    data-srcset="../assets/media/octane/multiple-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/octane/multiple-m.jpg"
+                    media="(min-width: 1000px)" />
+                <source
+                    data-srcset="../assets/media/octane/multiple-s.jpg"
+                    media="(min-width: 700px)" />
+                <source
+                    data-srcset="../assets/media/octane/multiple-p.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/octane/multiple-large.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+          </div>
+        </div>
 
-
+        {% include next-project.html %}
 
 
       </div>
 
-      {% include footerCSlite.html %}
+      {% include footer.html %}
 
       {% include menu.html %}
 

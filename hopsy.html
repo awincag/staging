@@ -2,9 +2,9 @@
 meta_title: Hopsy | Alex Cagwin
 bg_color: 2C2C2C
 project: Hopsy
-nextProject: nvolv
-nextProjectTitle: Nvolv
-previousProject: dumptruck
+nextProject: dumptruck
+nextProjectTitle: Dumptruck
+previousProject: ug
 challenge: Re-design Hopsy to help increase revenue and subscription sign ups.
 details:
   - label: Role
@@ -20,14 +20,26 @@ menu:
     link:
   - title: About Me
     link: about
-  - title: Octane AI
-    link: octaneai
-  - title: Dumptruck
-    link: dumptruck
   - title: Hopsy
     link: hopsy
+  - title: Dumptruck
+    link: dumptruck
+  - title: Octane AI
+    link: octaneai
+  - title: Virtual Fantasy League
+    link: vfl
+  - title: Everwill
+    link: everwill
   - title: Nvolv
     link: nvolv
+  - title: Instapark
+    link: instapark
+  - title: Dodo App
+    link: dodo
+  - title: Cal Poly Distance Club
+    link: cpdc
+  - title: The Underground Symphony
+    link: ug
 ---
 
 <!DOCTYPE html>
@@ -38,8 +50,8 @@ menu:
 
     {% include headjs.html %}
 </head>
-  <body id="main" class="main-bg">
-    <div id="hopsy" class="content flex flex-horizontal-center light">
+  <body id="hopsy" class="main-bg">
+    <div id="main" class="content flex flex-horizontal-center light">
 
       {% include navigation.html %}
 
@@ -49,7 +61,6 @@ menu:
             <h1 class="hidden">{{ page.project }}</h1>
           </div>
           <div class="header-content">
-            <span class="header-project-text white">{{ page.project }}</span>
             <span class="h4">Fresh, local, craft beer delivered to you.</span>
           </div>
         </div>
@@ -58,33 +69,41 @@ menu:
             <img src="../assets/media/hopsy/main-hero.png" alt="Laptop">
           </picture>
         </div>
+        <div class="header-text">
+          <span class="header-project-text">{{ page.project }}</span>
+        </div>
       </div>
 
-      <section class="intro split split-p-a intro-reverse">
+      <section class="intro split split-p-a">
         <div class="intro-content">
-          <div class="intro-break header desktop-hide"></div>
+          <div class="intro-project-header">
+            <span class="intro-project-title white">{{ page.project }}</span>
+          </div>
+          <div class="intro-break"></div>
           <div class="intro-details">
+            <div class="intro-details-1">
+              <span class="header-label white">Challenge</span>
+              <div class="details-item">
+                <p>{{ page.challenge }}</p>
+              </div>
+            </div>
             {% for item in page.details %}
               <div class="intro-details-2">
-                <span class="fact-label white">{{ item.label}}</span>
+                <span class="header-label white">{{ item.label}}</span>
                 <div class="details-item">
                   <p>{{ item.content}}</p>
                 </div>
               </div>
             {% endfor %}
           </div>
-          <div class="case-study-break"></div>
+          <div class="intro-break"></div>
           <div class="intro-link">
-            <a href="https://sf.hopsy.beer" target="_blank"  title="View Live" class="project-live">
+            <a href="http://sf.hopsy.beer" target="_blank" title="View Live" class="project-live">
               <p>View Live</p>
             </a>
           </div>
         </div>
         <div class="split-content">
-          <div class="header-content-bio">
-            <span>{{ page.challenge }}</span>
-          </div>
-          <div class="section-break"></div>
           <div class="section-content">
             <p>Did you know that over 90% of the beers in your local grocery store chain is owned by only 4 main beer brands? Most craft breweries are owned by one of the four large beer conglomerates. Hopsy is here to offset the mass-owned beer by providing access to local, fresh, craft beer.</p>
             <p>Started in 2015, Hopsy established partnered with local Bay Area nano breweries to provide better access to the great beers that come out of them. Since then, they've created a fantastic off-line presence with companies throughout the Bay Area, but their digital presence needed work. West Agile Labs and Hopsy partnered in winter of 2016/2017 to redesign their digital storefront.</p>
@@ -111,12 +130,12 @@ menu:
         <div class="project-break"></div>
 
         <section class="project-section split split-p-a">
-          <div class="intro-content">
-            <span class="intro-project-title white">An Brand Awakening</span>
+          <div class="project-content">
+            <span class="intro-project-title white">An Iterative Approach</span>
           </div>
           <div class="split-content">
             <div class="section-content">
-              <p>Hopsy had been built on an old Opencart theme about 3 years ago. that provided limited to no custom styling without creating extensive custom frameworks. Due to the original technology constraints, the Hopsy brand fell flat, lost within the defaults of Opencart. We focused on highlighting the Hopsy brand alive by leveraging the impact of Oswald as a the primary type and heavily utilizing images to stimulate customers.</p>
+              <p>With an emphasis on conversion, that meant two things: ensuring customers could feel confident when choosing their beer and decreasing the effort needed to purchase that beer. Hopsy intially had their beer described by it's IBU's and ABV. They also included price, brewery, beer type and an 'add to cart' button. We found that majority of people didn't correlate IBU's and ABV to flavor profile. After that discovery, we update each beer SKU to include beer type, brewery, flavor profile, ABV and a combined price / add to cart button, to all the limited real-estate to breathe. Including flavor profiles enables customers to quickly understand if that's a beer they're looking for.</p>
             </div>
           </div>
         </section>
@@ -152,12 +171,12 @@ menu:
         <div class="project-break m"></div>
 
         <section class="project-section split split-p-t">
-          <div class="intro-content">
+          <div class="project-content">
             <span class="intro-project-title white">Find Your Beer</span>
           </div>
           <div class="split-content">
             <div class="section-content">
-              <p>With an emphasis on conversion, that meant two things: ensuring customers could feel confident when choosing their beer and decreasing the effort needed to purchase that beer. The majority of people don't correlate IBU's and ABV to type of taste or flavor profile. We updated each beer SKU to focus on beer type, brewery, flavor profile and ABV. To save real-estate, we a combined price / add to cart button. The advent of flavor profiles helps all levels of beer afficiendos choose the right beef for them.</p>
+              <p>With an emphasis on conversion, that meant two things: ensuring customers could feel confident when choosing their beer and decreasing the effort needed to purchase that beer. Hopsy intially had their beer described by it's IBU's and ABV. They also included price, brewery, beer type and an 'add to cart' button. We found that majority of people didn't correlate IBU's and ABV to flavor profile. After that discovery, we update each beer SKU to include beer type, brewery, flavor profile, ABV and a combined price / add to cart button, to all the limited real-estate to breathe. Including flavor profiles enables customers to quickly understand if that's a beer they're looking for.</p>
             </div>
           </div>
         </section>
@@ -191,7 +210,7 @@ menu:
         </div>
 
         <section class="project-section split split-p-t">
-          <div class="intro-content">
+          <div class="project-content">
             <span class="intro-project-title white">Streamling Checkout</span>
           </div>
           <div class="split-content">
@@ -288,6 +307,8 @@ menu:
             </div>
           </div>
         </div>
+
+        {% include next-project.html %}
 
       </div>
 
