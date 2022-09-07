@@ -1,0 +1,353 @@
+---
+meta_title: BabyNoggin | Alex Cagwin
+project: BabyNoggin
+nextProject: dumptruck
+nextProjectTitle: Dumptruck
+previousProject: octaneai
+highlight: Enabling doctors to better screen developing children.
+challenge: Reduce the time needed to take, analyze and record 20-question-screeners for providers.
+details:
+  - label: Role
+    content: Product Design Lead
+  - label: Timeline
+    content: May '18 – Jan '19
+  - label: Delivery
+    content: iPad
+credits:
+  - label: Agency
+    content: Freelance
+  - label: Rathan Haran
+    content: Product Manager
+contributions:
+  - item: Product Design
+  - item: Interaction Design
+  - item: Visual Design
+  - item: Feature Prioritization
+  - item: Prototyping
+  - item: User Research Sessions
+  - item: User Research Synthesis
+menu:
+  - title: Home
+    link:
+  - title: About Me
+    link: about
+  - title: Harley-Davidson
+    link: harleydavidson
+  - title: Marcel
+    link: marcel
+  - title: Octane AI
+    link: octaneai
+  - title: BabyNoggin
+    link: babynoggin
+  - title: Dumptruck
+    link: dumptruck
+  - title: Archive & Fun
+    link: archive
+
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    {% include head.html %}
+
+    {% include headjs.html %}
+</head>
+  <body id="main" class="main-bg">
+    <div id="babynoggin">
+
+      {% include navigation.html %}
+
+      <div class="hero-banner baby-bg"></div>
+
+      <div class="home-padding project-hero" style="background-color: #ED8C35">
+        <div class="hero">
+          <div class="header-title block">
+            <h1 class="hidden">{{ page.project }}</h1>
+          </div>
+          <div class="header-content">
+            <span class="header-project-text white">{{ page.project }}</span>
+            <span class="header-project-desc white">{{ page.highlight }}</span>
+          </div>
+        </div>
+        <div class="header--details">
+          {% for item in page.details %}
+            <div class="header--details-item">
+              <span class="header--details-label">{{ item.label }}</span>
+              <span class="header--details-content">{{ item.content}}</span>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="header-hero ipad">
+          <picture>
+            <img src="../assets/media/babynoggin/hero.png" alt="Screenshot of BabyNoggin on iPad">
+          </picture>
+        </div>
+      </div>
+
+      <section class="intro content-padding">
+
+        <div class="intro-content">
+
+          <div class="project-break desktop-hide-2"></div>
+
+          <!-- <div class="intro-break header desktop-hide"></div> -->
+
+          <div class="intro-details-split">
+            <div class="intro-details">
+
+              <span class="project-label">Credits</span>
+
+              {% for item in page.credits %}
+
+                <div class="intro-details-2">
+                  <span class="list-label">{{ item.label}}</span>
+                  <span class="list-item">{{ item.content}}</span>
+                </div>
+
+              {% endfor %}
+
+            </div>
+
+            <div class="intro-details">
+
+              <span class="project-label">Contributions</span>
+
+              {% for item in page.contributions %}
+
+                <div class="intro-details-2">
+                  <span class="list-label">{{ item.item }}</span>
+                </div>
+
+              {% endfor %}
+
+            </div>
+            <a href="http://www.babynoggin.com/" target="_blank" title="View Live" class="header-project-live">View Live</a>
+          </div>
+
+
+        </div>
+
+        <div class="body-content">
+          <div>
+            <span class="project-label">Challenge</span>
+            <span class="project-challenge">{{ page.challenge }}</span>
+          </div>
+
+          <div class="project-break"></div>
+
+          <div class="section-content">
+            <span class="project-label">Overview</span>
+            <p>Pediatricians leverage a number of different screenings (5 dominant formats) to assess the rate at which a child develops in a particular skillset (Gross & Fine Motor, Social + 4 more). The majority of this process is on pen and paper in the healthcare providers office. </p>
+            <p>While I was at BabyNoggin, I focused on ways optimize the in-office workflow. Closer to the end of my time at BabyNoggin, I started to explore concepts how BabyNoggin  can encourage parents to prepare for screenings prior to the doctors office.</p>
+          </div>
+
+          <div class="project-break"></div>
+
+          <div class="section-content">
+            <span class="project-label">Results</span>
+            <div class="section-results">
+              <div class="result-item">
+                <span class="result-stat main">200</span>
+                <span class="result-label">Doctors as of Q1 2019</span>
+              </div>
+              <div class="result-item">
+                <div class="result-stat main">
+                  <span>25</span>
+                  <span class="result-stat-add">%</span>
+                </div>
+                <span class="result-label">Monthly Recurring Revenue</span>
+              </div>
+            </div>
+            <p style="margin: 0">When I left, the product was piloted with Advocate Aurora Health, the 10th largest not-for-profit integrated healthcare system in the U.S.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="home-padding mocks-proto" style="background-color: #f7f7f7">
+        <div class="prototype">
+            <picture>
+              <video width="100%" height="100%" src="../assets/media/babynoggin/baby.mp4" autoplay="auto" loop muted class="laptop-video"></video>
+            </picture>
+        </div>
+      </div>
+
+      <section class="content-padding">
+        <div class="section-hero">
+          <div class="section-hero-title">
+            <div class="section-number sn-10">
+              <span class="section-number-item">0</span>
+              <span class="section-number-item">1</span>
+            </div>
+            <span class="section-hero-header">In-Office Screening</span>
+          </div>
+          <div class="section-hero-content">
+            <p class="content-header">We built a framework that enabled offices to more efficiently screen patients and record their results.</p>
+          </div>
+        </div>
+
+        <div class="content-split">
+          <div class="content-item">
+            <div class="content-item-img straight">
+              <picture>
+                <source
+                    data-srcset="../assets/media/babynoggin/1-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/babynoggin/1-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/babynoggin/1-s.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/babynoggin/1-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+            <div class="content-item-caption">
+              <span class="content-header">Screening Completion</span>
+              <span class="content-caption-desc">Supporting parents with the necessary communication to recall scenarios necessary for completing  questions in the screener.</span>
+            </div>
+          </div>
+
+          <div class="content-item">
+            <div class="content-item-img">
+              <picture>
+                <source
+                    data-srcset="../assets/media/babynoggin/2-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/babynoggin/2-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/babynoggin/2-s.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/babynoggin/2-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+            <div class="content-item-caption">
+              <span class="content-header">Awareness around missed questions and at-risk answers</span>
+              <span class="content-caption-desc">Screener questions often were obscure and hard to answer. We designed and built a flow that allowed providers to quickly jump through all skipped questions.</span>
+            </div>
+          </div>
+
+          <div class="content-item">
+            <div class="content-item-img">
+              <picture>
+                <source
+                    data-srcset="../assets/media/babynoggin/3-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/babynoggin/3-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/babynoggin/3-s.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/babynoggin/3-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+            <div class="content-item-caption">
+              <span class="content-header">Display screening results</span>
+              <p class="content-caption-desc">The screeners had up to 20 questions with complex scoring methdology. We automated that process.</p>
+            </div>
+          </div>
+
+          <div class="content-item">
+            <div class="content-item-img">
+              <picture>
+                <source
+                    data-srcset="../assets/media/babynoggin/4-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/babynoggin/4-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/babynoggin/4-s.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/babynoggin/4-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+            <div class="content-item-caption">
+              <span class="content-header">Ability to save results in provider’s electronic health records</span>
+              <p class="content-caption-desc">There are over 100 different EHR systems each with their own API. Rather than building numerous API intergations, we plugged into provider workflows by simply allowing them to print results and scan into their system when they can.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <div>
+        <div class="content-break"></div>
+      </div>
+
+
+      <section class="content-padding">
+        <div class="section-hero">
+          <div class="section-hero-title">
+            <div class="section-number sn-10">
+              <span class="section-number-item">0</span>
+              <span class="section-number-item">2</span>
+            </div>
+            <span class="section-hero-header">Pre-Office Prep</span>
+            <div class="section-hero-content mb grid-6">
+              <div class="col-1-6">
+                <p class="content-header">At the end of a screener, we previewed questions from the next visit so that parents would know what to look for between visits. They had an opportunity to enter their email to view the either view or complete the screener</p>
+                <p class="content-header">If a parent either prepped or completed  a screen before their visit, we would be saving 10-30 minutes per appointment.</p>
+                <p class="section-fact">Some doctors see upwards of 70 patients a day. This could potentially save them up to 45 hours annually.</p>
+            </div>
+            </div>
+          </div>
+          <div class="section-hero-content">
+            <div class="hero-item">
+              <div class="content-item-img">
+                <picture>
+                  <source
+                      data-srcset="../assets/media/babynoggin/5-xxl.jpg"
+                      media="(min-width: 1500px)" />
+                  <source
+                      data-srcset="../assets/media/babynoggin/5-l.jpg"
+                      media="(min-width: 1200px)" />
+                  <source
+                      data-srcset="../assets/media/babynoggin/5-s.jpg"
+                      media="(min-width: 100px)" />
+                  <img
+                      data-sizes="auto"
+                      data-src="../assets/media/babynoggin/5-l.jpg"
+                      class="lazyload blur-up" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
+
+
+
+      </div>
+
+      {% include footerCSlite.html %}
+
+      {% include menu.html %}
+
+      {% include message.html %}
+
+      {% include js.html %}
+
+    </body>
+</html>

@@ -1,0 +1,594 @@
+---
+meta_title: Harley-Davidson | Alex Cagwin
+bg_color: 1F1F1F
+live:
+project: Harley-Davidson
+nextProject: marcel
+nextProjectTitle: Marcel
+previousProject: archive
+highlight: A Ride Planning Ecosystem for Moto-heads
+challenge: Enable Harley riders to discover, customize and ride the best routes near them.
+details:
+  - label: Role
+    content: Product Designer
+  - label: Timeline
+    content: Feb '17 – Nov '17
+  - label: Delivery
+    content: iOS, Android & Web
+credits:
+  - label: Agency
+    content: Freelance
+  - label: Agency
+    content: Pivotal Labs
+  - label: Richard Enlow
+    content: Design Lead
+  - label: Prianka Rayamajhi
+    content: Product Designer
+  - label: David Ghent
+    content: Product Designer
+contributions:
+  - item: Product Design
+  - item: Interaction Design
+  - item: Visual Design
+  - item: Feature Prioritization
+  - item: High-Fidelity Prototyping
+  - item: User Research Sessions
+  - item: User Research Synthesis
+  - item: Design Crit Facilitation
+menu:
+  - title: Home
+    link:
+  - title: About Me
+    link: about
+  - title: Harley-Davidson
+    link: harleydavidson
+  - title: Marcel
+    link: marcel
+  - title: Octane AI
+    link: octaneai
+  - title: BabyNoggin
+    link: babynoggin
+  - title: Dumptruck
+    link: dumptruck
+  - title: Archive & Fun
+    link: archive
+
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    {% include head.html %}
+
+    {% include headjs.html %}
+</head>
+  <body id="main" class="main-bg">
+    <div id="hd" class="light">
+
+      {% include navigation.html %}
+
+      <div class="hero-banner harley-bg"></div>
+
+      <div class="home-padding project-hero" style="background-color: #0F0F0F">
+        <div class="hero">
+          <div class="header-title block">
+            <h1 class="hidden">{{ page.project }}</h1>
+          </div>
+          <div class="header-content">
+            <span class="header-project-text main">{{ page.project }}</span>
+            <span class="header-project-desc white">{{ page.highlight }}</span>
+            <!-- <a href="https://apps.apple.com/us/app/harley-davidson/id1292723595" target="_blank" title="View Live" class="header-project-live">View Live</a> -->
+            <div class="header--details">
+              {% for item in page.details %}
+                <div class="header--details-item">
+                  <span class="header--details-label">{{ item.label }}</span>
+                  <span class="header--details-content">{{ item.content}}</span>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        <!-- <div class="header--details">
+          {% for item in page.details %}
+            <div class="header--details-item">
+              <span class="header--details-label">{{ item.label }}</span>
+              <span class="header--details-content">{{ item.content}}</span>
+            </div>
+          {% endfor %}
+        </div> -->
+        <div class="header-hero">
+          <picture>
+            <img src="../assets/media/harley/hero.png" alt="Screenshot of Harley-Davidson on iPhone">
+          </picture>
+        </div>
+      </div>
+
+      <section class="intro content-padding">
+
+        <div class="intro-content">
+
+          <div class="project-break desktop-hide-2"></div>
+
+          <!-- <div class="intro-break header desktop-hide"></div> -->
+
+          <div class="intro-details-split">
+            <div class="intro-details">
+
+              <span class="project-label">Credits</span>
+
+              {% for item in page.credits %}
+
+                <div class="intro-details-2">
+                  <span class="list-label">{{ item.label}}</span>
+                  <span class="list-item">{{ item.content}}</span>
+                </div>
+
+              {% endfor %}
+
+            </div>
+
+            <div class="intro-details">
+
+              <span class="project-label">Contributions</span>
+
+              {% for item in page.contributions %}
+
+                <div class="intro-details-2">
+                  <span class="list-label">{{ item.item }}</span>
+                </div>
+
+              {% endfor %}
+
+            </div>
+            <a href="https://apps.apple.com/us/app/harley-davidson/id1292723595" target="_blank" title="View Live" class="header-project-live">View Live</a>
+          </div>
+
+
+        </div>
+
+        <div class="body-content">
+          <div>
+            <span class="project-label">Challenge</span>
+            <span class="project-challenge white">{{ page.challenge }}</span>
+          </div>
+
+          <div class="project-break"></div>
+
+          <div class="section-content">
+            <span class="project-label">Overview</span>
+            <p>Harley-Davidson is one of the most well-known brands in the world, not just the motorocycle industry. In the early 2000’s they built a mapping application on web that enabled riders to plan short and multi-day rides. However, they needed to revamp their routing ecosystem as they started to invest and build digital tools into their motorcycles.<p>
+            <p>I had the opportunity to work with Harley-Davidson throughout 2017 as they rebuilt their ride planner ecosystem. Their goal was simple: improve annual ridership 3-4 more times per year.</p>
+          </div>
+
+          <div class="project-break"></div>
+
+          <!--
+          <div class="section-content">
+            <span class="project-label">Experience & Solution</span>
+            <p>Harley-Davidson is one of the most well-known brands in the world, not just the motorocycle industry. In the early 2000’s they built a mapping application on web that enabled riders to plan short and multi-day rides. However, they needed to revamp their routing ecosystem as they started to invest and build digital tools into their motorcycles.<p>
+            <p>I had the opportunity to work with Harley-Davidson throughout 2017 as they rebuilt their ride planner ecosystem. Their goal was simple: improve annual ridership 3-4 more times per year.</p>
+          </div>
+
+          <div class="project-break"></div>
+          -->
+
+          <div class="section-content">
+            <span class="project-label">Results</span>
+            <div class="section-results">
+              <div class="result-item">
+                <div class="result-stat main">
+                  <span>9.5</span>
+                  <span class="result-stat-add">k</span>
+                </div>
+                <span class="result-label">iOS Store Ratings</span>
+              </div>
+              <div class="result-item">
+                <span class="result-stat main">4.8</span>
+                <span class="result-label">Average App Store Review</span>
+              </div>
+            </div>
+
+            <div class="testimonials">
+              <div class=testimonial-item>
+                <span class="testimonial-quote">&ldquo;</span>
+                <span class="testimonial-desc">I'm loving the user interface of the new app! The recommendations for new and safe routes is my favorite part.</span>
+                <span class="testimonial-author">— calirider37</span>
+              </div>
+
+              <div class=testimonial-item>
+                <span class="testimonial-quote">&ldquo;</span>
+                <span class="testimonial-desc">Such a well designed app! The rider planner is so easy to use and very helpful when I am taking long rides.</span>
+                <span class="testimonial-author">— abcsop</span>
+              </div>
+
+
+              <div class=testimonial-item>
+                <span class="testimonial-quote">&ldquo;</span>
+                <span class="testimonial-desc">I have been using the H-D app for several months now and I have really enjoyed using all the features</span>
+                <span class="testimonial-author">— Slick from KS</span>
+              </div>
+
+
+              <div class=testimonial-item>
+                <span class="testimonial-quote">&ldquo;</span>
+                <span class="testimonial-desc">I really like this app for the fact that it gives me extra reason to ride trying to get more miles than others.</span>
+                <span class="testimonial-author">— krbobby</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <div class="home-padding mocks-proto" style="background-color: #0F0F0F; display: flex; justify-content: center; align-items: center">
+        <div class="prototype">
+            <picture>
+              <!-- <video width="100%" height="100%" src="../assets/media/harley/proto.mp4" autoplay="auto" loop muted class="laptop-video"></video> -->
+                <img src="../assets/media/harley/proto.jpg" alt="about-asset" style="height: 100%; width: auto">
+            </picture>
+        </div>
+      </div>
+
+      <section class="content-padding">
+        <div class="content-offset-2">
+          <div class="section-hero-offset">
+            <div class="focus-number">
+              <span class="focus-number-item">0</span>
+              <span class="focus-number-item">1</span>
+            </div>
+            <span class="section-hero-header white">Finding Rides</span>
+            <p class="content-header">Navigation for a Motorcycle is quite different than a car. It isn’t always about getting there as fast as possible. We highlighted those keep component during the discovery process. </p>
+            <div class="section-hero-numbers">
+              <div class="hero-numbers-item">
+                <div class="numbers-item-number">
+                  <span>0</span>
+                  <span>1</span>
+                </div>
+                <span class="numbers-item-desc">Amount of time to ride</span>
+              </div>
+              <div class="hero-numbers-item">
+                <div class="numbers-item-number">
+                  <span>0</span>
+                  <span>2</span>
+                </div>
+                <span class="numbers-item-desc">Weather</span>
+              </div>
+              <div class="hero-numbers-item">
+                <div class="numbers-item-number">
+                  <span>0</span>
+                  <span>3</span>
+                </div>
+                <span class="numbers-item-desc">Curvy-ness of the road</span>
+              </div>
+              <div class="hero-numbers-item">
+                <div class="numbers-item-number">
+                  <span>0</span>
+                  <span>4</span>
+                </div>
+                <span class="numbers-item-desc">Traffic</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="content-img no-box">
+            <picture>
+              <source
+                  data-srcset="../assets/media/harley/1-xxl.jpg"
+                  media="(min-width: 1500px)" />
+              <source
+                  data-srcset="../assets/media/harley/1-l.jpg"
+                  media="(min-width: 1200px)" />
+                  <source
+                      data-srcset="../assets/media/harley/1-m.jpg"
+                      media="(min-width: 1000px)" />
+              <source
+                  data-srcset="../assets/media/harley/1-s.jpg"
+                  media="(min-width: 700px)" />
+              <source
+                  data-srcset="../assets/media/harley/1-p.jpg"
+                  media="(min-width: 100px)" />
+              <img
+                  data-sizes="auto"
+                  data-src="../assets/media/harley/1-l.jpg"
+                  class="lazyload blur-up" />
+            </picture>
+          </div>
+
+        </div>
+
+        <!-- three item split -->
+        <div class="tri-grid spacing">
+          <picture>
+            <source
+                data-srcset="../assets/media/harley/2-xxl.jpg"
+                media="(min-width: 1500px)" />
+            <source
+                data-srcset="../assets/media/harley/2-l.jpg"
+                media="(min-width: 1200px)" />
+            <source
+                data-srcset="../assets/media/harley/2-s.jpg"
+                media="(min-width: 100px)" />
+            <img
+                data-sizes="auto"
+                data-src="../assets/media/harley/2-l.jpg"
+                class="lazyload blur-up" />
+          </picture>
+          <picture>
+            <source
+                data-srcset="../assets/media/harley/3-xxl.jpg"
+                media="(min-width: 1500px)" />
+            <source
+                data-srcset="../assets/media/harley/3-l.jpg"
+                media="(min-width: 1200px)" />
+            <source
+                data-srcset="../assets/media/harley/3-s.jpg"
+                media="(min-width: 100px)" />
+            <img
+                data-sizes="auto"
+                data-src="../assets/media/harley/3-l.jpg"
+                class="lazyload blur-up" />
+          </picture>
+          <picture>
+            <source
+                data-srcset="../assets/media/harley/4-xxl.jpg"
+                media="(min-width: 1500px)" />
+            <source
+                data-srcset="../assets/media/harley/4-l.jpg"
+                media="(min-width: 1200px)" />
+            <source
+                data-srcset="../assets/media/harley/4-s.jpg"
+                media="(min-width: 100px)" />
+            <img
+                data-sizes="auto"
+                data-src="../assets/media/harley/4-l.jpg"
+                class="lazyload blur-up" />
+          </picture>
+        </div>
+
+      </section>
+
+
+      <div>
+        <div class="content-break"></div>
+      </div>
+
+
+      <section class="content-padding">
+        <div class="section-hero-center">
+          <div class="focus-number">
+            <span class="focus-number-item">0</span>
+            <span class="focus-number-item">2</span>
+          </div>
+          <span class="section-hero-header white">Route Management</span>
+          <p class="content-header">Afer selecting a route, we gave riders the tools to manage their ride such as customizing, adding stops or changing the start location.</p>
+        </div>
+
+        <div class="content-3-large">
+
+          <!-- small image with caption -->
+          <div class="content-item">
+            <div class="content-item-img">
+              <picture>
+                <source
+                    data-srcset="../assets/media/harley/6-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/harley/6-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/harley/6-s.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/harley/6-p.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+            <div class="content-item-caption">
+              <p class="content-caption-desc">Riders could view today’s or future weather to properly prepare.</p>
+            </div>
+          </div>
+
+          <!-- large image -->
+
+          <div class="content-item">
+            <div class="content-item-img">
+              <picture>
+                <source
+                    data-srcset="../assets/media/harley/5-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/harley/5-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/harley/5-s.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/harley/5-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+          </div>
+
+          <!-- small image with caption -->
+          <div class="content-item">
+            <div class="content-item-img">
+              <picture>
+                <source
+                    data-srcset="../assets/media/harley/7-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/harley/7-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/harley/7-s.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/harley/7-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+            <div class="content-item-caption">
+              <p class="content-caption-desc">Riders could quick add gas stations and restaurants along the way.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- two prototypes -->
+        <div class="content-split spacing">
+          <div class="content-item content-proto">
+            <div class="content-item-img no-box">
+              <picture>
+                <source
+                    data-srcset="../assets/media/harley/8-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/harley/8-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/harley/8-s.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/harley/8-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+            <div class="content-item-caption">
+              <span class="content-header">Waypoint Management</span>
+            </div>
+          </div>
+          <div class="content-item content-proto">
+            <div class="content-item-img no-box">
+              <picture>
+                <source
+                    data-srcset="../assets/media/harley/9-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/harley/9-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/harley/9-s.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/harley/9-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+            <div class="content-item-caption">
+              <span class="content-header">Adding Waypoints</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+      <div>
+        <div class="content-break"></div>
+      </div>
+
+
+      <section class="content-padding">
+        <div class="content-offset reverse">
+          <div class="section-hero-offset">
+            <div class="focus-number">
+              <span class="focus-number-item">0</span>
+              <span class="focus-number-item">3</span>
+            </div>
+            <span class="section-hero-header white">Navigation</span>
+            <p class="content-header">Riders had the ability to ride their selected route with an in-app navigation epxerience. We optimized the existing platform provided by HereMaps.<br><br>We focused on continuous map orientation &amp; zooming levels, re-centering map capabilities and voice directions (many riders have bluetooth helmets as they cannot look at their phone in the middle of riding).</p>
+          </div>
+
+          <div class="content-split-2">
+            <div class="content-item-img height">
+              <picture>
+                <source
+                    data-srcset="../assets/media/harley/10-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/harley/10-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/harley/10-s.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/harley/10-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+            <div class="content-item-img spacing">
+              <picture>
+                <source
+                    data-srcset="../assets/media/harley/11-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/harley/11-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/harley/11-s.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/harley/11-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+
+      <section class="final-content">
+        <picture>
+          <source
+              data-srcset="../assets/media/harley/12-xxl.jpg"
+              media="(min-width: 1900px)" />
+          <source
+              data-srcset="../assets/media/harley/12-xl.jpg"
+              media="(min-width: 1500px)" />
+          <source
+              data-srcset="../assets/media/harley/12-l.jpg"
+              media="(min-width: 1200px)" />
+          <source
+              data-srcset="../assets/media/harley/12-m.jpg"
+              media="(min-width: 1000px)" />
+          <source
+              data-srcset="../assets/media/harley/12-s.jpg"
+              media="(min-width: 700px)" />
+          <source
+              data-srcset="../assets/media/harley/12-p.jpg"
+              media="(min-width: 100px)" />
+          <img
+              data-sizes="auto"
+              data-src="../assets/media/harley/12-l.jpg"
+              class="lazyload blur-up" />
+        </picture>
+      </section>
+
+
+
+      </div>
+
+      {% include footerCS.html %}
+
+      {% include menu.html %}
+
+      {% include message.html %}
+
+      {% include js.html %}
+
+    </body>
+</html>
