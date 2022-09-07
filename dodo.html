@@ -1,4 +1,40 @@
 ---
+meta_title: Dodo App | Alex Cagwin
+project: Dodo App
+nextProject: cpdc
+nextProjectTitle: Cal Poly Distance Club
+previousProject: instapark
+challenge: Significantly reduce the effort and time to report mobile app bugs.
+details:
+  - label: Role
+    content: Product Designer
+  - label: Art Director
+    content: Jackie Cruickshank
+  - label: Product Manager
+    content: Rathan Haran
+  - label: Year
+    content: Winter 2016
+menu:
+  - title: Home
+    link:
+  - title: About Me
+    link: about
+  - title: Hopsy
+    link: hopsy
+  - title: Dumptruck
+    link: dumptruck
+  - title: Octane AI
+    link: octaneai
+  - title: Nvolv
+    link: nvolv
+  - title: Instapark
+    link: instapark
+  - title: Dodo App
+    link: dodo
+  - title: Cal Poly Distance Club
+    link: cpdc
+  - title: The Underground Symphony
+    link: ug
 ---
 
 
@@ -12,232 +48,125 @@
 </head>
   <body id="dodo" class="main-bg">
     <div id="main" class="content flex flex-horizontal-center">
-      <div id="header" class="nav-2 header animated header--fixed">
-        <div class="nav--content">
-          <a href="/" id="close" class="close-button" >
-            <div class="close-out"></div>
-          </a>
-          <div class="nav--break"></div>
-          <a href="/eventyoda" title="Previous Project">
-            <i class="fa fa-angle-left"></i>
-            <span class="nav-tooltip">Previous Project</span>
-          </a>
-          <a href="/cpdc"title="Next Project">
-            <i class="fa fa-angle-right"></i>
-            <span class="nav-tooltip">Next Project</span>
-          </a>
-          <a href="mailto:hey@acag.win" class="desktop-hide">
-            <i class="fa fa-envelope-o"></i>
-          </a>
-          <a data-clipboard-text="hey@acag.win" class="no-smoothState copied mobile-hide">
-            <i class="fa fa-envelope-o"></i>
-            <span class="nav-tooltip">Shoot Me an Email</span>
-          </a>
-        </div>
-      </div>
 
-      <div id="header" class="project--header f-width">
+      {% include navigation.html %}
+
+      <div class="project--header f-width">
         <div class="header">
-          <div class="header-title block an-s-1 page-animation-1">
-            <h1 class="hidden">Dodo App</h1>
-            <span class="h1">Dodo App</span><span class="h1 project-period">.</span>
+          <div class="header-title block">
+            <h1 class="hidden">{{ page.project }}</h1>
           </div>
-          <div class="header-content an-s page-animation-2">
-            <span class="h4">Making mobile bug reporting less painful.</span>
+          <div class="header-content">
+            <span class="h4 white">Making mobile bug reporting less painful.</span>
           </div>
+        </div>
+        <div class="header-hero">
+          <picture>
+            <img src="../assets/media/dodo/main.png" alt="Dodo Logo">
+          </picture>
+        </div>
+        <div class="header-text">
+          <span class="header-project-text">{{ page.project }}</span>
         </div>
       </div>
 
-        <section id="mocks" class="f-width mocks an-s page-animation-3">
-            <div class="screens--screen an-s page-animation-4">
-              <div class="photo-width" style="display: flex;">
-                <picture class="logo-center">
-                    <img src="media/dodo/main.png" alt="Dodo Logo" class="logo">
-                </picture>
+      <section class="intro split split-p-a">
+        <div class="intro-content">
+          <div class="intro-project-header">
+            <span class="intro-project-title">{{ page.project }}</span>
+          </div>
+          <div class="intro-break"></div>
+          <div class="intro-details">
+            <div class="intro-details-1">
+              <span class="header-label">Challenge</span>
+              <div class="details-item">
+                <p>{{ page.challenge }}</p>
               </div>
             </div>
-        </section>
-
-        <section class="footer" style="margin: 0">
-            <div class="footer--content">
-              <div class="footer--item-2">
-                <span class="footer-label grey">Challenge</span>
-                <div class="list-item">
-                  <p>Significantly reduce the effort and time to report mobile app bugs.</p>
+            {% for item in page.details %}
+              <div class="intro-details-2">
+                <span class="header-label">{{ item.label}}</span>
+                <div class="details-item">
+                  <p>{{ item.content}}</p>
                 </div>
               </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Role</span>
-                <div class="list-item">
-                  <p>Product Designer</p>
-                </div>
+            {% endfor %}
+          </div>
+          <div class="intro-break"></div>
+        </div>
+        <div class="split-content">
+          <div class="section-content">
+            <p>The average time it takes to report a bug on a mobile device is more than a minute. When you have upwards of a few bugs that you need to translate from your device into your development management tools like Jira, Trello, Slack or Pivotal, that can take an excessive amount of time. Core Problem: How do you reduce that time significantly for project &amp; product managers?</p>
+            <p>Working product and project management at a development agency, my partner and I knew that we had to remove the need to upload screenshots to your computer before making annotations.</p>
+            <p>The previous process included:</p>
+            <div class="p-process flex">
+              <div class="list-column">
+                  <ul>
+                    <li>1. Take a screenshot of the bugs</li>
+                    <li>2a. Plug phone into computer</li>
+                    <li>2b. Upload photos to google drive or dropbox using native apps</li>
+                    <li>3. Download / preview photo</li>
+                    <li>4. Take screenshot</li>
+                  </ul>
               </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Product Manager</span>
-                <div class="list-item">
-                  <p>Rathan Haran</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Art Director</span>
-                <div class="list-item">
-                  <p>Jackie Cruickshank</p>
-                </div>
-              </div>
-              <div class="footer--item-2">
-                <div class="project-live">
-                  <span class="view main">Coming Soon</span>
-                </div>
+              <div class="list-column">
+                  <ul>
+                    <li>5. Annotate screenshot</li>
+                    <li>6. Open up project management tool (Slack, Jira, Trello, Pivotal Tracker)</li>
+                    <li>7. Create Ticket &amp; add description</li>
+                    <li>8. Attach photo with annotations</li>
+                    <li>9. Complete</li>
+                  </ul>
               </div>
             </div>
-        </section>
-
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h4 main">Solution</span>
-            </div>
-            <div class="section-content">
-              <p>Working product and project management at a development agency, My partner and I knew that we had to remove the need to upload screenshots to your computer before making annotations.</p>
-              <p>The previous process included:</p>
-              <div class="p-process flex">
-                <div class="list-column">
-                    <ul>
-                      <li>1. Take a screenshot of the bugs</li>
-                      <li>2a. Plug phone into computer</li>
-                      <li>2b. Upload photos to google drive or dropbox using native apps</li>
-                      <li>3. Download / preview photo</li>
-                      <li>4. Take screenshot</li>
-                    </ul>
-                </div>
-                <div class="list-column">
-                    <ul>
-                      <li>5. Annotate screenshot</li>
-                      <li>6. Open up project management tool (Slack, Jira, Trello, Pivotal Tracker)</li>
-                      <li>7. Create Ticket &amp; add description</li>
-                      <li>8. Attach photo with annotations</li>
-                      <li>9. Complete</li>
-                    </ul>
-                </div>
+            <p>After about 16 rounds of iterations, we were able to get the flow down to less than half that. Our new flow included:</p>
+            <div class="p-process flex">
+              <div class="list-column">
+                  <ul>
+                    <li>1. Take a screenshot of the bugs</li>
+                    <li>2. Open Up Dodo</li>
+                    <li>3. Choose Photo</li>
+                  </ul>
               </div>
-              <p>After about 16 rounds of iterations, we were able to get the flow down to less than half that. Our new flow included:</p>
-              <div class="p-process flex">
-                <div class="list-column">
-                    <ul>
-                      <li>1. Take a screenshot of the bugs</li>
-                      <li>2. Open Up Dodo</li>
-                      <li>3. Choose Photo</li>
-                    </ul>
-                </div>
-                <div class="list-column">
-                    <ul>
-                      <li>4. Tap Bug Area to add comment (which is optional)</li>
-                      <li>5. Post to integration (Slack, Jira, Trello or Pivotal Tracker)</li>
-                    </ul>
-                </div>
+              <div class="list-column">
+                  <ul>
+                    <li>4. Tap Bug Area to add comment (which is optional)</li>
+                    <li>5. Post to integration (Slack, Jira, Trello or Pivotal Tracker)</li>
+                  </ul>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!--
-        <section id="mocks" class="f-width mocks-light">
-          <div class="screens--screen">
-            <div class="photo-width phone-bg">
-              <picture>
-                <img src="media/dodo/dodo-1-l.gif" alt="Dodo Flow">
-              </picture>
-            </div>
-          </div>
-        </section> -->
 
-        <section id="mocks" class="f-width mocks-light">
+        <section id="mocks" class="f-width mocks">
           <div class="screens--screen animation">
             <div class="photo-width phone-flow">
               <picture>
-                <img src="media/dodo/dodo-1-l.gif" alt="Dodo Flow">
+                <img src="../assets/media/dodo/dodo-1-l.gif" alt="Dodo Flow">
               </picture>
             </div>
             <div class="photo-width phone-bg">
               <picture>
-                <img src="media/dodo/phone-bg.png" alt="Phone Background">
+                <img src="../assets/media/dodo/phone-bg.png" alt="Phone Background">
               </picture>
             </div>
           </div>
         </section>
 
-        <div class="next-project" id="cpdc">
-          <a href="/cpdc" title="Cal Poly Distance Club" class="next--content wrap">
-            <span class="footer-label">Next Project</span>
-            <span class="next-label">Cal Poly Distance Club</span>
-            <div class="next-background"></div>
-          </a>
-        </div>
+        {% include next-project.html %}
+
+
       </div>
 
-        <footer>
-          <div class="footer">
-            <div class="footer--content">
-              <div class="footer--item">
-                <span class="footer-label">Copyright</span>
-                <span><i class="fa fa-copyright"></i> Alex Cagwin, 2016.</span>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label">Email</span>
-                <a href="mailto:hey@acag.win" title="Email Me">
-                  <span>Hey@acag.win</span>
-                </a>
-                <a data-clipboard-text="hey@acag.win" class="copied no-smoothState">
-                  <span class="footer-contact">Copy Email Link</span>
-                </a>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label">Elsewhere</span>
-                <a href="https://www.linkedin.com/in/alex-cagwin-25b90937" target="_blank" title="LinkedIn">
-                  <span>LinkedIn</span>
-                </a>
-                <a href="https://twitter.com/wincag1" target="_blank" title="Twitter">
-                  <span>Twitter</span>
-                </a>
-                <a href="https://500px.com/alexcagwin" target="_blank" title="500px">
-                  <span>500px</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </footer>
+      {% include footer.html %}
 
-        <div id="message">
-          <div id="msg" class="message">
-            <span>Email Copied to Clipboard</span>
-            <!-- <span class="closebtn">&times;</span> -->
-          </div>
-          <a data-scroll href="#make" id="f-msg" class="message">
-            <span>Oops! Didn't Work. Click here to jump to the bottom and copy/paste my email.</span>
-            <span class="closebtn">&times;</span>
-          </a>
-        </div>
+      {% include menu.html %}
 
+      {% include message.html %}
 
+      {% include js.html %}
 
-    <script src="js/headroom.min.js"></script>
-    <script src="js/smooth-scroll.min.js"></script>
-    <script src="js/clipboard.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-      (function() {
-        var header = new Headroom(document.querySelector("#header"), {
-            tolerance: 3,
-            offset: 50,
-            classes: {
-              initial: "animated",
-              pinned: "slideDown",
-              unpinned: "slideUp"
-            }
-        });
-        header.init();
-
-    }());
-    </script>
     </body>
 </html>

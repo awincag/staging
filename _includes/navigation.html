@@ -1,16 +1,53 @@
-<div id="header" class="header trns animated header--fixed">
-  <div class="header--content">
-    <div class="logo">
-      <a href="/" class="type-logo flex-h-center trns" title="West Agile Labs">
-        <span class="trns">West Agile Labs</span>
+<div id="header" class="nav-2 header animated header--fixed">
+  <div class="nav--content desktop-hide">
+    <a href="#" id="menu-nav" class="project-btn" >
+      <div class="project-btn-out">
+        <div class="project-btn-item"></div>
+        <div class="project-btn-item"></div>
+        <div class="project-btn-item"></div>
+        <div class="project-btn-item"></div>
+        <div class="project-btn-item"></div>
+        <div class="project-btn-item"></div>
+        <div class="project-btn-item"></div>
+        <div class="project-btn-item"></div>
+        <div class="project-btn-item"></div>
+      </div>
+      <span class="nhg main">{{ page.project }}</span>
+    </a>
+    <div class="mobile-nav-mail">
+      <div class="nav--break"></div>
+      <a href="mailto:hey@acag.win" class="desktop-hide">
+        <i class="fa fa-envelope-o"></i>
       </a>
     </div>
-    <div class="navigation">
-      <a id="menu-nav" href="#" data-target="menu" class="overlay open-overlay flex-h-center navigation--open trns" title="Open Navigation">
-        <span class="trns">menu</span>
+  </div>
+  <div class="mobile-hide">
+    <div class="nav--content">
+      <a href="/" class="project-btn">
+        <div class="project-btn-out">
+          <div class="project-btn-item"></div>
+          <div class="project-btn-item"></div>
+          <div class="project-btn-item"></div>
+          <div class="project-btn-item"></div>
+          <div class="project-btn-item"></div>
+          <div class="project-btn-item"></div>
+          <div class="project-btn-item"></div>
+          <div class="project-btn-item"></div>
+          <div class="project-btn-item"></div>
+        </div>
+        <span class="nav-tooltip">Return Home</span>
       </a>
-      <a id="start-nav" href="#" data-target="start-project" class="overlay open-overlay flex-h-center navigation--start mobile-hide trns" title="Start A Project">
-        <span class="trns">start a project</span>
+      <a href="/{{ page.previousProject }}" title="Previous Project">
+        <i class="fa fa-angle-left"></i>
+        <span class="nav-tooltip">Previous Project</span>
+      </a>
+      <a href="/{{ page.nextProject }}" title="Next Project">
+        <i class="fa fa-angle-right"></i>
+        <span class="nav-tooltip">Next Project</span>
+      </a>
+      <a data-clipboard-text="hey@acag.win" class="no-smoothState copied">
+        <i class="fa fa-envelope-o"></i>
+        <span class="nav-tooltip">Shoot Me an Email</span>
       </a>
     </div>
   </div>

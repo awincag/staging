@@ -1,4 +1,21 @@
 ---
+project: About Me
+meta_title: About Me | Alex Cagwin
+menu:
+  - title: Home
+    link:
+  - title: About Me
+    link: about
+  - title: Harley-Davidson
+    link: harleydavidson
+  - title: BabyNoggin
+    link: babynoggin
+  - title: Octane AI
+    link: octaneai
+  - title: Dumptruck
+    link: dumptruck
+  - title: Archive & Fun
+    link: archive
 ---
 
 
@@ -10,204 +27,344 @@
 
     {% include headjs.html %}
 </head>
-  <body>
-      <div id="main" class="content flex home-padding flex-horizontal-center">
+  <body id="about">
+      <div id="main" class="home-padding black-bg">
         <div id="header" class="nav-2 header animated header--fixed">
-          <div class="nav--content">
-            <a href="/" id="close" class="close-button" >
-              <div class="close-out"></div>
+          <div class="nav--content desktop-hide">
+            <a href="#" id="menu-nav" class="project-btn" >
+              <div class="project-btn-out">
+                <div class="project-btn-item"></div>
+                <div class="project-btn-item"></div>
+                <div class="project-btn-item"></div>
+                <div class="project-btn-item"></div>
+                <div class="project-btn-item"></div>
+                <div class="project-btn-item"></div>
+                <div class="project-btn-item"></div>
+                <div class="project-btn-item"></div>
+                <div class="project-btn-item"></div>
+              </div>
+              <span class="nhg main">{{ page.project }}</span>
             </a>
-            <div class="nav--break"></div>
-            <a href="https://www.linkedin.com/in/alex-cagwin-25b90937" target="_blank" title="LinkedIn">
-              <i class="fa fa-linkedin"></i>
-              <span class="nav-tooltip">Connect with Me</span>
-            </a>
-            <a href="https://twitter.com/wincag1" target="_blank" title="Twitter">
-              <i class="fa fa-twitter"></i>
-              <span class="nav-tooltip">Follow Me</span>
-            </a>
-            <a href="mailto:hey@acag.win" class="desktop-hide">
-              <i class="fa fa-envelope-o"></i>
-            </a>
-            <a data-clipboard-text="hey@acag.win" class="no-smoothState copied mobile-hide">
-              <i class="fa fa-envelope-o"></i>
-              <span class="nav-tooltip">Shoot Me an Email</span>
-            </a>
+            <div class="mobile-nav-mail">
+              <div class="nav--break"></div>
+              <a href="https://www.linkedin.com/in/alex-cagwin-25b90937" target="_blank" title="LinkedIn" class="nav-padding-l-b nav-padding-r-s">
+                <i class="fa fa-linkedin"></i>
+                <span class="nav-tooltip">Connect with Me</span>
+              </a>
+              <a href="https://twitter.com/wincag1" target="_blank" title="Twitter" class="nav-padding-l-s nav-padding-r-s">
+                <i class="fa fa-twitter"></i>
+                <span class="nav-tooltip">Follow Me</span>
+              </a>
+              <a href="mailto:hey@acag.win" class="desktop-hide nav-padding-l-s nav-padding-r-b">
+                <i class="fa fa-envelope-o"></i>
+              </a>
+            </div>
+          </div>
+          <div class="mobile-hide">
+            <div class="nav--content">
+              <a href="/" class="project-btn">
+                <div class="project-btn-out">
+                  <div class="project-btn-item"></div>
+                  <div class="project-btn-item"></div>
+                  <div class="project-btn-item"></div>
+                  <div class="project-btn-item"></div>
+                  <div class="project-btn-item"></div>
+                  <div class="project-btn-item"></div>
+                  <div class="project-btn-item"></div>
+                  <div class="project-btn-item"></div>
+                  <div class="project-btn-item"></div>
+                </div>
+                <span class="nav-tooltip">Return Home</span>
+              </a>
+              <a href="https://www.linkedin.com/in/alex-cagwin-25b90937" target="_blank" title="LinkedIn">
+                <i class="fa fa-linkedin"></i>
+                <span class="nav-tooltip">Connect with Me</span>
+              </a>
+              <a href="https://twitter.com/wincag1" target="_blank" title="Twitter">
+                <i class="fa fa-twitter"></i>
+                <span class="nav-tooltip">Follow Me</span>
+              </a>
+              <a data-clipboard-text="hey@acag.win" class="no-smoothState copied mobile-hide">
+                <i class="fa fa-envelope-o"></i>
+                <span class="nav-tooltip">Shoot Me an Email</span>
+              </a>
+            </div>
           </div>
         </div>
 
-        <section id="header" class="f-width header-space">
-          <div class="header home-wrap">
-            <div class="header-title block an-s-1 page-animation-1">
+        <div class="hero-banner about-bg"></div>
+
+          <div class="header">
+            <div class="header-title">
               <h1 class="hidden">About Me</h1>
-              <span class="h1">Hey there</span><span class="h1 pink">!</span>
+              <span class="header-project-text main">About Me</span>
             </div>
+          </div>
+
+          <div class="hero-content about-hero">
+            <!-- sidebar -->
+            <div class="content-sidebar white">
+              <div class="hero-content-title">
+                <span class="hero-h1 nh-b">Focuses</span>
+              </div>
+              <div class="hero-content-br"></div>
+              <div class="hero-content-add">
+                <p class="italics">Here are the areas I like to work and specialize in. Anything outside this is fair game, but that’s not really why we should partner.</p>
+              </div>
+            </div>
+            <!-- main content starts -->
+            <div class="content-main">
+              <div class="focuses-list">
+                <div class="focus-item">
+                  <div class="focus-number">
+                    <span class="focus-number-item">0</span>
+                    <span class="focus-number-item">1</span>
+                  </div>
+                  <span class="focus-header white">Digital Design</span>
+                  <span class="focus-content ">Anything with a screen. I have 8 years of experience designing digital experiences across mediums, working on over 50 products. I bring a unique blend of typographic and prototyping skills to design out delightful and compelling experiences.</span>
+                </div>
+                <div class="focus-item">
+                  <div class="focus-number">
+                    <span class="focus-number-item">0</span>
+                    <span class="focus-number-item">2</span>
+                  </div>
+                  <span class="focus-header white">Opportunity Discovery</span>
+                  <span class="focus-content">With an emphasis on qualitative, I bring extensive research experience to identify, understand and define new market opportunities for clients.</span>
+                </div>
+                <div class="focus-item">
+                  <div class="focus-number">
+                    <span class="focus-number-item">0</span>
+                    <span class="focus-number-item">3</span>
+                  </div>
+                  <span class="focus-header white">Leading Teams</span>
+                  <span class="focus-content">I have recruited and built design teams from scratch as well as led product programs with multiple balanced teams. With a background in product management and experience in development, I can lead product teams through the entirety of the product development cycle while also managing c-level stakeholders.</span>
+                </div>
+              </div>
+
+              <div class="focuses-br"></div>
+
+              <div class="services">
+                <div class="capabilities">
+                  <span class="project-label">Capabilities</span>
+                  <div class="focus-content">
+                    <span class="list-label white">Product Strategy<span>
+                  </div>
+                  <div class="focus-content">
+                    <span class="list-label white">Conversational Design<span>
+                  </div>
+                  <div class="focus-content">
+                    <span class="list-label white">Digital Design<span>
+                  </div>
+                  <div class="focus-content">
+                    <span class="list-label white">Machine Learning<span>
+                  </div>
+                  <div class="focus-content">
+                    <span class="list-label white">Artificial Intelligence<span>
+                  </div>
+                  <div class="focus-content">
+                    <span class="list-label white">Product Design<span>
+                  </div>
+                  <div class="focus-content">
+                    <span class="list-label white">Motion Design<span>
+                  </div>
+                  <div class="focus-content">
+                    <span class="list-label white">Rapid Prototyping<span>
+                  </div>
+                  <div class="focus-content">
+                    <span class="list-label white">Web Design<span>
+                  </div>
+                  <div class="focus-content">
+                    <span class="list-label white">Mobile Design<span>
+                  </div>
+                  <div class="focus-content">
+                    <span class="list-label white">Visual Design<span>
+                  </div>
+                  <div class="focus-content">
+                    <span class="list-label white">Team & Organizational Design<span>
+                  </div>
+                  <div class="focus-content">
+                    <span class="list-label white">Lean UX<span>
+                  </div>
+                  <div class="focus-content">
+                    <span class="list-label white">Website Development<span>
+                  </div>
+                </div>
+                <div class="industries">
+                  <span class="project-label">Industries</span>
+                  <div class="focus-content industries-item white">
+                    <span class="list-label">Healthcare</span>
+                    <span class="header-action-year">8</span>
+                  </div>
+                  <div class="focus-content industries-item white">
+                    <span class="list-label">Finance</span>
+                    <span class="header-action-year">4</span>
+                  </div>
+                  <div class="focus-content industries-item white">
+                    <span class="list-label">E-Commerce</span>
+                    <span class="header-action-year">4</span>
+                  </div>
+                  <div class="focus-content industries-item white">
+                    <span class="list-label">Automotive</span>
+                    <span class="header-action-year">3</span>
+                  </div>
+                  <div class="focus-content industries-item white">
+                    <span class="list-label">B2B Marketplace</span>
+                    <span class="header-action-year">2</span>
+                  </div>
+                  <div class="focus-content industries-item white">
+                    <span class="list-label">Education</span>
+                    <span class="header-action-year">2</span>
+                  </div>
+                  <div class="focus-content industries-item white">
+                    <span class="list-label">Events</span>
+                    <span class="header-action-year">2</span>
+                  </div>
+                  <div class="focus-content industries-item white">
+                    <span class="list-label">Logistics</span>
+                    <span class="header-action-year">2</span>
+                  </div>
+                  <div class="focus-content industries-item white">
+                    <span class="list-label">Social Media</span>
+                    <span class="header-action-year">2</span>
+                  </div>
+                  <div class="focus-content industries-item white">
+                    <span class="list-label">Sports</span>
+                    <span class="header-action-year">2</span>
+                  </div>
+                  <div class="focus-content industries-item white">
+                    <span class="list-label">Advertising</span>
+                    <span class="header-action-year">2</span>
+                  </div>
+                  <div class="focus-content industries-item white">
+                    <span class="list-label">Inventory Management</span>
+                    <span class="header-action-year">1</span>
+                  </div>
+                  <div class="focus-content industries-item white">
+                    <span class="list-label">Real Estate</span>
+                    <span class="header-action-year">1</span>
+                  </div>
+                  <div class="focus-content industries-item white">
+                    <span class="list-label">Recruiting</span>
+                    <span class="header-action-year">1</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+        <section class="content content-padding">
+          <div class="content-sidebar">
+              <div class="about-img">
+                <img src="../assets/media/about/headshot.jpg" alt="about-asset">
+              </div>
+              <div class="caption">
+                <span class="">Taken by the great <a href="http://www.nathanpodshadley.com/" target="_blank">Nathan Podshadley</a>.</span>
+              </div>
+          </div>
+          <div class="content-main content-about">
+            <div class="section-title">
+              <span class="header-label-2">Long Bio</span>
+            </div>
+            <p>I primarily focus on product and interaction design for companies like Harley Davidson, Fidelity, Natera, Octane AI and ShearShare. I work in a collaborative and highly iterative fashion emphasizing building and testing prototypes with users. </p>
+            <p>I started my career at <a href="http://westagilelabs.com" target="_blank">West Agile Labs</a> as a QA analyst trying to break products. I was there for 3 years, where I built out and oversaw the design and product teams. I led our design team of five, pitched clients, managed resources, developed the West Agile brand and worked on over 45+ products, such as <a href="https://www.natera.com/" target="_blank" title="Natera">Natera</a>, <a href="https://www.spikebee.com/calgary" target="_blank" title="SpikeBee">SpikeBee</a>, <a href="https://nvolv.co/" target="_blank" title="Nvolv">Nvolv</a>, <a href="/eventyoda" title="Eventyoda">Eventyoda</a>,  <a href="https://octaneai.com/" target="_blank" title="Octane AI">Octane AI</a>, and <a href="http://shearshare.com/" target="_blank" title="ShearShare">ShearShare</a>, which won Tech.Co’s startup of the year. </p>
+            <p>After West Agile, I worked for <a href="https://maps.harley-davidson.com/" target="_blank">Harley Davidson</a> for the better part of 2017. During that time, the product team focused on re-designing their existing ride planning tool. For the first half of the engagement, I had the opportunity to work out of Pivotal Labs with talented team there. Some of the designers I had the privilege to work with were <a href="http://www.meetrichardenlow.com/" target="_blank">Richard Enlow</a>, <a href="http://www.pixelspersecond.com/" target="_blank">Prianka Rayamajhi</a> and <a href="http://ghent.design/" target="_blank">David Ghent</a>.
+            <p>I had moved to NYC after the Harley Davidson engagement where I started working over with <a href="https://www.sapientrazorfish.com/" target="_blank">SapientRazorfish</a> helping craft and build <a href="https://marcel.ai/" target="_blank">Marcel</a>, the AI powered assistant. I'm currently helping redefine their agency workflow as well define the UX framework for a conversational interface.</p>
+            <p>In the middle of 2018, I partnered again with a one of the most talented product people I know, Rathan Haran, where we helped transform Baby Noggin's product. We brought to the table, lean and agile methdologies to help better support the Baby Noggin ecosystem, focusing on iterative prototyping and research. We are currently helping doctors and teachers better screen children.</p>
+            <div class="section-break"></div>
+            <p><a href="https://www.dropbox.com/s/j8c45i10bifq8g7/_AlexCagwinResume.pdf?dl=0" target="_blank" title="Resume">Full Resume</a></p>
           </div>
         </section>
 
-        <section id="history" class="f-width about-content space-btn">
-          <div class="an-s page-animation-3 clients">
-            <div class="section-title">
-              <span class="header-label pink">Select Clients</span>
+        <section class="vignette content-padding">
+          <div class="vig-main">
+            <div class="hero-content-title">
+              <span class="hero-h1 mban-l">A Vignette</span>
             </div>
-            <div class="section-content client-list">
-              <span>Fidelity</span>
-              <span>Natera</span>
-              <span>Octane AI</span>
-              <span>Embark</span>
-              <span>ShearShare</span>
-              <span>Hopsy</span>
-              <span>Virtual Fantasty League</span>
-              <span>Funeral App</span>
-              <span>SpikeBee</span>
-              <span>Everwill</span>
-              <span>Mixt Greens</span>
-            </div>
-          </div>
-          <div class="home-wrap-2 an-s page-animation-4">
-            <div class="section-title">
-              <span class="header-label pink">&nbsp;</span>
-            </div>
-            <div class="header-content-bio">
-              <span>I’m Alex, a digital designer, currently freelancing in San Francisco and New York. I’m also on a quest to make the world’s best breakfast tacos.</span>
-            </div>
-            <div class="section-content">
-              <p>I primarily focus on product and interaction design for companies like Harley Davidson, Fidelity, Natera and ShearShare. I work in a collaborative and highly iterative fashion emphasizing building and testing prototypes with users. </p>
-              <p>Previously, I was at <a href="http://westagilelabs.com" target="_blank">West Agile Labs</a> for 3 years, where I built out and oversaw the design and product teams. I led our design team of five, pitched clients, managed resources, developed the West Agile brand and worked on over 45+ products, such as <a href="https://www.natera.com/" target="_blank" title="Natera">Natera</a>, <a href="https://www.spikebee.com/calgary" target="_blank" title="SpikeBee">SpikeBee</a>, <a href="https://nvolv.co/" target="_blank" title="Nvolv">Nvolv</a>, <a href="/eventyoda" title="Eventyoda">Eventyoda</a>,  <a href="https://octaneai.com/" target="_blank" title="Octane AI">Octane AI</a>, and <a href="http://shearshare.com/" target="_blank" title="ShearShare">ShearShare</a>, which won Tech.Co’s startup of the year. </p>
+            <div class="section-break"></div>
+            <div class="hero-content-add content-about">
               <p>Born and raised in lovely <a href="https://goo.gl/maps/bEYJrXj91YU2" target="_blank" title="South Bay, California">South Bay, California.</a> I went to <a href="https://www.bcp.org/" target="_blank" title="South Bay, California">BCP</a> and received my undergrad degree in Political Science at <a href="http://www.calpoly.edu/" target="_blank" title="Cal Poly, SLO">Cal Poly, SLO</a>, where I ran cross-country and track at both. I also started the <a href="http://cpdistanceclub.com/" target="_blank" title="Cal Poly Distance Club">Cal Poly Distance Club</a> with my best friend Mike</p>
               <p>On the side, I try to keep busy with <a href="https://500px.com/alexcagwin" target="_blank" title="500px">photography</a>, <a href="https://soundcloud.com/awincag" target="_blank" title="Soundcloud">making music</a>, and lots of side projects. The two big ones I’m working on right now are <a href="/ug" title="Underground Symphony">The Underground Symphony</a> and <a href="/dodo" title="dodo">Dodo</a>. My biggest passion outside of the world of design is  some really good fucking breakfast tacos. Seriously, they’re decadent. Check out the website <a href="http://theworldsbestbreakfasttacos.com" target="_blank" title="The World&#39;s Best Breakfast Tacos">here</a> to learn more about them and how you can get a bite yourself. </p>
             </div>
           </div>
-        </section>
-
-      </div>
-
-        <section class="footer" style="margin: 0">
-            <div class="footer--content">
-              <div class="footer--item">
-                <span class="footer-label grey">Experience</span>
-                <div class="list-item">
-                  <p>Co-Founder, Designer</p>
-                  <a class="label-small" href="http://fandf.xyz" target="_blank" title="Form &amp; Function">Form &amp; Function</a>
+          <div class="vig-main">
+            <div class="vig-timeline">
+              <div class="timeline-content">
+                <div class="timeline-br"></div>
+                <div class="timeline-list">
+                  <div class="timeline-item">
+                    <span class="year">1990</span>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-item-content">
+                      <span class="timeline-header">Born</span>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="year">2009</span>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-item-content">
+                      <span class="timeline-header">Graduated from Bellarmine</span>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="year">2012</span>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-item-content">
+                      <span class="timeline-header">Cal Poly Distance Club</span>
+                      <span class="timeline-description">I ended up running a 4:18 mile under the tutelage of the great Mando.</span>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="year">2013</span>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-item-content">
+                      <span class="timeline-header">Graduated Cal Poly</span>
+                      <span class="timeline-description">I almost went back for a degree in computer science. I didn't because "I didn't want to stare at a screen all day".</span>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="year">2014</span>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-item-content">
+                      <span class="timeline-header">San Francisco</span>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="year">2017</span>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-item-content">
+                      <span class="timeline-header">RoadTrip</span>
+                      <span class="timeline-description">I roadtripped across the country, driving 13,732 miles and saw 32 states.</span>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="year">2018</span>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-item-content">
+                      <span class="timeline-header">New York</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="list-item">
-                  <p>Lead Designer</p>
-                  <a class="label-small" href="http://westagilelabs.com" target="_blank" title="West Agile Labs">West Agile Labs</a>
-                </div>
-                <div class="list-item">
-                  <p>Product Manager</p>
-                  <p class="label-small">Ten Dollar Wholesale</p>
-                </div>
-                <div class="list-item">
-                  <p>Founder</p>
-                  <a class="label-small" href="http://cpdistanceclub.com/" target="_blank" title="Cal Poly Distance Club">Cal Poly Distance Club</a>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Education</span>
-                <div class="list-item">
-                  <p>BA, Political Science</p>
-                  <a class="label-small" href="http://www.calpoly.edu/" target="_blank" title="Cal Poly, SLO">Cal Poly, SLO 2013</a>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Thoughts &amp; Ideas</span>
-                <div class="list-item">
-                  <p>Gonna get to this after I finish up all my side projects. </p>
-                </div>
-              </div>
-            </div>
-        </section>
-
-          <div class="main-photo about-photo">
-            <picture>
-              <source
-                  data-srcset="../assets/media/headshot-xl.jpg"
-                  media="(min-width: 1500px)" />
-              <source
-                  data-srcset="../assets/media/headshot-l.jpg"
-                  media="(min-width: 1200px)" />
-              <source
-                  data-srcset="../assets/media/headshot-m.jpg"
-                  media="(min-width: 1000px)" />
-              <source
-                  data-srcset="../assets/media/headshot-s.jpg"
-                  media="(min-width: 700px)" />
-              <source
-                  data-srcset="../assets/media/headshot-p.jpg"
-                  media="(min-width: 100px)" />
-              <img
-                  data-sizes="auto"
-                  src="../assets/media/headshot-placeholder.jpg"
-                  class="lazyload blur-up" />
-            </picture>
-          </div>
-
-        <footer>
-          <div class="footer">
-            <div class="footer--content">
-              <div class="footer--item">
-                <span class="footer-label">Copyright</span>
-                <span><i class="fa fa-copyright"></i> Alex Cagwin, 2016.</span>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label">Email</span>
-                <a href="mailto:hey@acag.win" title="Email Me">
-                  <span>Hey@acag.win</span>
-                </a>
-                <a data-clipboard-text="hey@acag.win" class="copied no-smoothState">
-                  <span class="footer-contact">Copy Email Link</span>
-                </a>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label">Elsewhere</span>
-                <a href="https://www.linkedin.com/in/alex-cagwin-25b90937" target="_blank" title="LinkedIn">
-                  <span>LinkedIn</span>
-                </a>
-                <a href="https://twitter.com/wincag1" target="_blank" title="Twitter">
-                  <span>Twitter</span>
-                </a>
-                <a href="https://500px.com/alexcagwin" target="_blank" title="500px">
-                  <span>500px</span>
-                </a>
               </div>
             </div>
           </div>
-        </footer>
+
+        </section>
 
 
-        <div id="message">
-          <div id="msg" class="message">
-            <span>Email Copied to Clipboard</span>
-            <!-- <span class="closebtn">&times;</span> -->
-          </div>
-          <a data-scroll href="#make" id="f-msg" class="message">
-            <span>Oops! Didn't Work. Click here to jump to the bottom and copy/paste my email.</span>
-            <span class="closebtn">&times;</span>
-          </a>
-        </div>
 
 
-    </div>
 
-    <script src="js/headroom.min.js"></script>
-    <script src="js/smooth-scroll.min.js"></script>
-    <script src="js/clipboard.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-      (function() {
-        var header = new Headroom(document.querySelector("#header"), {
-            tolerance: 3,
-            offset: 50,
-            classes: {
-              initial: "animated",
-              pinned: "slideDown",
-              unpinned: "slideUp"
-            }
-        });
-        header.init();
+          {% include footer.html %}
 
-    }());
-    </script>
+          {% include menu.html %}
+
+          {% include message.html %}
+
+          {% include js.html %}
+
+
+
     </body>
 </html>

@@ -1,6 +1,51 @@
 ---
----
+meta_title: Dumptruck | Alex Cagwin
+bg_color: 283965
+project: Dumptruck
+nextProject: archive
+nextProjectTitle: Archive & Fun
+previousProject: babynoggin
+highlight: Bringing contracting dumptrucks into the digital age.
+challenge: Digitizing Bucky’s Hauling by creating a fully comprehensive logistics platform.
+details:
+  - label: Role
+    content: Lead Designer
+  - label: Timeline
+    content: Nov '16 – Jun '17
+  - label: Delivery
+    content: Responsive Web & Android
+credits:
+  - label: Agency
+    content: Freelance
+  - label: Rathan Haran
+    content: Product Manager
+  - label: Brian Basher
+    content: Art Director
+contributions:
+  - item: Product Design
+  - item: Interaction Design
+  - item: Visual Design
+  - item: Feature Prioritization
+  - item: High-Fidelity Prototyping
+menu:
+  - title: Home
+    link:
+  - title: About Me
+    link: about
+  - title: Harley-Davidson
+    link: harleydavidson
+  - title: Marcel
+    link: marcel
+  - title: Octane AI
+    link: octaneai
+  - title: BabyNoggin
+    link: babynoggin
+  - title: Dumptruck
+    link: dumptruck
+  - title: Archive & Fun
+    link: archive
 
+---
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -10,62 +55,150 @@
 
     {% include headjs.html %}
 </head>
-  <body id="dumptruck" class="main-bg">
-    <div id="main" class="content flex flex-horizontal-center">
-      <div id="header" class="nav-2 header animated header--fixed">
-        <div class="nav--content">
-          <a href="/" id="close" class="close-button" >
-            <div class="close-out"></div>
-          </a>
-          <div class="nav--break"></div>
-          <a href="/hopsy" title="Next Project">
-            <i class="fa fa-angle-left"></i>
-            <span class="nav-tooltip">Previous Project</span>
-          </a>
-          <a href="/octaneai" title="Previous Project">
-            <i class="fa fa-angle-right"></i>
-            <span class="nav-tooltip">Next Project</span>
-          </a>
-          <a href="mailto:hey@acag.win" class="desktop-hide">
-            <i class="fa fa-envelope-o"></i>
-          </a>
-          <a data-clipboard-text="hey@acag.win" class="no-smoothState copied mobile-hide">
-            <i class="fa fa-envelope-o"></i>
-            <span class="nav-tooltip">Shoot Me an Email</span>
-          </a>
+  <body id="main" class="main-bg">
+    <div id="dumptruck" class="light">
+
+      {% include navigation.html %}
+
+      <div class="hero-banner dumptruck-bg"></div>
+
+      <div class="home-padding project-hero" style="background-color: #19264F">
+        <div class="hero">
+          <div class="header-title block">
+            <h1 class="hidden">{{ page.project }}</h1>
+          </div>
+          <div class="header-content">
+            <span class="header-project-text white">{{ page.project }}</span>
+            <span class="header-project-desc white">{{ page.highlight }}</span>
+            <span class="header-project-live">{{ page.live }}</span>
+          </div>
+        </div>
+        <div class="header--details">
+          {% for item in page.details %}
+            <div class="header--details-item">
+              <span class="header--details-label">{{ item.label }}</span>
+              <span class="header--details-content">{{ item.content}}</span>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="header-hero monitor">
+          <picture>
+            <img src="../assets/media/dumptruck/main-hero.png" alt="Screenshot of Dumptruck on iPhone">
+          </picture>
         </div>
       </div>
 
-      <div id="header" class="project--header f-width">
-        <div class="header">
-          <div class="header-title block an-s-1 page-animation-1">
-            <h1 class="hidden">Dumptruck</h1>
-            <span class="h1">Dumptruck</span><span class="h1 project-period">.</span>
-          </div>
-          <div class="header-content an-s page-animation-2">
-            <span class="h4">Get rid of those tickets.</span>
-          </div>
-        </div>
-      </div>
+      <section class="intro content-padding">
 
-      <div class="fw-2 an-s page-animation-3">
-          <div class="screens--screen an-s page-animation-4">
+        <div class="intro-content">
+
+          <div class="project-break desktop-hide-2"></div>
+
+          <!-- <div class="intro-break header desktop-hide"></div> -->
+
+          <div class="intro-details-split">
+            <div class="intro-details">
+
+              <span class="project-label">Credits</span>
+
+              {% for item in page.credits %}
+
+                <div class="intro-details-2">
+                  <span class="list-label">{{ item.label}}</span>
+                  <span class="list-item">{{ item.content}}</span>
+                </div>
+
+              {% endfor %}
+
+            </div>
+
+            <div class="intro-details">
+
+              <span class="project-label">Contributions</span>
+
+              {% for item in page.contributions %}
+
+                <div class="intro-details-2">
+                  <span class="list-label">{{ item.item }}</span>
+                </div>
+
+              {% endfor %}
+
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="body-content">
+          <div>
+            <span class="project-label">Challenge</span>
+            <span class="project-challenge white">{{ page.challenge }}</span>
+          </div>
+
+          <div class="project-break"></div>
+
+          <div class="section-content">
+            <span class="project-label">Overview</span>
+            <p>While the gig economy has risen in new areas, it's been strong in markets such as big-rig trucking and dumptrucking. Bucky's Hauling LLC is a network of trucking comanpies and suppliers fulfilling orders on an on-demand basis. They were looking for a transition from excel spreadsheets to the digital world to better manage and scale their business. They partnered with Gigster and their freelance network to take them into the digital age.</p>
+          </div>
+
+          <div class="project-break"></div>
+
+          <div class="section-content">
+            <span class="project-label">Experience & Solution</span>
+            <p style="margin: 0">The core experience revolved around managing the lifecycle of an order. This meant tracking the order from inception to assignment to fullfilment to completion. We designed & built three platforms, each managing an aspect of the order.</p>
+            <div class="section-hero-numbers">
+              <div class="hero-numbers-item">
+                <div class="numbers-item-number">
+                  <span>0</span>
+                  <span>1</span>
+                </div>
+                <span class="numbers-item-desc">Consumers — Placement of Order</span>
+              </div>
+              <div class="hero-numbers-item">
+                <div class="numbers-item-number">
+                  <span>0</span>
+                  <span>2</span>
+                </div>
+                <span class="numbers-item-desc">Dispatch — Coordinator of Order</span>
+              </div>
+              <div class="hero-numbers-item">
+                <div class="numbers-item-number">
+                  <span>0</span>
+                  <span>3</span>
+                </div>
+                <span class="numbers-item-desc">Trucking Companies — Order Fulfillment</span>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </section>
+
+      <div class="fw-2">
+          <div class="screens--screen">
             <div class="photo-width">
               <picture>
                 <source
-                    data-srcset="media/dumptruck/hero-xl.jpg"
+                    data-srcset="../assets/media/dumptruck/hero-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/hero-xl.jpg"
                     media="(min-width: 1500px)" />
                 <source
-                    data-srcset="media/dumptruck/hero-l.jpg"
+                    data-srcset="../assets/media/dumptruck/hero-l.jpg"
                     media="(min-width: 1200px)" />
                 <source
-                    data-srcset="media/dumptruck/hero-m.jpg"
+                    data-srcset="../assets/media/dumptruck/hero-m.jpg"
                     media="(min-width: 1000px)" />
                 <source
-                    data-srcset="media/dumptruck/hero-s.jpg"
+                    data-srcset="../assets/media/dumptruck/hero-s.jpg"
                     media="(min-width: 700px)" />
                 <source
-                    data-srcset="media/dumptruck/hero-p.jpg"
+                    data-srcset="../assets/media/dumptruck/hero-p.jpg"
                     media="(min-width: 100px)" />
                 <img
                     data-sizes="auto"
@@ -76,463 +209,392 @@
           </div>
       </div>
 
-        <section class="footer" style="margin: 0">
-            <div class="footer--content">
-              <div class="footer--item-2">
-                <span class="footer-label grey">Challenge</span>
-                <div class="list-item">
-                  <p>Improve the proposal and booking process for small and medium businesses. </p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Role</span>
-                <div class="list-item">
-                  <p>Lead Designer</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Product Manager</span>
-                <div class="list-item">
-                  <p>Rathan Haran</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Art Direction &amp; Logo</span>
-                <div class="list-item">
-                  <p>Brian Basher</p>
-                </div>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label grey">Year</span>
-                <div class="list-item">
-                  <p>Fall &amp; Winter 2016</p>
-                </div>
-              </div>
-              <div class="footer--item-2">
-                <a href="http://www.dumptruck.com/bay-area" target="_blank" title="View Live" class="project-live">
-                  <span class="view">View Live</span>
-                </a>
-              </div>
+      <section class="content-padding">
+        <div class="section-hero">
+          <div class="section-hero-title">
+            <div class="section-number sn-25">
+              <span class="section-number-item">0</span>
+              <span class="section-number-item">1</span>
             </div>
-        </section>
-
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h4 main">Overview &amp; Problem</span>
-            </div>
-            <div class="section-content">
-              <p>"Booking events is hard. Booking events for a lot of people is harder. Booking events for your team takes time. Having 15 people tell you want they want makes it harder. Booking events within budget is hard. Trying to get proposals from multiple event vendors to stay within budget making sure people are happy and content and fulfilled in the time frame needed... well that's ******* hard. </p>
-              <p>Trying to do all of that and book events has been a pain in the ass for anyone who does them. There are full-time jobs dedicated to people for people to find the right vendor, the right venue, the right activities all within the right budget and timeframe. For small and medium businesses and teams, this becomes a nightmare. Adding in catering and transporation and event pages, yeah... we needed that too. </p>
-              <p>Ultimately, how do we simplify that process for SMB's to quickly find events and book them with all their constraints."</p>
-            </div>
+            <span class="section-hero-header white">Consumers</span>
           </div>
-        </section>
-
-        <div id="mocks" class="f-width">
-          <div class="section-title">
-            <span class="h5 t-center">Dispatch Ecosystem</span>
-          </div>
-          <div class="screens--screen l-animation">
-            <div class="laptop-flow">
-              <picture>
-                <video width="100%" height="80%" src="media/dumptruck/dumptruck.mov" autoplay="auto" loop muted class="laptop-video"></video>
-              </picture>
-            </div>
-            <div class="laptop-bg">
-              <picture>
-                <img src="media/dumptruck/dispatch.png" alt="Laptop Background">
-              </picture>
-            </div>
-          </div>
-        </div>
-
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h4 main">Full Control</span>
-            </div>
-            <div class="section-content">
-              <p>Dumptruck was built late 2013 as a non-responsive, relatively simple CMS site that allowed for displaying of events and '1-click' quotes. While '1-click' quotes are great for the user, doing this at volume became difficult and time-consuming. The office assistant, company ops or event planner who needed to get proposals for 4-5 events would have to browse and find multiple events, go into their product pages, request the proposal, and continue the process again. Our focus quickly shifted from presenting a better information on the events page to how can people more effectively get volume. After discussing with 50 or so repeat event bookers, it became very evident that people were less concerned with the nitty gritty of the event, and more worried about making it operationally possible, specifically with budget and schedule. I mean, if someone says “hey do you want to go kayaking, skydiving, paintballing or lazer tag”, you most likely already know what the event is about, then it just comes down to when can it work. </p>
-              <p>When we started, they just finished a rebrand but needed help with improving the product. It became very evident that the biggest issue for users was browsing events and requesting multiple proposals at any given time. </p>
-              <p>After 3 large iterations and usability testing, I was able to take their existing layout and create a responsive booking flor for instant quote requests across multiple events within the attendee's requirements. Additionally, we were able to build out the booking flow for individual events to cater for venue booking, transporation, packages and any additional add-ons that could improve the team building experience. </p>
-              <p>To note, we also added the ability for users to version their proposals. Often, event bookers need to understand the legalities and intracacies of the proposals. If the initial proposal is rejected by the budgeting staff, having the ability to manage the various proposals has been a huge hit. </p>
-            </div>
-          </div>
-        </section>
-
-        <div class="fw-2">
-          <div class="screens--screen">
-            <div class="photo-width">
-              <picture>
-                <source
-                    data-srcset="media/dumptruck/d-2-xl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="media/dumptruck/d-2-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="media/dumptruck/d-2-m.jpg"
-                    media="(min-width: 1000px)" />
-                <source
-                    data-srcset="media/dumptruck/d-2-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="media/dumptruck/d-2-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="media/dumptruck/d-2-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
-            </div>
+          <div class="section-hero-content">
+            <p class="content-header">Consumers have the ability to purchase  and track one of four different order types (flat rate, disposal, materials and duration). We focused on designing and building a dynamic checkout that evolves as a shopper goes through the ordering process.</p>
           </div>
         </div>
 
 
-        <div class="fw-2">
-          <div class="screens--screen">
-            <div class="photo-width">
-              <picture>
-                <source
-                    data-srcset="media/dumptruck/d-3-xl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="media/dumptruck/d-3-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="media/dumptruck/d-3-m.jpg"
-                    media="(min-width: 1000px)" />
-                <source
-                    data-srcset="media/dumptruck/d-3-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="media/dumptruck/d-3-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="media/dumptruck/d-3-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
-            </div>
-          </div>
-        </div>
-
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h5 t-center">Consumer Ecosystem</span>
-            </div>
-          </div>
-        </section>
-
-        <div class="fw-2">
-          <div class="screens--screen">
-            <div class="photo-width">
-              <picture>
-                <source
-                    data-srcset="media/dumptruck/c-main-xl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="media/dumptruck/c-main-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="media/dumptruck/c-main-m.jpg"
-                    media="(min-width: 1000px)" />
-                <source
-                    data-srcset="media/dumptruck/c-main-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="media/dumptruck/c-main-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="media/dumptruck/c-main-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
-            </div>
-          </div>
+        <!-- three consumer screens -->
+        <div class="tri-grid spacing">
+          <picture>
+            <source
+                data-srcset="../assets/media/dumptruck/3-xxl.jpg"
+                media="(min-width: 1500px)" />
+            <source
+                data-srcset="../assets/media/dumptruck/3-l.jpg"
+                media="(min-width: 1200px)" />
+            <source
+                data-srcset="../assets/media/dumptruck/3-s.jpg"
+                media="(min-width: 700px)" />
+            <source
+                data-srcset="../assets/media/dumptruck/3-p.jpg"
+                media="(min-width: 100px)" />
+            <img
+                data-sizes="auto"
+                data-src="../assets/media/dumptruck/3-l.jpg"
+                class="lazyload blur-up" />
+          </picture>
+          <picture>
+            <source
+                data-srcset="../assets/media/dumptruck/4-xxl.jpg"
+                media="(min-width: 1500px)" />
+            <source
+                data-srcset="../assets/media/dumptruck/4-l.jpg"
+                media="(min-width: 1200px)" />
+            <source
+                data-srcset="../assets/media/dumptruck/4-s.jpg"
+                media="(min-width: 700px)" />
+            <source
+                data-srcset="../assets/media/dumptruck/4-p.jpg"
+                media="(min-width: 100px)" />
+            <img
+                data-sizes="auto"
+                data-src="../assets/media/dumptruck/4-l.jpg"
+                class="lazyload blur-up" />
+          </picture>
+          <picture>
+            <source
+                data-srcset="../assets/media/dumptruck/5-xxl.jpg"
+                media="(min-width: 1500px)" />
+            <source
+                data-srcset="../assets/media/dumptruck/5-l.jpg"
+                media="(min-width: 1200px)" />
+            <source
+                data-srcset="../assets/media/dumptruck/5-s.jpg"
+                media="(min-width: 700px)" />
+            <source
+                data-srcset="../assets/media/dumptruck/5-p.jpg"
+                media="(min-width: 100px)" />
+            <img
+                data-sizes="auto"
+                data-src="../assets/media/dumptruck/5-l.jpg"
+                class="lazyload blur-up" />
+          </picture>
         </div>
 
 
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h4 main">Find, purchase and track your materials</span>
-            </div>
-            <div class="section-content">
-              <p>dumptruck was built late 2013 as a non-responsive, relatively simple CMS site that allowed for displaying of events and '1-click' quotes. While '1-click' quotes are great for the user, doing this at volume became difficult and time-consuming. The office assistant, company ops or event planner who needed to get proposals for 4-5 events would have to browse and find multiple events, go into their product pages, request the proposal, and continue the process again. Our focus quickly shifted from presenting a better information on the events page to how can people more effectively get volume. After discussing with 50 or so repeat event bookers, it became very evident that people were less concerned with the nitty gritty of the event, and more worried about making it operationally possible, specifically with budget and schedule. I mean, if someone says “hey do you want to go kayaking, skydiving, paintballing or lazer tag”, you most likely already know what the event is about, then it just comes down to when can it work. </p>
-              <p>When we started, they just finished a rebrand but needed help with improving the product. It became very evident that the biggest issue for users was browsing events and requesting multiple proposals at any given time. </p>
-              <p>After 3 large iterations and usability testing, I was able to take their existing layout and create a responsive booking flor for instant quote requests across multiple events within the attendee's requirements. Additionally, we were able to build out the booking flow for individual events to cater for venue booking, transporation, packages and any additional add-ons that could improve the team building experience. </p>
-              <p>To note, we also added the ability for users to version their proposals. Often, event bookers need to understand the legalities and intracacies of the proposals. If the initial proposal is rejected by the budgeting staff, having the ability to manage the various proposals has been a huge hit. </p>
-            </div>
-          </div>
-        </section>
 
-        <div class="fw-2">
-          <div class="screens--screen">
-            <div class="photo-width">
-              <picture>
-                <source
-                    data-srcset="media/dumptruck/c-1-xl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="media/dumptruck/c-1-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="media/dumptruck/c-1-m.jpg"
-                    media="(min-width: 1000px)" />
-                <source
-                    data-srcset="media/dumptruck/c-1-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="media/dumptruck/c-1-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="media/dumptruck/c-1-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
-            </div>
-          </div>
-        </div>
 
-        <div class="fw-2">
-          <div class="screens--screen">
-            <div class="photo-width">
-              <picture>
-                <source
-                    data-srcset="media/dumptruck/c-2-xl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="media/dumptruck/c-2-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="media/dumptruck/c-2-m.jpg"
-                    media="(min-width: 1000px)" />
-                <source
-                    data-srcset="media/dumptruck/c-2-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="media/dumptruck/c-2-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="media/dumptruck/c-2-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
-            </div>
-          </div>
-        </div>
-
-        <div class="fw-2">
-          <div class="screens--screen">
-            <div class="photo-width">
-              <picture>
-                <source
-                    data-srcset="media/dumptruck/c-3-xl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="media/dumptruck/c-3-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="media/dumptruck/c-3-m.jpg"
-                    media="(min-width: 1000px)" />
-                <source
-                    data-srcset="media/dumptruck/c-3-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="media/dumptruck/c-3-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="media/dumptruck/c-3-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
-            </div>
+        <!-- order overview -->
+        <div class="content-item">
+          <div class="content-item-img straight">
+            <picture>
+              <source
+                  data-srcset="../assets/media/dumptruck/7-xxl.jpg"
+                  media="(min-width: 1900px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/7-xl.jpg"
+                  media="(min-width: 1500px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/7-l.jpg"
+                  media="(min-width: 1200px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/7-m.jpg"
+                  media="(min-width: 1000px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/7-s.jpg"
+                  media="(min-width: 700px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/7-p.jpg"
+                  media="(min-width: 100px)" />
+              <img
+                  data-sizes="auto"
+                  data-src="../assets/media/dumptruck/7-l.jpg"
+                  class="lazyload blur-up" />
+            </picture>
           </div>
         </div>
 
 
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h5 t-center">Trucking Companies &amp; Drivers</span>
-            </div>
-          </div>
-        </section>
-
-        <div class="fw-2">
-          <div class="screens--screen">
-            <div class="photo-width">
-              <picture>
-                <source
-                    data-srcset="media/dumptruck/mobile-main-xl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="media/dumptruck/mobile-main-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="media/dumptruck/mobile-main-m.jpg"
-                    media="(min-width: 1000px)" />
-                <source
-                    data-srcset="media/dumptruck/mobile-main-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="media/dumptruck/mobile-main-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="media/dumptruck/mobile-main-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
-            </div>
+        <!-- checkout -->
+        <div class="content-item">
+          <div class="content-item-img straight">
+            <picture>
+              <source
+                  data-srcset="../assets/media/dumptruck/6-xxl.jpg"
+                  media="(min-width: 1900px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/6-xl.jpg"
+                  media="(min-width: 1500px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/6-l.jpg"
+                  media="(min-width: 1200px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/6-m.jpg"
+                  media="(min-width: 1000px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/6-s.jpg"
+                  media="(min-width: 700px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/6-p.jpg"
+                  media="(min-width: 100px)" />
+              <img
+                  data-sizes="auto"
+                  data-src="../assets/media/dumptruck/6-l.jpg"
+                  class="lazyload blur-up" />
+            </picture>
           </div>
         </div>
 
 
-        <section id="like" class="padding f-width">
-          <div class="wrap">
-            <div class="section-title">
-              <span class="h4 main">The Process</span>
-            </div>
-            <div class="section-content">
-              <p>dumptruck was built late 2013 as a non-responsive, relatively simple CMS site that allowed for displaying of events and '1-click' quotes. While '1-click' quotes are great for the user, doing this at volume became difficult and time-consuming. The office assistant, company ops or event planner who needed to get proposals for 4-5 events would have to browse and find multiple events, go into their product pages, request the proposal, and continue the process again. Our focus quickly shifted from presenting a better information on the events page to how can people more effectively get volume. After discussing with 50 or so repeat event bookers, it became very evident that people were less concerned with the nitty gritty of the event, and more worried about making it operationally possible, specifically with budget and schedule. I mean, if someone says “hey do you want to go kayaking, skydiving, paintballing or lazer tag”, you most likely already know what the event is about, then it just comes down to when can it work. </p>
-              <p>When we started, they just finished a rebrand but needed help with improving the product. It became very evident that the biggest issue for users was browsing events and requesting multiple proposals at any given time. </p>
-              <p>After 3 large iterations and usability testing, I was able to take their existing layout and create a responsive booking flor for instant quote requests across multiple events within the attendee's requirements. Additionally, we were able to build out the booking flow for individual events to cater for venue booking, transporation, packages and any additional add-ons that could improve the team building experience. </p>
-              <p>To note, we also added the ability for users to version their proposals. Often, event bookers need to understand the legalities and intracacies of the proposals. If the initial proposal is rejected by the budgeting staff, having the ability to manage the various proposals has been a huge hit. </p>
-            </div>
-          </div>
-        </section>
+      </section>
 
-        <div class="fw-2">
-          <div class="screens--screen">
-            <div class="photo-width">
-              <picture>
-                <source
-                    data-srcset="media/dumptruck/mobile-1-xl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="media/dumptruck/mobile-1-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="media/dumptruck/mobile-1-m.jpg"
-                    media="(min-width: 1000px)" />
-                <source
-                    data-srcset="media/dumptruck/mobile-1-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="media/dumptruck/mobile-1-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="media/dumptruck/mobile-1-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
+
+      <section class="content-padding" style="background-color: #19264F">
+        <div class="section-hero">
+          <div class="section-hero-title">
+            <div class="section-number sn-25">
+              <span class="section-number-item">0</span>
+              <span class="section-number-item">2</span>
             </div>
+            <span class="section-hero-header white">Dispatch</span>
+          </div>
+          <div class="section-hero-content">
+            <p class="content-header">We created a master control planel for Dispatchers to manage every aspect of an order. This included being able to quote orders, find suppliers, assign trucking companies, track loads and fulfill payment.</p>
           </div>
         </div>
 
-        <div class="fw-2">
-          <div class="screens--screen">
-            <div class="photo-width">
-              <picture>
-                <source
-                    data-srcset="media/dumptruck/mobile-2-xl.jpg"
-                    media="(min-width: 1500px)" />
-                <source
-                    data-srcset="media/dumptruck/mobile-2-l.jpg"
-                    media="(min-width: 1200px)" />
-                <source
-                    data-srcset="media/dumptruck/mobile-2-m.jpg"
-                    media="(min-width: 1000px)" />
-                <source
-                    data-srcset="media/dumptruck/mobile-2-s.jpg"
-                    media="(min-width: 700px)" />
-                <source
-                    data-srcset="media/dumptruck/mobile-2-p.jpg"
-                    media="(min-width: 100px)" />
-                <img
-                    data-sizes="auto"
-                    data-src="media/dumptruck/mobile-2-l.jpg"
-                    class="lazyload blur-up" />
-              </picture>
-            </div>
+        <div class="content-item">
+          <div class="content-item-img straight">
+            <picture>
+              <source
+                  data-srcset="../assets/media/dumptruck/1-xxl.jpg"
+                  media="(min-width: 1500px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/1-xl.jpg"
+                  media="(min-width: 1500px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/1-l.jpg"
+                  media="(min-width: 1200px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/1-m.jpg"
+                  media="(min-width: 1000px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/1-s.jpg"
+                  media="(min-width: 700px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/1-p.jpg"
+                  media="(min-width: 100px)" />
+              <img
+                  data-sizes="auto"
+                  data-src="../assets/media/dumptruck/1-l.jpg"
+                  class="lazyload blur-up" />
+            </picture>
           </div>
         </div>
 
-        <div class="next-project" id="octane">
-          <a href="/octaneai" title="Next Project" class="next--content wrap">
-            <span class="footer-label">Next Project</span>
-            <span class="next-label">Octane AI</span>
-            <div class="next-background"></div>
-          </a>
+        <div class="content-offset reverse spacing">
+          <div class="section-hero-offset" style="align-self: center">
+            <p class="content-header">Order Management</p>
+            <p class="content-caption-desc">At it's core, an order is defined by it's loads. Thus, the entire design system was crafted around loads. Incoming orders are triaged by the system into individual loads for more precise and efficient fulfillment methods. Loads could be filled by single or multiple suppliers as well as single or multiple trucking contractors, enabling maximum flexibility. The dispatcher has full control over every step of the process.</p>
+          </div>
+
+          <div class="content-img overflow-r">
+            <picture>
+              <source
+                  data-srcset="../assets/media/dumptruck/2-xxl.jpg"
+                  media="(min-width: 1500px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/2-xl.jpg"
+                  media="(min-width: 1500px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/2-l.jpg"
+                  media="(min-width: 1200px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/2-m.jpg"
+                  media="(min-width: 1000px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/2-s.jpg"
+                  media="(min-width: 700px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/2-p.jpg"
+                  media="(min-width: 100px)" />
+              <img
+                  data-sizes="auto"
+                  data-src="../assets/media/dumptruck/2-l.jpg"
+                  class="lazyload blur-up" />
+            </picture>
+          </div>
         </div>
+
+
+      </section>
+
+
+      <div>
+        <div class="content-break"></div>
       </div>
 
-        <footer>
-          <div class="footer">
-            <div class="footer--content">
-              <div class="footer--item">
-                <span class="footer-label">Copyright</span>
-                <span><i class="fa fa-copyright"></i> Alex Cagwin, 2016.</span>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label">Email</span>
-                <a href="mailto:hey@acag.win" title="Email Me">
-                  <span>Hey@acag.win</span>
-                </a>
-                <a data-clipboard-text="hey@acag.win" class="copied no-smoothState">
-                  <span class="footer-contact">Copy Email Link</span>
-                </a>
-              </div>
-              <div class="footer--item">
-                <span class="footer-label">Elsewhere</span>
-                <a href="https://www.linkedin.com/in/alex-cagwin-25b90937" target="_blank" title="LinkedIn">
-                  <span>LinkedIn</span>
-                </a>
-                <a href="https://twitter.com/wincag1" target="_blank" title="Twitter">
-                  <span>Twitter</span>
-                </a>
-                <a href="https://500px.com/alexcagwin" target="_blank" title="500px">
-                  <span>500px</span>
-                </a>
+
+      <section class="content-padding">
+        <div class="section-hero">
+          <div class="section-hero-title vertical-split">
+            <div class="section-number sn-25">
+              <span class="section-number-item">0</span>
+              <span class="section-number-item">3</span>
+            </div>
+            <span class="section-hero-header white">Drivers</span>
+            <div class="section-hero-content mb grid-6">
+              <p class="content-header col-1-6">The driver app we designed focused on providing a contextual and focused experience to ensure that drivers could update their orders with ease. Each step of updating an order only focused on either moving forward or correcting an action.</p>
+            </div>
+          </div>
+          <div class="section-hero-content grid-6">
+            <div class="hero-item col-2">
+              <div class="content-item-img">
+                <picture>
+                  <source
+                      data-srcset="../assets/media/dumptruck/10-xxl.jpg"
+                      media="(min-width: 1900px)" />
+                  <source
+                      data-srcset="../assets/media/dumptruck/10-l.jpg"
+                      media="(min-width: 1200px)" />
+                  <source
+                      data-srcset="../assets/media/dumptruck/10-s.jpg"
+                      media="(min-width: 100px)" />
+                  <img
+                      data-sizes="auto"
+                      data-src="../assets/media/dumptruck/10-l.jpg"
+                      class="lazyload blur-up" />
+                </picture>
               </div>
             </div>
           </div>
-        </footer>
-
-        <div id="message">
-          <div id="msg" class="message">
-            <span>Email Copied to Clipboard</span>
-            <!-- <span class="closebtn">&times;</span> -->
-          </div>
-          <a data-scroll href="#make" id="f-msg" class="message">
-            <span>Oops! Didn't Work. Click here to jump to the bottom and copy/paste my email.</span>
-            <span class="closebtn">&times;</span>
-          </a>
         </div>
 
+        <div>
+          <div class="f-br dumptruck"></div>
+        </div>
+
+        <div class="content-captions">
+
+          <!-- small image with caption -->
+          <div class="content-item">
+            <div class="content-item-img">
+              <picture>
+                <source
+                    data-srcset="../assets/media/dumptruck/9-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/9-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/9-s.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/dumptruck/9-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+          </div>
+
+          <!-- small image with caption -->
+          <div class="content-item">
+            <div class="content-item-img">
+              <picture>
+                <source
+                    data-srcset="../assets/media/dumptruck/8-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/8-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/8-s.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/dumptruck/8-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+          </div>
+          <div class="content-item-caption grid-4 mobile-hide">
+            <div class="col-2-5 as-c">
+              <div class="content-caption">
+                <span class="project-label">Left & Right</span>
+                <span class="content-item-caption white">Drivers needed to keep customers and managers aware of status, so we focused on providing easy, contextual actions to help move them through the process. We even pulled in estimated times to help them leave on time.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="f-br dumptruck"></div>
+        </div>
+
+        <div class="content-captions">
+          <div class="content-item-caption grid-4 mobile-hide">
+            <div class="col-1-4 as-c">
+              <div class="content-caption">
+                <span class="project-label">Left</span>
+                <span class="content-item-caption white">Drivers could manage all their past orders and accounting in one place.</span>
+              </div>
+              <div class="content-caption">
+                <span class="project-label">Right</span>
+                <span class="content-item-caption white">Drivers had control over what loads they'd pick up.</span>
+              </div>
+            </div>
+          </div>
+          <div class="content-item-img">
+            <picture>
+              <source
+                  data-srcset="../assets/media/dumptruck/12-xxl.jpg"
+                  media="(min-width: 1900px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/12-l.jpg"
+                  media="(min-width: 1200px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/12-s.jpg"
+                  media="(min-width: 100px)" />
+              <img
+                  data-sizes="auto"
+                  data-src="../assets/media/dumptruck/12-l.jpg"
+                  class="lazyload blur-up" />
+            </picture>
+          </div>
+          <div class="content-item-img">
+            <picture>
+              <source
+                  data-srcset="../assets/media/dumptruck/11-xxl.jpg"
+                  media="(min-width: 1900px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/11-l.jpg"
+                  media="(min-width: 1200px)" />
+              <source
+                  data-srcset="../assets/media/dumptruck/11-s.jpg"
+                  media="(min-width: 100px)" />
+              <img
+                  data-sizes="auto"
+                  data-src="../assets/media/dumptruck/11-l.jpg"
+                  class="lazyload blur-up" />
+            </picture>
+          </div>
+        </div>
+
+      </section>
 
 
-    <script src="js/headroom.min.js"></script>
-    <script src="js/smooth-scroll.min.js"></script>
-    <script src="js/clipboard.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-      (function() {
-        var header = new Headroom(document.querySelector("#header"), {
-            tolerance: 3,
-            offset: 50,
-            classes: {
-              initial: "animated",
-              pinned: "slideDown",
-              unpinned: "slideUp"
-            }
-        });
-        header.init();
 
-    }());
-    </script>
+
+      </div>
+
+      {% include footerCS.html %}
+
+      {% include menu.html %}
+
+      {% include message.html %}
+
+      {% include js.html %}
+
     </body>
 </html>
