@@ -1,0 +1,370 @@
+---
+meta_title: Dumptruck.com | Alex Cagwin
+project: Dumptruck
+nextProject: hopsy
+nextProjectTitle: Hopsy
+previousProject: octaneai
+challenge: Streamline the contracting dumptruck industry by creating a fully comprehensive logistics platform.
+details:
+  - label: Role
+    content: Lead Designer
+  - label: Art Director
+    content: Brian Basher
+  - label: Product Manager
+    content: Rathan Haran
+  - label: Agency
+    content: Freelance
+  - label: Year
+    content: Winter 2016
+menu:
+  - title: Home
+    link:
+  - title: About Me
+    link: about
+  - title: Octane AI
+    link: octaneai
+  - title: Dumptruck
+    link: dumptruck
+  - title: Hopsy
+    link: hopsy
+  - title: Nvolv
+    link: nvolv
+
+---
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    {% include head.html %}
+
+    {% include headjs.html %}
+</head>
+  <body id="main" class="main-bg">
+    <div id="dumptruck" class="content flex flex-horizontal-center">
+
+      {% include navigation.html %}
+
+      <div class="project--header f-width">
+        <div class="header">
+          <div class="header-title block">
+            <h1 class="hidden">{{ page.project }}</h1>
+          </div>
+          <div class="header-content">
+            <span class="header-project-text">{{ page.project }}</span>
+            <span class="h4 white">Get rid of those tickets.</span>
+          </div>
+        </div>
+        <div class="header-hero">
+          <picture>
+            <source
+                data-srcset="../assets/media/dumptruck/main-hero-xxl.png"
+                media="(min-width: 1900px)" />
+            <source
+                data-srcset="../assets/media/dumptruck/main-hero-xl.png"
+                media="(min-width: 1500px)" />
+            <source
+                data-srcset="../assets/media/dumptruck/main-hero-l.png"
+                media="(min-width: 1200px)" />
+            <source
+                data-srcset="../assets/media/dumptruck/main-hero-m.png"
+                media="(min-width: 1000px)" />
+            <source
+                data-srcset="../assets/media/dumptruck/main-hero-s.png"
+                media="(min-width: 700px)" />
+            <source
+                data-srcset="../assets/media/dumptruck/main-hero-p.png"
+                media="(min-width: 100px)" />
+            <img
+                data-sizes="auto"
+                data-src="../assets/media/dumptruck/main-hero-l.png"
+                class="lazyload"
+                alt="Mobile Background" />
+          </picture>
+        </div>
+      </div>
+
+      <section class="intro split split-p-a intro-reverse">
+        <div class="intro-content">
+          <div class="intro-break header desktop-hide"></div>
+          <div class="intro-details">
+            {% for item in page.details %}
+              <div class="intro-details-2">
+                <span class="fact-label">{{ item.label}}</span>
+                <div class="details-item">
+                  <p>{{ item.content}}</p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="case-study-break"></div>
+          <div class="intro-link">
+            <a target="_blank" title="View Live" class="project-live">
+              <p>Coming Soon</p>
+            </a>
+          </div>
+        </div>
+        <div class="split-content">
+          <div class="header-content-bio">
+            <span>{{ page.challenge }}</span>
+          </div>
+          <div class="section-break"></div>
+          <div class="section-content">
+            <p>While the gig economy has risen in new areas, it's been strong in markets such as big-rig trucking and dumptrucking. Bucky's Hauling LLC is a network of trucking comapnies and suppliers fulfilling orders on an on-demand basis. They were looking for a transition from excel spreadsheets to the digital world to better manage and scale their business. They partnered with Gigster and their freelance network to take them into the digital age.</p>
+            <p>I worked closely with product manager, Rathan Haran, and art director, Brian Basher, to create a new digital experience for Bucky's Hauling. We focused on streamlining the entire order journey and automating complex workflows to help them scale Bucky's Hauling' business. There was a simple goal: get rid of the paper tickets needed at every stage of the trucking process. We designed a platform for dispatchers, customers, trucking companies and truck drivers to manage their respective needs and eliminate the tremendous paper trail. The product is currently in the development phase and will be launching end of Summer 2017. Once it launches, it'll be known as Dumptruck.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="fw-2">
+          <div class="screens--screen">
+            <div class="photo-width">
+              <picture>
+                <source
+                    data-srcset="../assets/media/dumptruck/hero-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/hero-xl.jpg"
+                    media="(min-width: 1500px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/hero-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/hero-m.jpg"
+                    media="(min-width: 1000px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/hero-s.jpg"
+                    media="(min-width: 700px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/hero-p.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="media/dumptruck/hero-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+          </div>
+      </div>
+
+      <section class="project-section split split-p-t dispatch-bg white">
+        <div class="intro-content">
+          <span class="intro-project-title">Dispatch Ecosystem</span>
+        </div>
+        <div class="split-content">
+          <div class="section-content">
+            <p>At the heart of the new digital experience, there needed to be a robust admin system to manage every aspect of every order. We were porting over a completely manual process to nearly automated. Dispatchers, the manager to oversee and ensure loads are being completed, needed to have full control over the order in the event the system failed. We designed an extensive platform which allows dispatchers manage customers, new and incoming orders, current loads, trucking companies, suppliers and materials.</p>
+            <p>Enabling dispatchers to do their job well meant providing a full comprehensive look at everything active at any given point of the day. We surfaced up all active orders, incoming orders, orders that needed their attention and pending invoices. The design focused on surfacing up only the most relevant information in order to push that order to the next stage and closer to completion.</p>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="fw-2 dispatch-bg">
+          <div class="screens--screen">
+            <div class="photo-width">
+              <picture>
+                <source
+                    data-srcset="../assets/media/dumptruck/1-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/1-xl.jpg"
+                    media="(min-width: 1500px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/1-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/1-m.jpg"
+                    media="(min-width: 1000px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/1-s.jpg"
+                    media="(min-width: 700px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/1-p.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/dumptruck/1-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+          </div>
+      </div>
+
+      <section class="project-section split split-r-n dispatch-bg white">
+        <div class="intro-content project-highlight">
+          <div>
+            <div class="section-content">
+              <span class="highlight-project-title">Order Management</span>
+              <p>At it's core, an order is defined by it's loads. Thus, the entire design system was crafted around loads. Incoming orders are triaged by the system into individual loads for more precise and efficient fulfillment methods. Loads could be filled by single or multiple suppliers as well as single or multiple trucking contractors, enabling maximum flexibility. The dispatcher has full control over every step of the process.</p>
+            </div>
+          </div>
+        </div>
+        <div class="split-content edge">
+          <div class="screens--screen">
+            <div class="photo-width" style="margin:0;">
+              <picture>
+                <source
+                    data-srcset="../assets/media/dumptruck/2-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/2-xl.jpg"
+                    media="(min-width: 1500px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/2-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/2-m.jpg"
+                    media="(min-width: 1000px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/2-s.jpg"
+                    media="(min-width: 700px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/2-p.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/dumptruck/2-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+          </div>
+      </div>
+    </section>
+
+      <section class="project-section split split-p-t customer-bg white">
+        <div class="intro-content">
+          <span class="intro-project-title">Consumer Ecosystem</span>
+        </div>
+        <div class="split-content">
+          <div class="section-content">
+            <p>We designed a complementing consumer ecosystem that allowed landscape architects and construction contractors to purchase and track various types of orders. Given the number of order types (flat rate, disposal, materials and duration), the process of purchasing evolves and responds as contractors complete the checkout process. They have full control over the length and duration of the job, removel of waste, and materials. They have the option of 'borrowing' a truck on-site if they need.</p>
+            <p>To ensure all parties (contractors, trucking companies, suppliers and the dispatch) are compensated equitably, we included a quoting flow that allows parties to negotiate before signing a contract. Once content, parties could manage and track the order across any device.</p>
+          </div>
+        </div>
+      </section>
+
+
+        <div class="fw-2 customer-bg">
+          <div class="screens--screen">
+            <div class="photo-width">
+              <picture>
+                <source
+                    data-srcset="../assets/media/dumptruck/c-1-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/c-1-xl.jpg"
+                    media="(min-width: 1500px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/c-1-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/c-1-m.jpg"
+                    media="(min-width: 1000px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/c-1-s.jpg"
+                    media="(min-width: 700px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/c-1-p.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/dumptruck/c-1-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="fw-2 customer-bg">
+          <div class="screens--screen">
+            <div class="photo-width">
+              <picture>
+                <source
+                    data-srcset="../assets/media/dumptruck/c-main-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/c-main-xl.jpg"
+                    media="(min-width: 1500px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/c-main-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/c-main-m.jpg"
+                    media="(min-width: 1000px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/c-main-s.jpg"
+                    media="(min-width: 700px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/c-main-p.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/dumptruck/c-main-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+
+
+        <section class="project-section split split-p-a driver-bg white">
+          <div class="intro-content">
+            <span class="intro-project-title">Trucking Companies</span>
+          </div>
+          <div class="split-content">
+            <div class="section-content">
+              <p>A system can only be as successful as the information it receives. The nearly all of the dumptruck platform required order statuses. The driver app we designed focused on providing a contextual and focused experience to ensure that drivers could update their orders with ease. Each step of updating an order only focused on providing the right information at the right time with one primary action: move forward in the flow.</p>
+            </div>
+          </div>
+        </section>
+
+
+        <div class="fw-2 driver-bg">
+          <div class="screens--screen">
+            <div class="photo-width">
+              <picture>
+                <source
+                    data-srcset="../assets/media/dumptruck/mobile-1-xxl.jpg"
+                    media="(min-width: 1900px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/mobile-1-xl.jpg"
+                    media="(min-width: 1500px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/mobile-1-l.jpg"
+                    media="(min-width: 1200px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/mobile-1-m.jpg"
+                    media="(min-width: 1000px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/mobile-1-s.jpg"
+                    media="(min-width: 700px)" />
+                <source
+                    data-srcset="../assets/media/dumptruck/mobile-1-p.jpg"
+                    media="(min-width: 100px)" />
+                <img
+                    data-sizes="auto"
+                    data-src="../assets/media/dumptruck/mobile-1-l.jpg"
+                    class="lazyload blur-up" />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      {% include footer.html %}
+
+      {% include menu.html %}
+
+      {% include message.html %}
+
+      {% include js.html %}
+
+
+    </body>
+</html>

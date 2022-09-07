@@ -1,9 +1,9 @@
 ---
 meta_title: Nvolv | Alex Cagwin
 project: Nvolv
-nextProject: instapark
-nextProjectTitle: Instapark
-previousProject: everwill
+nextProject: octaneai
+nextProjectTitle: Octane AI
+previousProject: hopsy
 challenge: Help conference attendees maximize their time while at large scale events.
 details:
   - label: Role
@@ -19,26 +19,14 @@ menu:
     link:
   - title: About Me
     link: about
-  - title: Hopsy
-    link: hopsy
-  - title: Dumptruck
-    link: dumptruck
   - title: Octane AI
     link: octaneai
-  - title: Virtual Fantasy League
-    link: vfl
-  - title: Everwill
-    link: everwill
+  - title: Dumptruck
+    link: dumptruck
+  - title: Hopsy
+    link: hopsy
   - title: Nvolv
     link: nvolv
-  - title: Instapark
-    link: instapark
-  - title: Dodo App
-    link: dodo
-  - title: Cal Poly Distance Club
-    link: cpdc
-  - title: The Underground Symphony
-    link: ug
 ---
 
 <!DOCTYPE html>
@@ -49,8 +37,8 @@ menu:
 
     {% include headjs.html %}
 </head>
-  <body id="nvolv" class="main-bg">
-    <div id="main" class="content flex flex-horizontal-center">
+  <body id="main" class="main-bg">
+    <div id="nvolv" class="content flex flex-horizontal-center">
 
             {% include navigation.html %}
 
@@ -60,6 +48,7 @@ menu:
                   <h1 class="hidden">{{ page.project }}</h1>
                 </div>
                 <div class="header-content">
+                  <span class="header-project-text">{{ page.project }}</span>
                   <span class="h4 white">Make conferences worth while.</span>
                 </div>
               </div>
@@ -68,34 +57,22 @@ menu:
                   <img src="../assets/media/nvolv/main-hero.png" alt="Laptop Background">
                 </picture>
               </div>
-              <div class="header-text">
-                <span class="header-project-text">{{ page.project }}</span>
-              </div>
             </div>
 
-            <section class="intro split split-p-a">
+            <section class="intro split split-p-a intro-reverse">
               <div class="intro-content">
-                <div class="intro-project-header">
-                  <span class="intro-project-title">{{ page.project }}</span>
-                </div>
-                <div class="intro-break"></div>
+                <div class="intro-break header desktop-hide"></div>
                 <div class="intro-details">
-                  <div class="intro-details-1">
-                    <span class="header-label">Challenge</span>
-                    <div class="details-item">
-                      <p>{{ page.challenge }}</p>
-                    </div>
-                  </div>
                   {% for item in page.details %}
                     <div class="intro-details-2">
-                      <span class="header-label">{{ item.label}}</span>
+                      <span class="fact-label">{{ item.label}}</span>
                       <div class="details-item">
                         <p>{{ item.content}}</p>
                       </div>
                     </div>
                   {% endfor %}
                 </div>
-                <div class="intro-break"></div>
+                <div class="case-study-break"></div>
                 <div class="intro-link">
                   <a href="https://itunes.apple.com/us/app/nvolv-experience-events-amazing/id998331446?mt=8" target="_blank" title="View Live" class="project-live">
                     <p>View Live</p>
@@ -103,6 +80,10 @@ menu:
                 </div>
               </div>
               <div class="split-content">
+                <div class="header-content-bio">
+                  <span>{{ page.challenge }}</span>
+                </div>
+                <div class="section-break"></div>
                 <div class="section-content">
                   <p>According to conventionindustry.org, 205 Million people in the United States attend "the 1.8M conventions, conferences, congresses, trade shows and exhibitions, incentive events and corporate/business meetings" each year.</p>
                   <p>How often would you say that when you go to a conference, you were able to capitalize and maximize the value of that trip? Were you able to get all those business cards you wanted? Were you able to keep track of all the events you wanted to go to? Did you have to read through a crumpled up, back-pocket worn conference guide?</p>
@@ -129,40 +110,6 @@ menu:
 
             <div class="project-break"></div>
 
-            <section class="project-section split split-p-a">
-              <div class="project-content">
-                <span class="intro-project-title">Focused Measures of Success</span>
-              </div>
-              <div class="split-content">
-                <div class="section-content">
-                  <p>Utilizing a variation of Google's Design Sprint, Jackie and myself worked in extremely close collaboration with the client over a period of 2 weeks. Typically, we have clients come in the first couple of days to kick off the project. However, for Nvolv, the client was working with us everyday, embedded into our workflow.</p>
-                  <p>To kick off the project, we started out aiming to understand the core problems and metrics that were going to drive all design decisions and structures. After a very long day's session discussioning the merits and pitfalls of the various business strategies, we chose 2 core phases: (1) Attendee and (2) Sponsor Experience. We focused on three key metrics for each experience.</p>
-                  <p>Attendee Experience</p>
-                  <div class="p-process flex">
-                    <div class="list-column">
-                        <ul>
-                          <li>– % Of Attendees attending sessions that have been saved</li>
-                          <li>– % of Attendees visiting brand pages</li>
-                          <li>– Avg # of Messages sent between two attendees</li>
-                        </ul>
-                    </div>
-                  </div>
-                  <p>Sponsorship Experience</p>
-                  <div class="p-process flex">
-                    <div class="list-column">
-                        <ul>
-                          <li>– # Messages per brand amabssador</li>
-                          <li>– # of attendee saves of sponsors events</li>
-                          <li>– # of sponsor ads</li>
-                        </ul>
-                    </div>
-                  </div>
-                  <p>With the close collaboration with Nvolv, we were able to knock out 3 full, low-fidelity protoypes by the end of the first week. Each protoyped was tested by a group of 5 potential attendees, selected by the client. This allowed us to rapidly try and evolve initial ideas.</p>
-                  <p>While half of the team was working on low-fidelity wireframes, the other half focused on creating and developing a brand system that could easily pair with almost any conference. Whether it be Dreamforce, SF Design Week, Oracle Open World, we designed a type system that was flexible to enough to pair with any of the large scale corporate identities.</p>
-                  <p>The second week was full production mode, iterating on the brand as well as implementing every iteration across the prototypes we had developed. Luckily, with the client in the office everyday, we could move rapidly and hit our 2 week deadline. The product has recently launch and is currently in full beta testing mode.</p>
-                </div>
-              </div>
-            </section>
 
         <div class="fw-2">
           <div class="screens--screen">
@@ -192,10 +139,8 @@ menu:
           </div>
         </div>
 
-        <div class="project-break m"></div>
-
         <section class="project-section split split-p-t">
-          <div class="project-content">
+          <div class="intro-content">
             <span class="intro-project-title">Connecting Attendees</span>
           </div>
           <div class="split-content">
@@ -237,7 +182,7 @@ menu:
         <div class="project-break"></div>
 
         <section class="project-section split split-p-a">
-          <div class="project-content">
+          <div class="intro-content">
             <span class="intro-project-title">Results</span>
           </div>
           <div class="split-content">
@@ -289,9 +234,6 @@ menu:
             </div>
           </div>
         </div>
-
-        {% include next-project.html %}
-
 
       </div>
 
