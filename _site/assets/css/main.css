@@ -233,46 +233,86 @@ img {
 
 
 .hero {
-  height: calc(100vh - 280px);
+  height: calc(100vh - 170px);
   min-height: 450px;
   display: flex;
-  overflow: hidden;
-}
+  flex-direction: column;
+  overflow: hidden; }
+  @media only screen and (min-width: 770px) {
+    .hero {
+      height: calc(100vh - 280px);
+      overflow: hidden;
+    }
+  }
+
 
 .hero {
   cursor: url("../media/work-cursor.png") 48 48, auto;
   transition: 0.1s ease-out;
 }
 
+.black-bg {
+  background: radial-gradient(100% 98.49% at 100% 0%, rgba(20, 20, 20, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+  position: relative;
+}
+
+
 .hero-assets {
   display: flex;
   flex-direction: row;
-  overflow: visible;
+  overflow-x: scroll;
+  overflow-y: clip;
   flex-wrap: nowrap;
   justify-content: flex-start;
   width: 100%;
-}
+  height: 100%; }
+  @media only screen and (min-width: 770px) {
+    .hero-assets {
+      overflow: visible;
+    }
+  }
 
 .hero img {
   width: auto;
-  height: 100%;
-}
+  height: 100%; }
+  @media only screen and (min-width: 770px) {
+    .hero img {
+      height: 110%;
+    }
+  }
+
 
 .hero-padding {
-  padding: 40px 30px 0;
-}
+  padding: 20px -0 0; }
+  @media only screen and (min-width: 770px) {
+    .hero-padding {
+      padding: 40px 64px 0;
+    }
+  }
 
 .hero-asset-item {
-  position: relative;
+  position: relative; /* this is affecting the clipping of the background shadow */
   overflow: visible;
   flex-grow: 1;
-  padding: 0 24px 0 0;
-}
+  padding: 0;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center; }
+  @media only screen and (min-width: 770px) {
+    .hero-asset-item {
+      padding: 0 48px 0 0;
+      min-width: auto;
+    }
+  }
 
 .hero-item-img {
   position: relative;
   z-index: 2;
   height: 100%;
+}
+
+.hero-item-img img {
+  filter: drop-shadow(-9px 9px 25px rgba(0, 0, 0, 0.25));
 }
 
 .hero-item-bg {
@@ -284,11 +324,67 @@ img {
   height: 100%;
 }
 
+.hero-btn {
+  padding: 16px 16px 24px;;
+  opacity: .3;
+  height: 100%;
+  min-width: calc(100vw - 32px);
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white {
+  color: #fff;
+}
+
+.hero-ind {
+  padding: 16px 0 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-ind-content {
+  display: flex;
+}
+
+.indicator {
+  display: block;
+  content: '';
+  background-color: #fff;
+  opacity: .3;
+  height: 5px;
+  width: 5px;
+  border-radius: 5px;
+  margin: 0 3px;
+  transition: .7s ease-out;
+}
+
+.indicator.active {
+  opacity: 1;
+}
+
+.home-width {
+  width: 100%;
+}
+
 .header-title {
   display: flex;
   flex-direction: column;
   margin: 0 0 24px;
 }
+
+.header-title {
+  font-size: 1.875rem;
+  line-height: 1.05; }
+  @media only screen and (min-width: 770px) {
+    .header-title {
+      font-size: 2.625rem;
+    }
+  }
 
 .about-hero {
   align-self: flex-start;
@@ -298,10 +394,6 @@ img {
   background-color: #010101;
   height: auto;
 }
-
-.header-title {
-  font-size: 2.625rem;
-  line-height: 1.05; }
 
 .header-space {
   position: relative;
@@ -317,19 +409,29 @@ img {
 
 .links-item-click {
   display: flex;
-  width: 24px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
+  @media only screen and (min-width: 770px) {
+    .links-item-click {
+      width: 24px;
+      height: 32px;
+    }
+  }
 
 .links-item-action {
   display: block;
-  width: 9px;
-  height: 9px;
+  width: 11px;
+  height: 11px;
   border-radius: 24px;
-  transition: .1s ease-out;
-}
+  transition: .1s ease-out; }
+  @media only screen and (min-width: 770px) {
+    .links-item-action {
+      width: 9px;
+      height: 9px;
+    }
+  }
 
 a:hover .links-item-action {
   width: 13px;
@@ -351,8 +453,13 @@ a:hover .links-item-action {
 .header-socials {
   display: flex;
   justify-content: space-between;
-  max-width: 250px;
-}
+  max-width: initial; }
+  @media only screen and (min-width: 770px) {
+    .header-socials {
+      max-width: 250px
+    }
+  }
+
 
 .header-text {
   flex: 1;
@@ -393,19 +500,43 @@ a:hover.top {
   font-size: .875rem;
 }
 
+.bio-title {
+  padding: 24px 0 0 0; }
+  @media only screen and (min-width: 770px) {
+    .bio-title {
+      padding: 0;
+    }
+  }
+
 
 .bio-header, .focus-item-txt {
-  font-size: 2rem;
-  line-height: 1.32;
-}
+  font-size: 1.5rem;
+  line-height: 1.32; }
+  @media only screen and (min-width: 770px) {
+    .bio-header, .focus-item-txt {
+      font-size: 2rem;
+    }
+  }
 
 .bio-focus-content {
   display: grid;
-  grid-auto-flow: column;
-}
+  grid-auto-flow: row; }
+  @media only screen and (min-width: 770px) {
+    .bio-focus-content {
+      grid-auto-flow: column;
+    }
+  }
 
 .bio-focus-content {
   margin: 40px 0 0;
+}
+
+.bio-main-content {
+  font-size: .8125rem; }
+  @media only screen and (min-width: 770px) {
+    .bio-main-content {
+      font-size: .875rem;
+    }
 }
 
 /*
@@ -732,8 +863,6 @@ a .header-action, a .header-action-2 {
 
 
 
-
-
 .content-sidebar {
   grid-area: sidebar;
 }
@@ -858,24 +987,52 @@ a .header-action, a .header-action-2 {
 
 .case-studies-primary, .case-studies-secondary {
   display: grid;
-  grid-gap: 32px;
+  grid-gap: 20px; }
+  @media only screen and (min-width: 770px) {
+    .case-studies-primary, .case-studies-secondary {
+      grid-gap: 32px;
+    }
 }
 
 .case-studies-primary {
-  grid-template-columns: repeat(3, 4fr);
+  grid-template-columns: repeat(1, 4fr); }
+  @media only screen and (min-width: 770px) {
+    .case-studies-primary {
+      grid-template-columns: repeat(3, 4fr);
+    }
 }
 
 .case-studies-secondary {
-  grid-template-columns: repeat(4, 3fr);
+  grid-template-columns: repeat(2, 3fr); }
+  @media only screen and (min-width: 770px) {
+    .case-studies-secondary {
+      grid-template-columns: repeat(4, 3fr);
+    }
 }
 
 
 .case-studies-primary .cs-title {
-  font-size: 1.375rem;
+  font-size: 1.25rem; }
+  @media only screen and (min-width: 770px) {
+    .case-studies-primary .cs-title {
+      font-size: 1.375rem;
+    }
 }
 
 .case-studies-secondary .cs-title {
-  font-size: 1.125rem;
+  font-size: 1rem; }
+  @media only screen and (min-width: 770px) {
+    .case-studies-secondary .cs-title {
+      font-size: 1.125rem;
+    }
+}
+
+.case-studies-secondary .p-action {
+  font-size: 0.8125rem; }
+  @media only screen and (min-width: 770px) {
+    .case-studies-secondary .p-action {
+      font-size: 0.875rem;
+    }
 }
 
 .br, .main-br {
@@ -946,6 +1103,7 @@ a .header-action, a .header-action-2 {
 }
 
 .focus-item, .capabilities, .industries {
+  padding: 0 0 24px;
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
@@ -955,6 +1113,7 @@ a .header-action, a .header-action-2 {
           flex-shrink: 1; }
   @media only screen and (min-width: 700px) {
     .focus-item, .capabilities, .industries {
+      padding: 0;
       -webkit-flex-basis: 48%;
           -ms-flex-preferred-size: 48%;
               flex-basis: 48%;
@@ -976,15 +1135,32 @@ a .header-action, a .header-action-2 {
   }
 
 .focus-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas:
+    "num skill skill skill skill skill";
+  grid-gap: 20px; }
+  @media only screen and (min-width: 770px) {
+    .focus-item {
+      grid-gap: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+
+.focus-item-num {
+  grid-area: num;
+}
+
+.focus-item-txt {
+  grid-area: skill;
 }
 
 .services {
@@ -1030,7 +1206,7 @@ a .header-action, a .header-action-2 {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1048,14 +1224,20 @@ a .header-action, a .header-action-2 {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   color: #333;
   padding: 8px 24px;
-  font-size: .875rem;
+  font-size: .75rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 96px;
-  width: 96px;
-  border-radius: 48px;
-}
+  height: 48px;
+  width: 48px;
+  border-radius: 48px; }
+  @media only screen and (min-width: 700px) {
+    .return-content {
+      font-size: .875rem;
+      height: 96px;
+      width: 96px;
+    }
+  }
 
 a:hover.return-content {
   background-color: #f9f9f9;
@@ -1627,13 +1809,6 @@ a:hover.return-content {
   margin: -24px 0 0 0;
 }
 
-.black-bg {
-  background: radial-gradient(100% 98.49% at 100% 0%, rgba(20, 20, 20, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
-  overflow: hidden;
-  position: relative;
-}
-
-
 #about .main {
   color: #9A404D;
 }
@@ -1681,7 +1856,7 @@ html{
 
 .home-padding {
   overflow: hidden;
-  padding: 50px 24px; }
+  padding: 24px 20px; }
   @media only screen and (min-width: 700px) {
     .home-padding {
       padding: 50px 60px;
@@ -3729,7 +3904,7 @@ footer a:hover .foot-btn {
 
 .footer-about {
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1;
   position: relative;
   z-index: 1;
@@ -3750,11 +3925,11 @@ footer a:hover .foot-btn {
   font-style: normal;
   color: #111;
   z-index: 1;
-  font-size: 10rem;
+  font-size: 40rem;
   line-height: 1;
   position: absolute;
-  left: 100px;
-  top: -40px; }
+  left: -15%;
+  top: -20%; }
   @media only screen and (min-width: 700px) {
     .footer-amp {
       font-size: 50rem;
@@ -3770,10 +3945,23 @@ footer a:hover .foot-btn {
 
 .footnote-col {
   display: grid;
-  grid-gap: 24px;
+  grid-gap: 2px;
   -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(1, 1fr); }
+  @media only screen and (min-width: 770px) {
+    .footnote-col {
       grid-template-columns: repeat(2, 1fr);
-}
+      grid-gap: 24px;
+    }
+  }
+
+.footnight-item {
+  padding: 0 0 24px; }
+  @media only screen and (min-width: 770px) {
+    .footnight-item {
+      padding: 0;
+    }
+  }
 
 .footnote p {
   margin: 0;

@@ -55,7 +55,8 @@
           <!-- Harley-Davidson -->
           <div class="hero-asset-item">
             <div class="hero-item-img">
-              <img src="../assets/media/hero-hd.png" alt="Harley-Davidson Image">
+              <!-- <img src="../assets/media/hero-hd.png" alt="Harley-Davidson Image"> -->
+              <img src="../assets/media/hero-hd-ns.png" alt="Harley-Davidson Image">
             </div>
             <div class="hero-item-bg">
               <img src="../assets/media/drop-shadow.png" alt="Harley-Davidson Image">
@@ -105,8 +106,28 @@
             </div>
           </div>
 
+          <div class="hero-asset-item white desktop-hide">
+            <div class="hero-btn">
+              <span class="hero-btn-txt">View All Work</span>
+            </div>
+          </div>
+
 
         </div>
+
+
+        <!-- hero indicators -->
+        <div class="hero-ind">
+          <div class="hero-ind-content">
+            <div class="indicator active"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator-sm"></div>
+          </div>
+        </div>
+
       </a>
     </div>
 
@@ -163,15 +184,18 @@
               <div class="bio-focus-content">
                 <div class="focus-item">
                   <span class="focus-item-num nh-d-55">I.</span>
-                  <span class="focus-item-txt nh-d-65">Digital<br>Design</span>
+                  <span class="focus-item-txt nh-d-65 desktop-hide">Digital Design</span>
+                  <span class="focus-item-txt nh-d-65 mobile-hide">Digital<br>Design</span>
                 </div>
                 <div class="focus-item">
                   <span class="focus-item-num nh-d-55">II.</span>
-                  <span class="focus-item-txt nh-d-65">Product<br>Strategy</span>
+                  <span class="focus-item-txt nh-d-65 desktop-hide">Product Strategy</span>
+                  <span class="focus-item-txt nh-d-65 mobile-hide">Product<br>Strategy</span>
                 </div>
                 <div class="focus-item">
                   <span class="focus-item-num nh-d-55">III.</span>
-                  <span class="focus-item-txt nh-d-65">Design<br>Leadership</span>
+                  <span class="focus-item-txt nh-d-65 desktop-hide">Design Leadership</span>
+                  <span class="focus-item-txt nh-d-65 mobile-hide">Design<br>Leadership</span>
                 </div>
 
               </div>
@@ -564,7 +588,7 @@
     var header = new Headroom(document.querySelector("#header"), {
         tolerance: {
           up : 5,
-          down : 5
+          down : 75
         },
         offset: 150,
         classes: {
