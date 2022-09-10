@@ -554,6 +554,15 @@ a:hover.top {
     }
 }
 
+.bio-main-content a {
+  color: #9A404D;
+}
+
+.bio-main-content a:hover {
+  color: #000;
+  cursor: pointer;
+}
+
 /*
 .focus-item-txt {
   color: #4a4a4a;
