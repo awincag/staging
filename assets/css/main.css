@@ -261,7 +261,7 @@ img {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
-  overflow-y: clip;
+  overflow-y: hidden;
   flex-wrap: nowrap;
   justify-content: flex-start;
   width: 100%;
@@ -292,7 +292,8 @@ img {
 
 .hero-asset-item {
   position: relative; /* this is affecting the clipping of the background shadow */
-  overflow: visible;
+  /* overflow-x: visible;
+  overflow-y: hidden; */
   flex-grow: 1;
   padding: 0;
   min-width: 100vw;
@@ -311,12 +312,26 @@ img {
   height: 100%;
 }
 
+.hero-item-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero-item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-item-img img {
   filter: drop-shadow(-9px 9px 25px rgba(0, 0, 0, 0.25));
 }
 
 .hero-item-bg {
-  position: absolute;
+  position: relative;
   left: -15%;
   right: 0;
   top: 5%;
