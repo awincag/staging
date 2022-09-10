@@ -14,7 +14,7 @@
 
   .nh-d-75 {
     font-family: 'NHaasGroteskTXStd-75Bd', Helvetica, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight:  700;
+    /* font-weight:  700; Shows up weird on mobile */
     font-style:   normal;
     font-stretch: normal;
     text-rendering: optimizeLegibility;
@@ -30,7 +30,7 @@
 
   .nh-d-65 {
     font-family: 'NHaasGroteskDSPro-65Md', Helvetica, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight:  600;
+    /* font-weight:  600; Shows up weird on mobile */
     font-style:   normal;
     font-stretch: normal;
     text-rendering: optimizeLegibility;
@@ -47,7 +47,7 @@
 
   .nh-d-55 {
     font-family: 'NHaasGroteskDSPro-55Rg', Helvetica, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight:  500;
+    /* font-weight:  500; shows up weird on mobile */
     font-style:   normal;
     font-stretch: normal;
     text-rendering: optimizeLegibility;
