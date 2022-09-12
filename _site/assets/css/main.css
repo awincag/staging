@@ -1277,12 +1277,13 @@ a .header-action, a .header-action-2 {
 
 .return-module {
   position: fixed;
-  bottom: 0;
+  top: 0;
+  bottom: auto;
   left: 0;
   right: 0;
   z-index: 100;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   padding: 16px;
   transition: .1s ease-out; }
@@ -1290,13 +1291,14 @@ a .header-action, a .header-action-2 {
     .return-module {
       top: 0;
       bottom: auto;
+      justify-content: center;
     }
   }
 
 .return-content {
-  background-color: #fff;
+  background-color: #212121;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
-  color: #333;
+  color: #fff;
   padding: 8px 24px;
   font-size: .75rem;
   display: flex;
@@ -1307,6 +1309,8 @@ a .header-action, a .header-action-2 {
   border-radius: 48px; }
   @media only screen and (min-width: 700px) {
     .return-content {
+      background-color: #fff;
+      color: #333;
       font-size: .875rem;
       height: 96px;
       width: 96px;
