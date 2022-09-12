@@ -277,7 +277,7 @@ img {
   height: 100%; }
   @media only screen and (min-width: 770px) {
     .hero img {
-      height: 110%;
+      height: 105%;
     }
   }
 
@@ -286,7 +286,7 @@ img {
   padding: 20px -0 0; }
   @media only screen and (min-width: 770px) {
     .hero-padding {
-      padding: 64px 16px 0;
+      padding: 48px 16px 0;
     }
   }
 
@@ -298,10 +298,12 @@ img {
   padding: 0;
   min-width: 100vw;
   display: flex;
+  margin: 0 0 45px 0;
   justify-content: center; }
   @media only screen and (min-width: 770px) {
     .hero-asset-item {
       padding: 0 16px 0 0;
+      margin: 0;
       min-width: auto;
     }
   }
@@ -323,7 +325,28 @@ img {
 .hero-item-img {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; }
+  @media only screen and (min-width: 770px) {
+    .hero-item-img {
+      align-items: initial;
+    }
+  }
+
+.hero-item-img {
+
+}
+
+.hero-item-gloss {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.hero-item-gloss {
+  background: radial-gradient(105.1% 98.95% at 100% 1.05%, rgba(255, 255, 255, 0.12) 13.54%, rgba(255, 255, 255, 0) 95.31%)
 }
 
 .hero-item-img img {
@@ -332,11 +355,17 @@ img {
 
 .hero-item-bg {
   position: relative;
-  left: -15%;
+  left: -16%;
   right: 0;
-  top: 5%;
+  top: 1%;
   z-index: 1;
-  height: 100%;
+  height: 110%; }
+  @media only screen and (min-width: 770px) {
+    .hero-item-bg {
+      left: -15%;
+      top: 5%;
+      height: 100%;
+  }
 }
 
 .hero-btn {
@@ -357,15 +386,37 @@ img {
 }
 
 .hero-ind {
-  padding: 16px 0 24px;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
 }
+
+.hero-ind {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100; }
+
 
 .hero-ind-content {
   display: flex;
 }
 
+.scroll-tray {
+  background: rgba(255, 255, 255, 0.2);
+  height: 3px;
+  margin: 10px auto;
+  width: 120px;
+}
+.scroll-indicator {
+  background: rgba(255, 255, 255, 0.5);
+  height: 3px;
+  position: relative;
+  width: 0;
+}
+
+/*
 .indicator {
   display: block;
   content: '';
@@ -376,7 +427,7 @@ img {
   border-radius: 5px;
   margin: 0 3px;
   transition: .7s ease-out;
-}
+} */
 
 .indicator.active {
   opacity: 1;

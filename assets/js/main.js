@@ -1,3 +1,55 @@
+var start = null;
+var body = document.body;
+var toggle = document.getElementById('toggle');
+var carousel = document.getElementById('carousel');
+var cards = document.querySelectorAll('.hero-asset-item');
+var tray = document.getElementById('tray');
+var indicator = document.getElementById('indicator');
+var info = {
+  numCards: cards.length
+};
+
+var getDimensions = function() {
+  info.container_width = carousel.clientWidth;
+  info.card_width = carousel.firstElementChild.clientWidth;
+  info.tray_width = tray.clientWidth;
+}
+
+var moveIndicator = function(timestamp) {
+  var amount_inview = info.container_width / (info.card_width * info.numCards); // < 1
+  var tray_scale = info.tray_width / info.container_width;
+
+  var indicator_width = info.tray_width * amount_inview;
+  var indicator_offset = (info.scroll_left * amount_inview) * tray_scale;
+
+  indicator.style.width = indicator_width + 'px';
+  indicator.style.left = indicator_offset + 'px';
+
+  requestAnimationFrame(moveIndicator);
+}
+
+var onScroll = function() {
+  info.scroll_left = carousel.scrollLeft;
+}
+
+var toggleView = function() {
+  if (body.style.width == '320px') {
+    body.removeAttribute('style');
+  } else {
+    body.style.width = '320px';
+  }
+  getDimensions();
+}
+
+// initialize
+getDimensions();
+toggle.addEventListener('click', toggleView);
+carousel.addEventListener('scroll', onScroll);
+window.addEventListener('resize', getDimensions);
+requestAnimationFrame(moveIndicator);
+
+
+
 var btn = document.getElementsByClassName('copied');
 // var btn = document.getElementById('btn');
 var message = document.getElementsByClassName('msg');
