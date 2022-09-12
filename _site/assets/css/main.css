@@ -283,7 +283,7 @@ img {
 
 
 .hero-padding {
-  padding: 20px -0 0; }
+  padding: 40px 0 0; }
   @media only screen and (min-width: 770px) {
     .hero-padding {
       padding: 48px 16px 0;
@@ -357,9 +357,9 @@ img {
   position: relative;
   left: -16%;
   right: 0;
-  top: 1%;
+  top: -2%;
   z-index: 1;
-  height: 110%; }
+  height: 135%; }
   @media only screen and (min-width: 770px) {
     .hero-item-bg {
       left: -15%;
@@ -386,7 +386,6 @@ img {
 }
 
 .hero-ind {
-  padding: 20px 0;
   display: flex;
   justify-content: center;
 }
@@ -406,11 +405,11 @@ img {
 .scroll-tray {
   background: rgba(255, 255, 255, 0.2);
   height: 3px;
-  margin: 10px auto;
-  width: 120px;
+  margin: 0;
+  width: 100%;
 }
 .scroll-indicator {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.7);
   height: 3px;
   position: relative;
   width: 0;
