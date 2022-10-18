@@ -1004,8 +1004,16 @@ a .header-action, a .header-action-2 {
   color: #9A404D;
 }
 
+.looping-video {
+  padding: 5em;
+}
+
 .hd-bg {
   background-color: #171717;
+}
+
+.laptop-video {
+  margin-bottom: -8px;
 }
 
 
