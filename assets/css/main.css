@@ -1006,6 +1006,9 @@ a .header-action, a .header-action-2 {
 
 .looping-video {
   padding: 7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hd-bg {
