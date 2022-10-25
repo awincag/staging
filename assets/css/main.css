@@ -1015,6 +1015,18 @@ a .header-action, a .header-action-2 {
   background-color: #171717;
 }
 
+.mrcl-bg {
+  background-color: #070707;
+}
+
+@media only screen and (min-width: 700px) {
+  .tall picture {
+    max-width: 25vw;
+  }
+}
+
+
+
 .laptop-video {
   margin-bottom: -8px;
   border-radius: 8px;
