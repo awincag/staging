@@ -578,9 +578,16 @@ a:hover.top {
     }
   }
 
+.bio-header {
+  font-size: 1.5rem;
+}
+
+.focus-item-txt {
+  font-size: 1.35rem;
+}
+
 
 .bio-header, .focus-item-txt {
-  font-size: 1.5rem;
   line-height: 1.32; }
   @media only screen and (min-width: 770px) {
     .bio-header, .focus-item-txt {
@@ -598,8 +605,12 @@ a:hover.top {
   }
 
 .bio-focus-content {
-  margin: 40px 0 0;
-}
+  margin: 16px 0 0; }
+  @media only screen and (min-width: 770px) {
+    .bio-focus-content {
+      margin: 40px 0 0;
+    }
+  }
 
 .bio-main-content {
   font-size: .8125rem; }
@@ -1210,8 +1221,17 @@ a .header-action, a .header-action-2 {
     }
 }
 
-.focus-item, .capabilities, .industries {
+.focus-item {
+  padding: 0 0 6px;
+}
+
+.capabilities, .industries {
   padding: 0 0 24px;
+}
+
+
+
+.focus-item, .capabilities, .industries {
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
@@ -1221,6 +1241,7 @@ a .header-action, a .header-action-2 {
           flex-shrink: 1; }
   @media only screen and (min-width: 700px) {
     .focus-item, .capabilities, .industries {
+      padding: 0 0 24px;
       padding: 0;
       -webkit-flex-basis: 48%;
           -ms-flex-preferred-size: 48%;
