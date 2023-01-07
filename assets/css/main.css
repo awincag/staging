@@ -1030,6 +1030,11 @@ a .header-action, a .header-action-2 {
   background-color: #070707;
 }
 
+.ai-bg {
+  background-color: #106BE0;
+}
+
+
 @media only screen and (min-width: 700px) {
   .tall picture {
     max-width: 25vw;
