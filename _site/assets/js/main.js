@@ -134,14 +134,14 @@ var onScroll = function() {
   info.scroll_left = carousel.scrollLeft;
 }
 
-var toggleView = function() {
-  if (body.style.width == '320px') {
-    body.removeAttribute('style');
-  } else {
-    body.style.width = '320px';
-  }
-  getDimensions();
-}
+// var toggleView = function() {
+//  if (body.style.width == '320px') {
+//    body.removeAttribute('style');
+//  } else {
+//    body.style.width = '320px';
+//  }
+//  getDimensions();
+//}
 
 // initialize
 getDimensions();

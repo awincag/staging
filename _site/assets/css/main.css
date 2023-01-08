@@ -210,7 +210,8 @@ img {
   transition: opacity 400ms;
 }
 .lazyloading {
-  background-color: #ff00dd;
+  opacity: 0;
+  background-color: #f9f9f9;
 }
 
 .blur-up {
@@ -1016,11 +1017,20 @@ a .header-action, a .header-action-2 {
 }
 
 .looping-video {
-  padding: 7em;
+  padding: 48px;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
+  @media only screen and (min-width: 700px) {
+    .looping-video {
+      padding: 4em
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .looping-video {
+      padding: 7em
+    }
+  }
 
 .hd-bg {
   background-color: #171717;
@@ -1610,14 +1620,14 @@ a:hover.return-content {
   margin-bottom: 40px;
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+/* box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15); */
 }
 
 .side-grid picture, .tri-grid picture, .content-item-img picture, .content-item picture, .content-img picture {
   margin-bottom: 0px;
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15); */
   display: block;
 }
 
