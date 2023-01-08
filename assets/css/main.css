@@ -211,7 +211,7 @@ img {
 }
 .lazyloading {
   opacity: 0;
-  background-color: #f9f9f9;
+  background-color: #f0f0f0;
 }
 
 .blur-up {
@@ -1046,6 +1046,14 @@ a .header-action, a .header-action-2 {
 
 .ai-bg {
   background-color: #106BE0;
+}
+
+.side-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(63.41% 63.41% at 50% 36.59%, #303030 0%, #000000 100%);
+  padding:1em;
 }
 
 
