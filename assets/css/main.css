@@ -1040,6 +1040,10 @@ a .header-action, a .header-action-2 {
   background-color: #070707;
 }
 
+.mrcl-bg-light {
+  background-color: #F8F8F8;
+}
+
 .ai-bg {
   background-color: #106BE0;
 }
