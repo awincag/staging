@@ -243,6 +243,7 @@ img {
     .hero {
       height: calc(100vh - 240px);
       overflow: hidden;
+      max-height: 800px;
     }
   }
 
@@ -748,6 +749,10 @@ a:hover.location {
   color: #444;
 }
 
+.p-action p {
+  margin-bottom: 1.5em;
+}
+
 .p-action a {
   color: #9A404D;
   font-size: inherit;
@@ -1144,6 +1149,11 @@ a .header-action, a .header-action-2 {
   grid-template-columns: repeat(1, 4fr); }
   @media only screen and (min-width: 770px) {
     .case-studies-primary {
+      grid-template-columns: repeat(2, 4fr);
+    }
+  }
+  @media only screen and (min-width: 1125px) {
+    .case-studies-primary {
       grid-template-columns: repeat(3, 4fr);
     }
 }
@@ -1213,7 +1223,48 @@ a .header-action, a .header-action-2 {
   display: block;
   width: 64px;
   height: 64px;
-  margin: 0 0 12px;
+  margin: 0 0 6px; }
+  @media only screen and (min-width: 770px) {
+    .client-logo {
+      margin: 0 0 12px;
+    }
+}
+
+.space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.result {
+  display: flex;
+  flex-direction: row;
+}
+
+.result-item {
+  width: 100%;
+  margin: 0 0 2em 0;
+}
+
+.result-item-num {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.r-i-n-txt {
+  font-size: 2rem;
+  margin-right: 2px;
+  line-height: 1.2;
+}
+
+.r-i-n-xtr {
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.result-item-label {
+  font-size: .75rem;
 }
 
 
@@ -3915,10 +3966,6 @@ a:hover.next--content {
 
 
 
-.result-item {
-  width: 100%;
-  margin: 0 0 1em 0;
-}
 
 .press-br {
   display: block;
